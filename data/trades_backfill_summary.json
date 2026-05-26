@@ -1,0 +1,2009 @@
+{
+  "generated_at_utc": "2026-05-26T23:05:55.396016+00:00",
+  "input_markets": 222,
+  "markets_processed": 222,
+  "max_trades_per_market": 10000,
+  "total_trades_written": 322899,
+  "unique_wallets": 60916,
+  "capped_markets": 0,
+  "per_market": [
+    {
+      "condition_id": "0x3142f65e9e8e38c50ef433edd8c628a0eed8400d7774292f5b006fb9fa820897",
+      "question": "Will \"Anxiety - Doechii\" win Best Music Video at the 68th annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 54734.075381,
+      "trades_pulled": 182,
+      "trades_written": 182,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc7454e19b073bb973364e504c0c03a32449d467665756d4c83d1cbe1a401cdd9",
+      "question": "Will Lady Gaga win 2 Grammys?",
+      "bucket": "awards",
+      "volume_usd": 201029.316521,
+      "trades_pulled": 470,
+      "trades_written": 470,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0d880d85cadbe01cf69b30215a8f7304f0bc3e31f6f92218b0b02c9f145e9780",
+      "question": "Will Lady Gaga win 3 Grammys?",
+      "bucket": "awards",
+      "volume_usd": 668656.587519,
+      "trades_pulled": 851,
+      "trades_written": 851,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9d358ad28d4d4cddc736b11f2b9faebb7ced21825828600eda9e09764349d599",
+      "question": "Will GNX (Kendrick Lamar) win Best Rap Album at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 91939.563436,
+      "trades_pulled": 1363,
+      "trades_written": 1363,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa14fa7cd7ec5c4472528335369eabdf92e83a1968e8cec4f4966a76b2d295018",
+      "question": "Will Let God Sort Em Out (Clipse Pusha T Malice) win Best Rap Album at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 90236.764711,
+      "trades_pulled": 2418,
+      "trades_written": 2418,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2feeead1f8bd91e30424de10ab27d4e48562db8846ec390914cffe4d4600c20c",
+      "question": "Will Luther (Kendrick Lamar and SZA) win Record of the Year at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 144985.116939,
+      "trades_pulled": 1649,
+      "trades_written": 1649,
+      "capped": false
+    },
+    {
+      "condition_id": "0x262cfdb7103a1ab09f37c46c401258b7db31247f70439b6b3dd770ec1ce7617f",
+      "question": "Will DTMF (Bad Bunny) win Record of the Year at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 67566.587549,
+      "trades_pulled": 915,
+      "trades_written": 915,
+      "capped": false
+    },
+    {
+      "condition_id": "0x159d25871befc23b455537bf6b9de2c6236cf6bfe46da0b9577f28db42ce4b09",
+      "question": "Will Abracadabra (Lady Gaga) win Record of the Year at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 63285.166495,
+      "trades_pulled": 946,
+      "trades_written": 946,
+      "capped": false
+    },
+    {
+      "condition_id": "0x33a3e96a12a5d7f46aabec104a70b0f5315ff72fd63cdeeb6371af7caed53130",
+      "question": "Will APT (Ros\u00e9 and Bruno Mars) win Record of the Year at the 68th Annual GRAMMY Awards?",
+      "bucket": "awards",
+      "volume_usd": 99039.866852,
+      "trades_pulled": 963,
+      "trades_written": 963,
+      "capped": false
+    },
+    {
+      "condition_id": "0xd730e31c172055955a3e1ce2157a357ef57025795e2c785cea292d2066bc2260",
+      "question": "Will Squid Game be the #1 searched TV show on Google this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 67924.942525,
+      "trades_pulled": 523,
+      "trades_written": 523,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9369931657597588cbd0f879c8fa387eb76549d94aa8e87f8519ed68dec2ea34",
+      "question": "Will The Bear be the #1 searched TV show on Google this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 75975.218886,
+      "trades_pulled": 165,
+      "trades_written": 165,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5ed62fe317871a7be652379134b37e90f791f97603d48badc29d47652c7f07f7",
+      "question": "Will OpenAI have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 56887.12599,
+      "trades_pulled": 279,
+      "trades_written": 279,
+      "capped": false
+    },
+    {
+      "condition_id": "0x437d6161e3d5cba4651270f78acaac4974914e7efff1f418e1dc89e52e1f5894",
+      "question": "Will DeepSeek have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 292541.298561,
+      "trades_pulled": 960,
+      "trades_written": 960,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe3a003c3bdb158a523c1162957676e798bb978abd7dcee922da9d968c82d8687",
+      "question": "Will xAI have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 211100.106946,
+      "trades_pulled": 209,
+      "trades_written": 209,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5bc71940759d1225300a190edbe20c275e86805475f1fa0a8e1b12b4d2df0291",
+      "question": "Will Anthropic have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 603091.944074,
+      "trades_pulled": 1813,
+      "trades_written": 1813,
+      "capped": false
+    },
+    {
+      "condition_id": "0x619b39c85b6019914dbbaf805d54a83b5855ab80b94f6ceb51db17d942d39dfe",
+      "question": "Will Meta have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 151996.27575,
+      "trades_pulled": 644,
+      "trades_written": 644,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0c7e04861e982fbff7284d62a759104f601e99be50728e01df59d4ba95def0ba",
+      "question": "Will Zhipu AI have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 134441.368845,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa9e9b65ecbf6745cbf973377e93e12279a979ce1c311afc4678855b0459dead3",
+      "question": "Will Mistral have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 112767.97689,
+      "trades_pulled": 3243,
+      "trades_written": 3243,
+      "capped": false
+    },
+    {
+      "condition_id": "0xab64fe2d2134eebaa2c87c9cdbcd82f3d8ca5af91172b3f6dbf562072a109e5d",
+      "question": "Will Alibaba have a #1 AI model this year?",
+      "bucket": "reality_tv",
+      "volume_usd": 182890.862735,
+      "trades_pulled": 956,
+      "trades_written": 956,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "question": "New \"Stranger Things\" episode released by Wednesday? ",
+      "bucket": "reality_tv",
+      "volume_usd": 15181604.224152,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc4f9c5ce504fe71a5ab7a870b39ce0dd13d527e9656a270bfc55e2ed5d33b83a",
+      "question": "New \"Stranger Things\" episode released by January 14? ",
+      "bucket": "reality_tv",
+      "volume_usd": 1005436.637695,
+      "trades_pulled": 284,
+      "trades_written": 284,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3d109c1fe77572356951368f363ea16c6d8fd0fe78bd0ef2a51af572ae9a4c67",
+      "question": "New \"Stranger Things\" episode released by January 31? ",
+      "bucket": "reality_tv",
+      "volume_usd": 10643992.245096,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa6480bbebce112177d153c814e85a7961b16cb2781ba707c33771d247cb51848",
+      "question": "New \"Stranger Things\" episode released by February 28? ",
+      "bucket": "reality_tv",
+      "volume_usd": 1294241.817949,
+      "trades_pulled": 1245,
+      "trades_written": 1245,
+      "capped": false
+    },
+    {
+      "condition_id": "0xdf72ce355c6405cf62414e6260e99c6de297ce31220c523d2886acd6f5ffd8d9",
+      "question": "New \"Stranger Things\" episode released by April 30? ",
+      "bucket": "reality_tv",
+      "volume_usd": 414347.09857900057,
+      "trades_pulled": 908,
+      "trades_written": 908,
+      "capped": false
+    },
+    {
+      "condition_id": "0x294759deb30aa52efdee2af1711411961c4cdaf696179c8a1d5ac08674814a52",
+      "question": "New \"Stranger Things\" episode released by March 31? ",
+      "bucket": "reality_tv",
+      "volume_usd": 377874.7889590002,
+      "trades_pulled": 260,
+      "trades_written": 260,
+      "capped": false
+    },
+    {
+      "condition_id": "0xab10207919644febebabfeeb8194dc2c637ffe5f5f3f4246e8b0a7238a36f68f",
+      "question": "Will a contestant numbered 151 - 175 win Beast Games: Season 2?",
+      "bucket": "reality_tv",
+      "volume_usd": 107364.365387,
+      "trades_pulled": 1056,
+      "trades_written": 1056,
+      "capped": false
+    },
+    {
+      "condition_id": "0x68241675cb6ae1fffa20b5981a17e6922c1140eb648a969e935ea1b7fc19deeb",
+      "question": "Will Felicia win Melodifestivalen 2026?",
+      "bucket": "reality_tv",
+      "volume_usd": 85333.69251499997,
+      "trades_pulled": 723,
+      "trades_written": 723,
+      "capped": false
+    },
+    {
+      "condition_id": "0x133f8b12cf14d8d136742b3447d7976161aed3e865eb518a868762849bb4a1e1",
+      "question": "Secret Lives of Mormon Wives Season 5 cancelled by April 15?",
+      "bucket": "reality_tv",
+      "volume_usd": 54005.183023999976,
+      "trades_pulled": 165,
+      "trades_written": 165,
+      "capped": false
+    },
+    {
+      "condition_id": "0xffe18e9366e6175b809c361df72ec9e9eedd12c7283a3dad1b3e18993fccf5c8",
+      "question": "Sidemen Charity Match 2026: Winner",
+      "bucket": "reality_tv",
+      "volume_usd": 151051.2293069999,
+      "trades_pulled": 1079,
+      "trades_written": 1079,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa5ba10f247c0c9a233b2e0437a1187f0974717d340a691122acc157027f889c3",
+      "question": "Will Taylor Swift hold less than 4 spots in the Billboard Hot 100 Top 10 for the week of November 1, 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 65978.011379,
+      "trades_pulled": 324,
+      "trades_written": 324,
+      "capped": false
+    },
+    {
+      "condition_id": "0x87f7d6635ebc4ad941aace2ec5058184171a7a05871cbf351fcbbaf66900aa4a",
+      "question": "Will Taylor Swift hold 6 or more spots in the Billboard Hot 100 Top 10 for the week of November 1, 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 64509.14595,
+      "trades_pulled": 321,
+      "trades_written": 321,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf73171c54722deed1abc6702bda0d440f330586ad0feb21d9951474e3e7245be",
+      "question": "Israel banned from Eurovision 2026 by November 30?",
+      "bucket": "release_performance",
+      "volume_usd": 294868.577872,
+      "trades_pulled": 2023,
+      "trades_written": 2023,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7208203a0fe65b589f2c72dd65a55ad2a7ac505b961bf645db38111a65b1100d",
+      "question": "Will Spotify's top song on Christmas be 'All I Want For Christmas Is You'?",
+      "bucket": "release_performance",
+      "volume_usd": 1387397.593509,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xd30b335573b59df82a68cd6f67cd664c83f1cb67a0048e3cfac41a6c8fce2081",
+      "question": "Will The Fate of Ophelia - Taylor Swift be the #1 song on Spotify this week?",
+      "bucket": "release_performance",
+      "volume_usd": 66762.919281,
+      "trades_pulled": 660,
+      "trades_written": 660,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9301cab840b1a7901d9ae5713bd1a3e9bdee1198ea1f3828d16a90fa0c6c78ab",
+      "question": "Will All I Want For Christmas Is You - Mariah Carey be the #1 song on Spotify this week?",
+      "bucket": "release_performance",
+      "volume_usd": 122382.304203,
+      "trades_pulled": 1508,
+      "trades_written": 1508,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7fd6076241cf4ab0e5e255a18de253c00087902f0d68eb14bfe70290d01d4128",
+      "question": "Will Last Christmas - Wham! be the #1 song on Spotify this week?",
+      "bucket": "release_performance",
+      "volume_usd": 128796.60585,
+      "trades_pulled": 1410,
+      "trades_written": 1410,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe601d5047ffb85c43758f1cbd5fe5faa5e646f0020f56fcc2534b17741ed9521",
+      "question": "Will Olivia Rodrigo release an album in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 4153786.418129,
+      "trades_pulled": 2858,
+      "trades_written": 2858,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8abe71036e148e592c12aee32b2417e79984d0d3f36a7e016cae3f0b44301b2c",
+      "question": "Will BL\u0245\u03fdKPI\u0418K release an album before 2026?",
+      "bucket": "release_performance",
+      "volume_usd": 122460.074667,
+      "trades_pulled": 971,
+      "trades_written": 971,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa78f78b43783c2e366fd348e8fb0932e97d0adfc7eef26e0498aa54c25be0d4a",
+      "question": "Will NewJeans perform again in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 79639.91629,
+      "trades_pulled": 1290,
+      "trades_written": 1290,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc04bca7f2f6881dbc37e007f7c14813d77d55e0d6663c27ee42b60f7bac8f1d2",
+      "question": "Will Ariana Grande be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 6857192.441319,
+      "trades_pulled": 2189,
+      "trades_written": 2189,
+      "capped": false
+    },
+    {
+      "condition_id": "0xfccc16f3bba1210d40db55ee1b71c741be5b14dc3512aba5dc32de5c6e0c4bde",
+      "question": "Will Bad Bunny be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 2848029.157291,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2a34915c245f4b94976dda8afddb56452caf0ba2307500f78d7f08813d467917",
+      "question": "Will Billie Eilish be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 16179129.9501,
+      "trades_pulled": 2341,
+      "trades_written": 2341,
+      "capped": false
+    },
+    {
+      "condition_id": "0xce40c461a55895fb30e24da5d3b5e01c3e5ef3897808f0ccfd4d7a9fc420c7ca",
+      "question": "Will Drake be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 4854685.253989,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xed4ac47e2d2845f7b4e65a31487a9185cecfaef7e538ac5036142c2b10291925",
+      "question": "Will Ed Sheeran be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 12168485.412909,
+      "trades_pulled": 1999,
+      "trades_written": 1999,
+      "capped": false
+    },
+    {
+      "condition_id": "0x181dc5943f9727ca5d89cb2c692f8654ee616571791892e4e87112188d6a26f9",
+      "question": "Will Taylor Swift be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 2327776.949885,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7455e92b9e9c842ca260e65f0d640108223fd9f3430f997472825763654d96c7",
+      "question": "Will The Weeknd be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 2939382.449538,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x23b63fa147a0fa4ea0869c83885fd1dfde6830981790984634efb72620a47975",
+      "question": "Will Eminem be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 2998536.13705,
+      "trades_pulled": 1626,
+      "trades_written": 1626,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4e32072a5aa4f047d78e65f176075d4847fbb321c171a52a6366035090b789c4",
+      "question": "Will Justin Bieber be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 6329477.288817,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x099952efaf314cb44fcc6179e1fd8ca309e473f7dd924e980a381b70648f2887",
+      "question": "Will Bruno Mars be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 13481205.344928,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0c4d91aed42846e9b50bb9b5bd2eb1c4160d721ef39529f209bc3c37b17ad601",
+      "question": "Will Kendrick Lamar be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 1534195.148362,
+      "trades_pulled": 280,
+      "trades_written": 280,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf411ada563d621dd96093bd1754a3a9be2ab0604335b9875ce1011dfde9aab4d",
+      "question": "Will Coldplay be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 7287869.917,
+      "trades_pulled": 710,
+      "trades_written": 710,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2d41f73f0e31be956ffb2b67b9fde896201cd5e62b2a0e17f03aa752941488eb",
+      "question": "Will Ye be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 9887489.907,
+      "trades_pulled": 775,
+      "trades_written": 775,
+      "capped": false
+    },
+    {
+      "condition_id": "0xeacb8bffca4200fbb4e19da2e6e6fb04ceeb88ccaa7cfe48bc44d1119b5148b3",
+      "question": "Will Chris Brown be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 78317.025,
+      "trades_pulled": 26,
+      "trades_written": 26,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5885972189426e11fc0cf4c36afad059301fab049ae75380aee40a1b3958e629",
+      "question": "Will Rihanna be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 55225.05,
+      "trades_pulled": 22,
+      "trades_written": 22,
+      "capped": false
+    },
+    {
+      "condition_id": "0x187827e8c0c9986f81c3afb518ff4b1f057543f67ce45287db41422f6485bcda",
+      "question": "Will Dua Lipa be the top Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 147153.31,
+      "trades_pulled": 32,
+      "trades_written": 32,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0ff6a7cb233fc32e1a94198391595ac2140310a231bb4a569095e55e01e5e09b",
+      "question": "Taylor Swift's \"The Life of a Showgirl\" debuts at #1?",
+      "bucket": "release_performance",
+      "volume_usd": 1691538.809948,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe3ad636b115be43190c259d3735fef888cea6f8fe317221858ca29c781737d13",
+      "question": "Will 'The Life of a Showgirl' be #1 for 9 straight weeks?",
+      "bucket": "release_performance",
+      "volume_usd": 56797.745845,
+      "trades_pulled": 299,
+      "trades_written": 299,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7f8688b9931f4bc8818999c81ae66c705f61108df07ec7f2f00c21481bdd01b5",
+      "question": "Will 'The Life of a Showgirl' be #1 for 5 straight weeks?",
+      "bucket": "release_performance",
+      "volume_usd": 248518.345127,
+      "trades_pulled": 434,
+      "trades_written": 434,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9838eea1f40bf6520c91bbd684a566720f43a23bc102051ef9debbd8206053a2",
+      "question": "Will 'The Life of a Showgirl' be #1 for 7 straight weeks?",
+      "bucket": "release_performance",
+      "volume_usd": 50408.985183,
+      "trades_pulled": 322,
+      "trades_written": 322,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa96e3a9ef1df68ebd52ece4c7a2ca13e5ec4025a18a12c20bd74bdcccf305a86",
+      "question": "Will 'The Life of a Showgirl' be #1 for 8 straight weeks?",
+      "bucket": "release_performance",
+      "volume_usd": 194802.492829,
+      "trades_pulled": 444,
+      "trades_written": 444,
+      "capped": false
+    },
+    {
+      "condition_id": "0x16d0091ceb7205446bbad250bf51f4f0d9f95265f8945422289c97dc4926cffd",
+      "question": "Will MrBeast reach 450 million subscribers in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 8495812.451834,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x10da1f0e05be2792f452f7b9f05775f7adce24917d6855b1fe962df2b5b9331b",
+      "question": "Will DeB\u00cd TiRAR M\u00e1S FOToS by Bad Bunny be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 89109.953837,
+      "trades_pulled": 1354,
+      "trades_written": 1354,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9ca2a27ec7dd804708637aa4d8b97a1b221a0717431e0b220b32b07e3eed2db4",
+      "question": "Will Mayhem by Lady Gaga be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 404285.460444,
+      "trades_pulled": 1320,
+      "trades_written": 1320,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8249f921f1192eedbc38587da6a3718782567efed441192370605d7dad55b1e0",
+      "question": "Will Man's Best Friend by Sabrina Carpenter be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 96733.639459,
+      "trades_pulled": 597,
+      "trades_written": 597,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0cbb9c5ae1383c90593876615bfb7b1d3d9a4280957dc3fa109f8af214048971",
+      "question": "Will The Life of a Showgirl by Taylor Swift be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 63790.537899,
+      "trades_pulled": 582,
+      "trades_written": 582,
+      "capped": false
+    },
+    {
+      "condition_id": "0x03d3839eb403fbde216419f55e7a6ed688653813266e67c29f14f9b0e69c76ba",
+      "question": "Will Hurry Up Tomorrow by The Weeknd be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 651100.063157,
+      "trades_pulled": 2046,
+      "trades_written": 2046,
+      "capped": false
+    },
+    {
+      "condition_id": "0x694c3ad105f34755691f7995ff66bd094b0aa07b5b2c7cbef383516aee205186",
+      "question": "Will I'm The Problem by Morgan Wallen be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 53321.666143,
+      "trades_pulled": 465,
+      "trades_written": 465,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8e4e38b7766a4d11a6984ea82811b8b7e588deba34c59cbb21e8f5d0bd5e0c2d",
+      "question": "Will GNX by Kendrick Lamar be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 292722.272436,
+      "trades_pulled": 956,
+      "trades_written": 956,
+      "capped": false
+    },
+    {
+      "condition_id": "0x89e1186db0d4a7cb29f9e9cfa67e432429b37bfaa5872211cfe6697a73df521c",
+      "question": "Will Music by Playboi Carti be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 231325.280893,
+      "trades_pulled": 904,
+      "trades_written": 904,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8176fb220cb9e975b8eff07a0991baf7711f53af60795f1d35b15cdd0564f997",
+      "question": "Will SOS by SZA be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 540313.8515,
+      "trades_pulled": 1346,
+      "trades_written": 1346,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0f612bfaece8498f744fcdf8cb93a6cbd7a2e9cd118dbccb5e728fadf2bc3dd7",
+      "question": "Will KPop Demon Hunters (Soundtrack from the Netflix Film) by KPop Demon Hunters Cast be the top Spotify album for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 357793.883208,
+      "trades_pulled": 657,
+      "trades_written": 657,
+      "capped": false
+    },
+    {
+      "condition_id": "0x418c6dd1e5aae3d4efa2fd37fc4fd59b5fb0136a8af7f4583c21a3f95f0ae85c",
+      "question": "Will Drake's next album debut No.1 on Billboard 200?",
+      "bucket": "release_performance",
+      "volume_usd": 55686.734846,
+      "trades_pulled": 512,
+      "trades_written": 512,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7b033419a28464e1fababbfe57a6ac63e27add41444192dafd3b8ead700e01a0",
+      "question": "Will SZA release a new song in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 1192326.370358,
+      "trades_pulled": 2024,
+      "trades_written": 2024,
+      "capped": false
+    },
+    {
+      "condition_id": "0x6812acca4cae37585e8a8a87950e72c6d626c3c213de46d84e822972132c658a",
+      "question": "Will Elon Musk be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 950517.918275,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3e796b4dad02ae3c8465539e32936fcbcfc0016965986ddd78d934c8d825a7c7",
+      "question": "Will Taylor Swift be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 1224908.253781,
+      "trades_pulled": 3423,
+      "trades_written": 3423,
+      "capped": false
+    },
+    {
+      "condition_id": "0x092e07a4e75f9384e6f2d6fcda7dfb54478207f677d8e117970934271ff19e54",
+      "question": "Will Sam Altman be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 538199.623547,
+      "trades_pulled": 1551,
+      "trades_written": 1551,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc60a01a86797f61188a3e593501a25af1d0fb3ef593987f18e0369f086207392",
+      "question": "Will Vladimir Putin be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 7248122.509011,
+      "trades_pulled": 2285,
+      "trades_written": 2285,
+      "capped": false
+    },
+    {
+      "condition_id": "0x1c9885eb9bff8ecfdf54f7344532c7f956b54484b85020b577785c4474cbc7bb",
+      "question": "Will Kendrick Lamar be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 1467474.199664,
+      "trades_pulled": 2890,
+      "trades_written": 2890,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8c9d14a76eac528ea6d796157144ec57f90ad8ff37a370dc8ca218d187077e45",
+      "question": "Will Diddy be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 437874.499085,
+      "trades_pulled": 1477,
+      "trades_written": 1477,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe6579dbe57c1a39bb0c95f5c174c24a5d980acd86ebf1fd73bc18c11951f377b",
+      "question": "Will Jimmy Kimmel be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 749564.456438,
+      "trades_pulled": 2392,
+      "trades_written": 2392,
+      "capped": false
+    },
+    {
+      "condition_id": "0x228ac9d2dac8f23c6b582266a9e5fc7e366af339dd377936371494d6d184f814",
+      "question": "Will Andy Byron be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 416409.007872,
+      "trades_pulled": 1978,
+      "trades_written": 1978,
+      "capped": false
+    },
+    {
+      "condition_id": "0xb2fb1b5f67a707d2659f63fad534285a66feac3e58f32fad8663a326eb809f03",
+      "question": "Will Luigi Mangione be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 614872.1413,
+      "trades_pulled": 2297,
+      "trades_written": 2297,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9d4f213d19569042e7f0b9300aabe14cdc394b5e51bfc6dd5c5bb5c4d240ef3a",
+      "question": "Will Nicol\u00e1s Maduro be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 199915.667669,
+      "trades_pulled": 1292,
+      "trades_written": 1292,
+      "capped": false
+    },
+    {
+      "condition_id": "0x582468340989450d63fd0a24cd293a1c65f408d9ecc56f3bb0a630a1b4199c7c",
+      "question": "Will Jannik Sinner be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 94809.755174,
+      "trades_pulled": 623,
+      "trades_written": 623,
+      "capped": false
+    },
+    {
+      "condition_id": "0x46de9c6c14d2ce8da3ca15ac7d1b2255d6edd5c64ec1e7b5e40190436b298a71",
+      "question": "Will Katy Perry be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 121169.051666,
+      "trades_pulled": 946,
+      "trades_written": 946,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa9c019863e0cc8a6aa339d51dd2f912e8e99195efa69494af28e985a3869d116",
+      "question": "Will Shedeur Sanders be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 157106.176333,
+      "trades_pulled": 47,
+      "trades_written": 47,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7a461888f0011b1730d74422388d76626b800033eb10a8fff4643984fb9f8806",
+      "question": "Will Donald Trump be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 10483734.021399,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x15bf2a1076dee184ef035a851235742bff87e406b7625f6fceb0814fe989aff8",
+      "question": "Will Charlie Kirk be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 3115695.369367,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x69c24e927005578af1f5aaeab24df8972075b205d24cc8de455131cac3a68dbc",
+      "question": "Will Benjamin Netanyahu be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 1078603.699052,
+      "trades_pulled": 1539,
+      "trades_written": 1539,
+      "capped": false
+    },
+    {
+      "condition_id": "0x043de3efb9536434b01af33ec2ca33ee296a46a5bff5bff0c8d36788066ed543",
+      "question": "Will Volodymyr Zelenskyy be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 346728.613081,
+      "trades_pulled": 1677,
+      "trades_written": 1677,
+      "capped": false
+    },
+    {
+      "condition_id": "0xb9b05c3a14c6a7c1c6c00a8c214ed154d4232a885f98ebfd01889204ed252931",
+      "question": "Will Pope Leo XIV be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 7533509.09764,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc911270562115b23c039a7332acfef95066fcf9fe8c675752c67766d997cbe64",
+      "question": "Will Zohran Mamdani be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 1351068.75117,
+      "trades_pulled": 2884,
+      "trades_written": 2884,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5e9d439604053a0ca5644927fae8ac677b04e30e07507e4b6eb0d24dcc224f4e",
+      "question": "Will Bianca Censori be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 3902452.044254,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x6630347f1c889178ef47c6c17026b7ba601cb546bd57740530a1cd0420f294e3",
+      "question": "Will Bad Bunny be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 236504.660627,
+      "trades_pulled": 1537,
+      "trades_written": 1537,
+      "capped": false
+    },
+    {
+      "condition_id": "0xd724d38f2358c962d146a6c38647eacd2abe180b9debdc1b8e863cccdcbd8614",
+      "question": "Will Kanye West / Ye be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 575844.61271,
+      "trades_pulled": 1832,
+      "trades_written": 1832,
+      "capped": false
+    },
+    {
+      "condition_id": "0xcb048886d15f9221a129150ca5d004fe72d6fa89d0a065d29e819363e9265eb7",
+      "question": "Will Sydney Sweeney be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 186599.86141,
+      "trades_pulled": 1077,
+      "trades_written": 1077,
+      "capped": false
+    },
+    {
+      "condition_id": "0x633a2040ea19eba7ed9ae3ad4035fbbd2fbce61f8344cd8567bb86c05265c712",
+      "question": "Will Beyonc\u00e9 be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 64251.457166,
+      "trades_pulled": 256,
+      "trades_written": 256,
+      "capped": false
+    },
+    {
+      "condition_id": "0xea17b1284d10617a57f910b2ea63bdef481b1724a4b899d454ff104bea67b657",
+      "question": "Will d4vd be the #1 searched person on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 13950282.417654,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9c28d213ceedc1bec0e97f850ab140fed59907614eb5291aa3b65c96daee0ccc",
+      "question": "Will APT. by Ros\u00e9 and Bruno Mars be the #1 searched song on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 74402.57419,
+      "trades_pulled": 219,
+      "trades_written": 219,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf31a6376b45a1e3e3af86d786ad9d8e640db5f6c2e83ab3772fad744eafb7f14",
+      "question": "Will Not Like Us by Kendrick Lamar be the #1 searched song on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 57432.2266,
+      "trades_pulled": 463,
+      "trades_written": 463,
+      "capped": false
+    },
+    {
+      "condition_id": "0x540f2fbfaa0b0a94a600ae8d2772c3d77a215982bd7d0f747682fa72ac6e6563",
+      "question": "Will Birds of a Feather by Billie Eilish be the #1 searched song on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 100110.694943,
+      "trades_pulled": 571,
+      "trades_written": 571,
+      "capped": false
+    },
+    {
+      "condition_id": "0x13efad8b2f23a6d2ae159302de16ba11cc93ebabf58e07b2315646074a7d409d",
+      "question": "Will Ordinary by Alex Warren be the #1 searched song on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 88627.42112,
+      "trades_pulled": 516,
+      "trades_written": 516,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4ef25537a6c6d86e601eb75b4f5468fc0902fd39005b0beba4d56a00f0bdaa1a",
+      "question": "Will Golden by HUNTR/X be the #1 searched song on Google this year?",
+      "bucket": "release_performance",
+      "volume_usd": 60477.619323,
+      "trades_pulled": 252,
+      "trades_written": 252,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa8bc1ef6fe8238159d70e0ff55541d543c5555d3fa0424dcd839a97bdd3f7a7f",
+      "question": "Will DtMF by Bad Bunny be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 399875.809635,
+      "trades_pulled": 972,
+      "trades_written": 972,
+      "capped": false
+    },
+    {
+      "condition_id": "0x11992ff938f88d7b06c2d04b4c34f6eda8dff91daf558c01eae48734b1fb46cf",
+      "question": "Will BAILE INoLVIDABLE by Bad Bunny be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 270734.8285,
+      "trades_pulled": 657,
+      "trades_written": 657,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9f0c890ca1b2a1cb134437c8081cc9aa16c09df992119df026dc6f97d3187422",
+      "question": "Will NUEVAYoL by Bad Bunny be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 329304.299751,
+      "trades_pulled": 567,
+      "trades_written": 567,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9cb1e1bac1384e31c24bb2d45011582289b06b43b473527f6e651a72c11b0c74",
+      "question": "Will VOY A LLeVARTE PA PR by Bad Bunny be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 346477.297308,
+      "trades_pulled": 881,
+      "trades_written": 881,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4b65c297dd997d60046978475c73babfbdcde8648d0a101ea4981c47458727b7",
+      "question": "Will Abracadabra by Lady Gaga be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 262873.374483,
+      "trades_pulled": 598,
+      "trades_written": 598,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0ac102883e43883b0d5e359882a29317b28bee96cc5019ea69bc37cc684a5178",
+      "question": "Will Die With a Smile by Lady Gaga and Bruno Mars be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 58753.740767,
+      "trades_pulled": 771,
+      "trades_written": 771,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8aeb38bca427070dd1da061eaa60bed5a462351e85625e27083d5dbc5401b6ab",
+      "question": "Will Ordinary by Alex Warren be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 123437.816211,
+      "trades_pulled": 397,
+      "trades_written": 397,
+      "capped": false
+    },
+    {
+      "condition_id": "0x69167e47a4b801acc72bb64b959fd39b3afcc5055e0ee59ec8e054004c21ac77",
+      "question": "Will Golden by HUNTR/X be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 78993.034134,
+      "trades_pulled": 289,
+      "trades_written": 289,
+      "capped": false
+    },
+    {
+      "condition_id": "0x1689771a0383992ecfb868995acb8e175b9cf1b2aae21237cd94e99a79c3ffcb",
+      "question": "Will EoO by Bad Bunny be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 348449.928142,
+      "trades_pulled": 651,
+      "trades_written": 651,
+      "capped": false
+    },
+    {
+      "condition_id": "0xcecfc29d17b92cb8c8c29774269030931bb8b8a5a31da7d1ca1e93a1c939aae5",
+      "question": "Will Don\u2019t Say You Love Me by Jin be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 200387.06236,
+      "trades_pulled": 648,
+      "trades_written": 648,
+      "capped": false
+    },
+    {
+      "condition_id": "0xfc7e98c61101861b19bfa71a1ffbc365b34cdcc93dcf28a14dfca973b351df25",
+      "question": "Will The Fate of Ophelia by Taylor Swift be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 531497.905381,
+      "trades_pulled": 1201,
+      "trades_written": 1201,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7bbe3ca57a3e7781bf008e5f1b5e68da75c9bc607cc6da589db967e2c2d6802b",
+      "question": "Will BIRDS OF A FEATHER by Billie Eilish be the most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 97449.132523,
+      "trades_pulled": 183,
+      "trades_written": 183,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0a95049dc388ca5118c76e3cb3c338d09596935bb781aef814df5f7fd120dcc6",
+      "question": "Will Ariana Grande be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 515286.826508,
+      "trades_pulled": 1785,
+      "trades_written": 1785,
+      "capped": false
+    },
+    {
+      "condition_id": "0xfd5a7d8cb258c7790a9c385d5999aff844108e66edd600f851a11397ede1c73b",
+      "question": "Will The Weeknd be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 661217.480457,
+      "trades_pulled": 2351,
+      "trades_written": 2351,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0c28736017aa6a1c4433ad4df200539f4660b5120f1b4cd607e4080e77a00a6d",
+      "question": "Will Justin Bieber be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 70600.529099,
+      "trades_pulled": 566,
+      "trades_written": 566,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3c7897078935c139abc79fcfa713863240f2edbc5af59fce3ad73f685d8b67b8",
+      "question": "Will Bad Bunny be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 125811.204424,
+      "trades_pulled": 993,
+      "trades_written": 993,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa3c108db31d39bd0e057d1c5901870b19973af17369c787b145e50e618a81cff",
+      "question": "Will Drake be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 405406.017882,
+      "trades_pulled": 2097,
+      "trades_written": 2097,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5530784023a1218c416fd815c4f7209abd927dd504b6380d94cfc2146e2bb51f",
+      "question": "Will Taylor Swift be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 114009.366155,
+      "trades_pulled": 1779,
+      "trades_written": 1779,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa0f0db21f3149055479191d0c9ac4267933eb789dcb04498812d2cfc4a6afb60",
+      "question": "Will Eminem be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 148880.172213,
+      "trades_pulled": 755,
+      "trades_written": 755,
+      "capped": false
+    },
+    {
+      "condition_id": "0x66e77c95e31d3f8132fb4a20b6558967ecf224b87161bf8b8fb97f65a07d10b5",
+      "question": "Will Bruno Mars be the second most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 283077.794682,
+      "trades_pulled": 1297,
+      "trades_written": 1297,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc20f3157ac657531fbc57a060fdd3e0e356a1054fdc794fda8f69760108bf566",
+      "question": "Will Ariana Grande be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 323387.468654,
+      "trades_pulled": 1178,
+      "trades_written": 1178,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf424b707f4ea232d850fb9e0abb864b5df4a065cee598da098a30029e213eb80",
+      "question": "Will Ed Sheeran be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 287692.070883,
+      "trades_pulled": 685,
+      "trades_written": 685,
+      "capped": false
+    },
+    {
+      "condition_id": "0x316fcd2f6ebebeac00801a188992f518b57757453b6fbc00d0c926d9ffba2803",
+      "question": "Will Justin Bieber be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 275528.8246,
+      "trades_pulled": 848,
+      "trades_written": 848,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2c3868656ee3f34b4346bffcff617fc3435301928b0dee8187f19efda487c518",
+      "question": "Will Bad Bunny be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 130591.508146,
+      "trades_pulled": 796,
+      "trades_written": 796,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2cb090d7f352cfb265039a90371335c2d715cad301f6c0c3a7af841c80d40576",
+      "question": "Will Taylor Swift be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 390243.559783,
+      "trades_pulled": 1920,
+      "trades_written": 1920,
+      "capped": false
+    },
+    {
+      "condition_id": "0xdf3f0366a59ac26ecb5b740de619225ac0ba7dfc9985fb182016283c09bb976b",
+      "question": "Will Bruno Mars be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 543853.146571,
+      "trades_pulled": 1932,
+      "trades_written": 1932,
+      "capped": false
+    },
+    {
+      "condition_id": "0x971488a466f50855b7a1de9d427085cfb76ac5a24cc7fcb58e00e4f210756c43",
+      "question": "Will Billie Eilish be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 466373.559711,
+      "trades_pulled": 1084,
+      "trades_written": 1084,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2a46bac806f455a2fd53322cd830298d2ff86a1a6e40f5133e03786396d5445b",
+      "question": "Will The Weeknd be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 371573.178192,
+      "trades_pulled": 1281,
+      "trades_written": 1281,
+      "capped": false
+    },
+    {
+      "condition_id": "0x947d1021c37d975fb9a2f81d9b7da2579dd6cbf18d9c1e147e7a8f95480cd01a",
+      "question": "Will Drake be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 339625.327524,
+      "trades_pulled": 1659,
+      "trades_written": 1659,
+      "capped": false
+    },
+    {
+      "condition_id": "0x6705e9d51ea4d02b87a0fc7c0806d6d7e64ae5e084188c27066418d9572a2540",
+      "question": "Will Eminem be the third most streamed Spotify artist for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 437222.430911,
+      "trades_pulled": 765,
+      "trades_written": 765,
+      "capped": false
+    },
+    {
+      "condition_id": "0x974ddd3b7379028f5c2a04c7f65f6da46f6a04dfe798f3e97a8ec9479f6a81e5",
+      "question": "Will Ordinary by Alex Warren be the 3rd most streamed song globally on Spotify for 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 65561.860148,
+      "trades_pulled": 159,
+      "trades_written": 159,
+      "capped": false
+    },
+    {
+      "condition_id": "0x5852b0184ac6d9f5cb42157de9e83042d5cf333c1ae524ddc7403bf99b34f325",
+      "question": "Will Taylor Swift release an album by December 31?",
+      "bucket": "release_performance",
+      "volume_usd": 184652.180876,
+      "trades_pulled": 961,
+      "trades_written": 961,
+      "capped": false
+    },
+    {
+      "condition_id": "0x815c29a668e00f1cdecd26cab39727d0c8e8acc211109bdd575031800da50ed7",
+      "question": "Selena Gomez married in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 51238.87982,
+      "trades_pulled": 793,
+      "trades_written": 793,
+      "capped": false
+    },
+    {
+      "condition_id": "0x89ac32e18929185f5bd0dc00e70337571f546e64ae5cd16dceb6026ac2679c1e",
+      "question": "Taylor Swift and Travis Kelce engaged in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 385147.398348,
+      "trades_pulled": 843,
+      "trades_written": 843,
+      "capped": false
+    },
+    {
+      "condition_id": "0x705a52e7a17eba05f3cfef9b28b0f4a9f737d9110bad59301852228b4fe377f7",
+      "question": "Jay-Z & Beyonc\u00e9 divorce in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 63394.592113,
+      "trades_pulled": 780,
+      "trades_written": 780,
+      "capped": false
+    },
+    {
+      "condition_id": "0x1d150a287c268fe491d22719d7d984433211984ad9379f25049ab5ae249eff10",
+      "question": "Will Rihanna release an album in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 184855.462709,
+      "trades_pulled": 241,
+      "trades_written": 241,
+      "capped": false
+    },
+    {
+      "condition_id": "0xab2209249f3b40f04706c4f0d1b194496422fa0b8114681f00a67711af13bc7e",
+      "question": "Will Drake release an album in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 75479.100515,
+      "trades_pulled": 514,
+      "trades_written": 514,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf9360a888da4c9d3ffa3576068b5be8115a07bb6a3a92d36ff159b6c9ced6d5f",
+      "question": "Will GELO drop another Billboard top 100 hit in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 118506.480686,
+      "trades_pulled": 106,
+      "trades_written": 106,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7bf2d9d58812b6442025072a87cd94756c62c5938fd112000a72ec6e58013347",
+      "question": "Diddy convicted of a felony?",
+      "bucket": "release_performance",
+      "volume_usd": 57425.163437,
+      "trades_pulled": 478,
+      "trades_written": 478,
+      "capped": false
+    },
+    {
+      "condition_id": "0x60d598861ef5b9ffca7681cfee6b124c0b995dc5e285e46046f06b28a1c85d4d",
+      "question": "Diddy found guilty of sex trafficking?",
+      "bucket": "release_performance",
+      "volume_usd": 797960.797249,
+      "trades_pulled": 2834,
+      "trades_written": 2834,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3049e71bef48719a018eea82cec06234ef6553bb652f7d8c24015ecacdf0e5ec",
+      "question": "Diddy guilty of all charges?",
+      "bucket": "release_performance",
+      "volume_usd": 148610.557232,
+      "trades_pulled": 562,
+      "trades_written": 562,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe7a70c629072e2e136b40d9f8cd18364343fc2e5b6557819afb9c0944370627a",
+      "question": "Rihanna Baby: Boy or Girl?",
+      "bucket": "release_performance",
+      "volume_usd": 87348.209238,
+      "trades_pulled": 494,
+      "trades_written": 494,
+      "capped": false
+    },
+    {
+      "condition_id": "0x093417eba5b965d876ca751c5e93f705501086817c83cb8edaa065473c97f803",
+      "question": "Will Diddy be sentenced to no prison time?",
+      "bucket": "release_performance",
+      "volume_usd": 327463.986689,
+      "trades_pulled": 2409,
+      "trades_written": 2409,
+      "capped": false
+    },
+    {
+      "condition_id": "0x75b847de7c324d320539a28cc56ab84ceab82d5b0873d8ffeccbc2f0ac751581",
+      "question": "Will Diddy be sentenced to less than 5 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 133597.476072,
+      "trades_pulled": 2170,
+      "trades_written": 2170,
+      "capped": false
+    },
+    {
+      "condition_id": "0x47e1784c27c29190b65390649639cfbcb719089cf9d0a68251f14b6528c53e49",
+      "question": "Will Diddy be sentenced to between 5 and 10 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 76282.75918,
+      "trades_pulled": 1708,
+      "trades_written": 1708,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2017298563c79b163c899ee95b8fd8b68f52292995e5149f50f0bd4695f64468",
+      "question": "Will Diddy be sentenced to between 10 and 20 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 107612.022228,
+      "trades_pulled": 1508,
+      "trades_written": 1508,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9a0214d32bdd9d169075c59e1a98ebdb65f3109f82d136d269f3344c4f34a897",
+      "question": "Will Diddy be sentenced to between 20 and 30 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 63364.041228,
+      "trades_pulled": 942,
+      "trades_written": 942,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2b8c3ffbb44b0ab92018f3c71d8b78ebcf2803080d4032909dd981fd51a131ae",
+      "question": "Will Diddy be sentenced to between 30 and 40 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 232187.50217,
+      "trades_pulled": 1623,
+      "trades_written": 1623,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf89501381cb9e67668ecebe52a53ba18c9239bc9c367704a7ab9a1b0ec143d84",
+      "question": "Will Diddy be sentenced to between 40 and 50 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 59745.242346,
+      "trades_pulled": 713,
+      "trades_written": 713,
+      "capped": false
+    },
+    {
+      "condition_id": "0x09315b0c3efb4b983013305746eb8563f538dbf2b9d507b4fc468eaded723491",
+      "question": "Will Diddy be sentenced to more than 50 years in prison?",
+      "bucket": "release_performance",
+      "volume_usd": 81720.07199,
+      "trades_pulled": 1018,
+      "trades_written": 1018,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4717d35396bb32996f91a8217c30339c549b615419cfd7fb2ac8b2a6b52d08ef",
+      "question": "Justin & Hailey Bieber divorce in 2025?",
+      "bucket": "release_performance",
+      "volume_usd": 75281.845568,
+      "trades_pulled": 653,
+      "trades_written": 653,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9a7729061961e8f6ba3ff15024e3654eb6157aa8cde900b460acc85deb6bc982",
+      "question": "Will The Art Of Loving by Olivia Dean be the Billboard 200 #1 album for the week of January 17?",
+      "bucket": "release_performance",
+      "volume_usd": 53061.809428,
+      "trades_pulled": 58,
+      "trades_written": 58,
+      "capped": false
+    },
+    {
+      "condition_id": "0x17c497be534c8ea49f84b3e8e8ae40bf044845e04721c07427fe4f4293e26f44",
+      "question": "Will 'Don't Be Dumb' debut week album sales be at least 200k?",
+      "bucket": "release_performance",
+      "volume_usd": 52615.582494,
+      "trades_pulled": 617,
+      "trades_written": 617,
+      "capped": false
+    },
+    {
+      "condition_id": "0x6b990da99944b9d1dd29adbbeb254a58fc7fa835b5006305b914618dc0b697e6",
+      "question": "Will \"End of Beginning - Djo\" be the #1 song on Spotify this week?",
+      "bucket": "release_performance",
+      "volume_usd": 197999.205139,
+      "trades_pulled": 1046,
+      "trades_written": 1046,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4ac3fc312b120e7733bfdb0a9d865f3ae67571e224a520f8a73ee33f1e11c287",
+      "question": "Will Kanye release BULLY by January 30?",
+      "bucket": "release_performance",
+      "volume_usd": 128172.245033,
+      "trades_pulled": 994,
+      "trades_written": 994,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9805dc4c454aca5de1d6f6e287d04a7744099eb7baeab596ceb09c3cee6bc9a8",
+      "question": "Will Kanye release BULLY by March 27?",
+      "bucket": "release_performance",
+      "volume_usd": 321222.58222199924,
+      "trades_pulled": 2482,
+      "trades_written": 2482,
+      "capped": false
+    },
+    {
+      "condition_id": "0x206c3143628df465c101393d0f332f5e0e7ea1250c4a5406c5d7107cdf22a669",
+      "question": "Bad Bunny wears a dress or skirt at the Big Game?",
+      "bucket": "release_performance",
+      "volume_usd": 147848.194452,
+      "trades_pulled": 1601,
+      "trades_written": 1601,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe470a4c5214be85bba76e31586a6cae64d1847a0283af04ef0a9bece7fef1ed5",
+      "question": "Will Bad Bunny say \"Fuck ICE\" at the Big Game?",
+      "bucket": "release_performance",
+      "volume_usd": 177441.753777,
+      "trades_pulled": 2008,
+      "trades_written": 2008,
+      "capped": false
+    },
+    {
+      "condition_id": "0x519d986045f10f6544cef7acaf5bfad6839908387e53707520d04f83355cd0f7",
+      "question": "Will LA MUDANZA be played at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 53258.146196,
+      "trades_pulled": 678,
+      "trades_written": 678,
+      "capped": false
+    },
+    {
+      "condition_id": "0x18b36d6e91d6e6dc09addc5ebce6f648e96ddbab065af3f67e42af53fe34efed",
+      "question": "Will I Like It be played at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 79561.48046,
+      "trades_pulled": 1006,
+      "trades_written": 1006,
+      "capped": false
+    },
+    {
+      "condition_id": "0x173550a8d98dca2fe7ed292ac63242ebe38bc84dfd8ae4592716b73f9dff90b0",
+      "question": "Will \"Tit\u00ed Me Pregunt\u00f3\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 1931788.643205,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x97815079f005c08321f0d338c24a5924e762a55336d4b8c75d47a5a00a5d5e1d",
+      "question": "Will \"LA MUDANZA\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 360515.810924,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x867cd066b0385e7fffaffa91eec674196e87df27d78978cec01b4e90960afede",
+      "question": "Will \"I Like It\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 126398.499628,
+      "trades_pulled": 2800,
+      "trades_written": 2800,
+      "capped": false
+    },
+    {
+      "condition_id": "0x14994ddc514a9fc0672110863e86f23753767bf91888243870be9267a7439b0b",
+      "question": "Will \"Efecto\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 88769.36265,
+      "trades_pulled": 1726,
+      "trades_written": 1726,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc89c515b1398039149624b621cda5f4fdf1b016728052a95b7108a32669ac6c7",
+      "question": "Will \"PERRO NEGRO\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 84512.739785,
+      "trades_pulled": 1718,
+      "trades_written": 1718,
+      "capped": false
+    },
+    {
+      "condition_id": "0xec00320d3776a5a03050204361591afd645be0c715bfa1b9426d08ed4fe04f1d",
+      "question": "Will \"Yonaguni\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 110787.25205,
+      "trades_pulled": 2020,
+      "trades_written": 2020,
+      "capped": false
+    },
+    {
+      "condition_id": "0x42c7114056b79ca850c3545d2287835e2c41d53364bc3557a00ba561726e5a16",
+      "question": "Will \"Te Bot\u00e9 - Remix\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 74420.746694,
+      "trades_pulled": 1371,
+      "trades_written": 1371,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe87804c0cc3ad40246be94ae48280c7927a4c9c622254025536d577331fde943",
+      "question": "Will \"La Jumpa\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 76335.349719,
+      "trades_pulled": 1400,
+      "trades_written": 1400,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4f6b507cc265b7020d3e135e06e2c74fbe528eea1023d77d1a250ad3c98c16f8",
+      "question": "Will \"Callaita\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 135811.680555,
+      "trades_pulled": 3108,
+      "trades_written": 3108,
+      "capped": false
+    },
+    {
+      "condition_id": "0x67b79dafdd2000e95501f7135a2b9f0204fbd080ac69adac8040109357c41aec",
+      "question": "Will \"La Santa\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 59923.337753,
+      "trades_pulled": 1348,
+      "trades_written": 1348,
+      "capped": false
+    },
+    {
+      "condition_id": "0x84b935a29e47581658db339ba05bb70f892ee724fbd55211a16a6f38b3b5992e",
+      "question": "Will \"Safaera\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 97702.422741,
+      "trades_pulled": 1827,
+      "trades_written": 1827,
+      "capped": false
+    },
+    {
+      "condition_id": "0xcdd1ffa649532866d1577b1ab0494f143629f435b63342c1f736f4e2dd1ec559",
+      "question": "Will \"BAILE INOLVIDABLE\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 256790.224626,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7077b1f9f89b5a3c20564d1ccbd1950727d4abb108eb7ec35608adedb6441161",
+      "question": "Will \"DtMF\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 229531.86803,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3909a3afcb9072027da33f8bc4f54ff9859e500415168ebb35f7ba0ed2546d3d",
+      "question": "Will \"D\u00c1KITI\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 128795.576663,
+      "trades_pulled": 3320,
+      "trades_written": 3320,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4dab1a074a9dbfc122f49b1b4e683d0b9960738107623d2dfd974eb98865a020",
+      "question": "Will \"NUEVAYOL\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 290918.54594,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2b9c52d0b27c6d3f6edb751d6c7cb9d58f1dc54fb5fc3b2fcdb4498e45cc7b63",
+      "question": "Will \"LA CANCI\u00d3N\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 72174.341735,
+      "trades_pulled": 1406,
+      "trades_written": 1406,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9552b9dc127d6057b326e5ffb6515695d715af4e28aeec3628ae17d262969548",
+      "question": "Will \"un x100to\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 67818.96712,
+      "trades_pulled": 1312,
+      "trades_written": 1312,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0539830f664121904018edb8b123520fb3a2fa9b15daebf8f42dd8ab75b191cc",
+      "question": "Will \"MIA\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 124368.210122,
+      "trades_pulled": 2343,
+      "trades_written": 2343,
+      "capped": false
+    },
+    {
+      "condition_id": "0x86f5990a4280928777da57753ac5f6834c688289e6ed4f45bf497b3be2d232f8",
+      "question": "Will \"Ojitos Lindos\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 82020.043007,
+      "trades_pulled": 1745,
+      "trades_written": 1745,
+      "capped": false
+    },
+    {
+      "condition_id": "0x0bf7bac18f1e4e99cdde22914332d7bbaa3d72e52fc64680db6e719df7529c33",
+      "question": "Will \"Me Porto Bonito\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 106234.900021,
+      "trades_pulled": 2310,
+      "trades_written": 2310,
+      "capped": false
+    },
+    {
+      "condition_id": "0xc6a7cbc9480a532185049717f1faa8ef5f09a4364eb37e7ac37db4cabe5b59ea",
+      "question": "Will \"No Me Conoce - Remix\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 71577.764094,
+      "trades_pulled": 1333,
+      "trades_written": 1333,
+      "capped": false
+    },
+    {
+      "condition_id": "0xba49b100aa6d2be311911791cce56498c7377d9fa45c408255e8a64d8c8a9c02",
+      "question": "Will \"Neverita\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 93861.508945,
+      "trades_pulled": 1941,
+      "trades_written": 1941,
+      "capped": false
+    },
+    {
+      "condition_id": "0x861c58ebf76a2d8b05280bd6143647813540d02d9cfa2132f265b9c402eb81db",
+      "question": "Will \"MONACO\" be played first at the Super Bowl halftime show?",
+      "bucket": "release_performance",
+      "volume_usd": 211640.20646,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe210052575420133d6b2fd2a160803e58fbf0b861bd7a22d0951ef25d0c2eac4",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 75M and 100M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 1391280.098319,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x10ca642cf60ff9f0e4b92510d2bb384658ae34c14bad704e21f589cd0a719736",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get fewer than 50M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 287435.66682,
+      "trades_pulled": 1272,
+      "trades_written": 1272,
+      "capped": false
+    },
+    {
+      "condition_id": "0x2749c8d903eb43d4be7ec2c3dc9608613089175450dab63022bf2dab042544f6",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 125M and 150M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 787120.279754,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8d2f0853d11bf809a5c5dafd713f4d7aa93ec2e3020e8c8d60350f897b0f1984",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 50M and 75M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 407565.397451,
+      "trades_pulled": 3260,
+      "trades_written": 3260,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8ba0968026142248f3d6cfc1b817f3519de767703598fe4eb2b8f38ed5713d08",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get at least 150M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 617021.646709,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xcad3878c2d8e309ab906916701277b6f5f4c22bb126fd7b3ef1a1ad0461df687",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video not be posted?",
+      "bucket": "release_performance",
+      "volume_usd": 93311.685115,
+      "trades_pulled": 877,
+      "trades_written": 877,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf95dfcdf72d98c59381df5b2d015e67aa7b7caf59258881c549d79400490a579",
+      "question": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 100M and 125M views in its first 7 days?",
+      "bucket": "release_performance",
+      "volume_usd": 1261221.347169,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xd4d04dbaf238a3aa7fe9333caafdf45d6fcc91d5de4e7cd0257d130e89444e68",
+      "question": "Will Bruno Mars have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 355759.365415,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0x699a92c550395c9375043a319b7e7e9ce96ad80f39ac0ec916daaf5b49ccb684",
+      "question": "Will Bad Bunny have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 233303.291309,
+      "trades_pulled": 3500,
+      "trades_written": 3500,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe8ec9fb94e2c3c30a53bd6cddd5ed0818430576c109028ec04ea6fe47ec16ffd",
+      "question": "Will The Weeknd have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 108157.782357,
+      "trades_pulled": 1701,
+      "trades_written": 1701,
+      "capped": false
+    },
+    {
+      "condition_id": "0xe15530ae415054237e1cb5b970020579408b028196fe8a315c4f301d96e2e44e",
+      "question": "Will Taylor Swift have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 71720.344187,
+      "trades_pulled": 1442,
+      "trades_written": 1442,
+      "capped": false
+    },
+    {
+      "condition_id": "0x58774a6d5900caf17bbc49bf569d3652098e1550db5c3e997b2673c568dad666",
+      "question": "Will Drake have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 108244.147486,
+      "trades_pulled": 1746,
+      "trades_written": 1746,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9ce66325a465b9009a30fe3a871f76eb9275ad5659afd4f89c9045d1fc053b24",
+      "question": "Will BL\u0245\u03fdKPI\u0418K release an album by February 28?",
+      "bucket": "release_performance",
+      "volume_usd": 140818.520229,
+      "trades_pulled": 1143,
+      "trades_written": 1143,
+      "capped": false
+    },
+    {
+      "condition_id": "0xbb0e10eb31da36887bba125132a76ba703dec569367644cdcf73441247f353a8",
+      "question": "Will 'Whatever's Clever!' - Charlie Puth debut week album sales be between 20k and 25k?",
+      "bucket": "release_performance",
+      "volume_usd": 76933.63448300002,
+      "trades_pulled": 58,
+      "trades_written": 58,
+      "capped": false
+    },
+    {
+      "condition_id": "0x675dacd60b0dd10799a9a459f2a415db923b38cc0e68ccce93fc6c6bb187d42a",
+      "question": "Will 'Whatever's Clever!' - Charlie Puth debut week album sales be between 25k and 30k?",
+      "bucket": "release_performance",
+      "volume_usd": 102920.17676,
+      "trades_pulled": 53,
+      "trades_written": 53,
+      "capped": false
+    },
+    {
+      "condition_id": "0x19304977d87e5b37f5c40719a3e935c136acd5705b1398afdb4179b0dbdda19b",
+      "question": "Will 'Arirang' - BTS debut week album sales be less than 3m?",
+      "bucket": "release_performance",
+      "volume_usd": 70190.53943999995,
+      "trades_pulled": 934,
+      "trades_written": 934,
+      "capped": false
+    },
+    {
+      "condition_id": "0xddc81b639d70a0d1637e9a6c28926aa9ce8bc8449dddf68bbdc1b307a897def5",
+      "question": "Will \"DtMF - Bad Bunny\" be the #1 song on Spotify this week?",
+      "bucket": "release_performance",
+      "volume_usd": 71315.84002900001,
+      "trades_pulled": 227,
+      "trades_written": 227,
+      "capped": false
+    },
+    {
+      "condition_id": "0x1b1193cb8821ed965de40994bfe00d1eec325ea345ddd669e820c86ce57f53b3",
+      "question": "Will The Weeknd have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 94718.78543500007,
+      "trades_pulled": 444,
+      "trades_written": 444,
+      "capped": false
+    },
+    {
+      "condition_id": "0x84074f56c9ff302f8f9d8f1ee28cad9b22d9d5b32f012542da97a8cae3760112",
+      "question": "Will Bruno Mars have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 51760.15748199999,
+      "trades_pulled": 914,
+      "trades_written": 914,
+      "capped": false
+    },
+    {
+      "condition_id": "0xbf8e216101badb5a89ac72cfc16b417ee0bd626cf297bafaecb2d15ae92624b7",
+      "question": "Will Bad Bunny have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 85469.19750499999,
+      "trades_pulled": 489,
+      "trades_written": 489,
+      "capped": false
+    },
+    {
+      "condition_id": "0xdff907d0e6edf210cffb1c581efe2729e26bf3b5b1a0ed314e899234ec97793d",
+      "question": "Will Drake have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 84503.34366500001,
+      "trades_pulled": 347,
+      "trades_written": 347,
+      "capped": false
+    },
+    {
+      "condition_id": "0x3193a4c8fc9111f9d34ad508dbb6767b96a2de5587f998c3a989a4340d4f17f4",
+      "question": "Will Bad Bunny have the second-greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 94173.00382599997,
+      "trades_pulled": 486,
+      "trades_written": 486,
+      "capped": false
+    },
+    {
+      "condition_id": "0x7300309d55566bfa583547d42d53bf0b589584e58ffcd0d9cfc21d7db8f8803d",
+      "question": "Will \"Golden - HUNTR/X\" be the Billboard #1 song for the week of April 4?",
+      "bucket": "release_performance",
+      "volume_usd": 51417.21320000003,
+      "trades_pulled": 98,
+      "trades_written": 98,
+      "capped": false
+    },
+    {
+      "condition_id": "0x73f9459381f9347e7c3cfae4cf2655fc184a115cf2a8f81eb9e95f205affa023",
+      "question": "Will \"Lemon Pound Cake - Afroman\" be the Billboard #1 song for the week of April 4?",
+      "bucket": "release_performance",
+      "volume_usd": 65694.64796100001,
+      "trades_pulled": 108,
+      "trades_written": 108,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9248525cb130e22e64a205b534dbae1a553d3161118ac21b2e8976293806a2cd",
+      "question": "Will Kanye release BULLY by April 3?",
+      "bucket": "release_performance",
+      "volume_usd": 241469.53983999992,
+      "trades_pulled": 747,
+      "trades_written": 747,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4e0d3a265577108a73a8517be376da0f5ba00514311a0a6b352ba6619fefeba4",
+      "question": "Will \"House Tour\" get 15 million or more views in the first week?",
+      "bucket": "release_performance",
+      "volume_usd": 123618.82025299995,
+      "trades_pulled": 725,
+      "trades_written": 725,
+      "capped": false
+    },
+    {
+      "condition_id": "0xb052c9a6e32eba545e5b2107cc210f060b9ea5369f53d9c7cda8cf8d66e8925d",
+      "question": "Will \"House Tour\" get between 13 and 14 million views in the first week?",
+      "bucket": "release_performance",
+      "volume_usd": 55282.41810799999,
+      "trades_pulled": 336,
+      "trades_written": 336,
+      "capped": false
+    },
+    {
+      "condition_id": "0xf66ffc552a145bb25b7745b513d3f11a43646ae22868338b36ba6eb6c7909eae",
+      "question": "Will Drake officially release Iceman by March 31, 2026?",
+      "bucket": "release_performance",
+      "volume_usd": 74220.327961,
+      "trades_pulled": 1050,
+      "trades_written": 1050,
+      "capped": false
+    },
+    {
+      "condition_id": "0x1081498f18c528f543e0342046f5a0a638168b9a3cb9197d4529addb1e76f8e1",
+      "question": "Will Drake officially release Iceman by April 30, 2026?",
+      "bucket": "release_performance",
+      "volume_usd": 310846.34462800063,
+      "trades_pulled": 3020,
+      "trades_written": 3020,
+      "capped": false
+    },
+    {
+      "condition_id": "0x9b2492bc9651044a3ef44aec558b6530b42e1de27a8290e0b09a9d4383e38f5f",
+      "question": "Will Drake officially release Iceman by May 31, 2026?",
+      "bucket": "release_performance",
+      "volume_usd": 127290.45902899983,
+      "trades_pulled": 1196,
+      "trades_written": 1196,
+      "capped": false
+    },
+    {
+      "condition_id": "0x38219338712a8356b39fe2adcb159eb9c3b59a2423965261f208e16c63f67c0b",
+      "question": "Will Drake officially release Iceman by June 30, 2026?",
+      "bucket": "release_performance",
+      "volume_usd": 89570.79495300006,
+      "trades_pulled": 852,
+      "trades_written": 852,
+      "capped": false
+    },
+    {
+      "condition_id": "0x881df4c76e228f2938f018cbd7ec834838ce8bdabda52a7abd98d06d0e13d6f8",
+      "question": "Will Olivia Rodrigo announce a new album by April 30?",
+      "bucket": "release_performance",
+      "volume_usd": 60209.11610099999,
+      "trades_pulled": 217,
+      "trades_written": 217,
+      "capped": false
+    },
+    {
+      "condition_id": "0x4a2b7d699a0b8cf970fc1599cb6e54065f86b1b4476316654a23aa21691aa7ed",
+      "question": "Will Justin Bieber have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 54266.990643000034,
+      "trades_pulled": 730,
+      "trades_written": 730,
+      "capped": false
+    },
+    {
+      "condition_id": "0x62743a4dfdad25555810576c9b03d9786a5bada28a05c9f3b67b43f0e3f19b05",
+      "question": "Will Bruno Mars have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 170756.99202299988,
+      "trades_pulled": 2296,
+      "trades_written": 2296,
+      "capped": false
+    },
+    {
+      "condition_id": "0x8616bfa937c684de4f0fcdd9b373b668ac9cbccdf168016e20e7b96f58dfe915",
+      "question": "Will Bad Bunny have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 115703.690775,
+      "trades_pulled": 334,
+      "trades_written": 334,
+      "capped": false
+    },
+    {
+      "condition_id": "0xa352b93c8023e25785bf8e75aeba3dccd72a9567a1c69b6ab942e8da7ee974ac",
+      "question": "Will Drake have the greatest number of monthly Spotify listeners this month?",
+      "bucket": "release_performance",
+      "volume_usd": 79183.87881299999,
+      "trades_pulled": 264,
+      "trades_written": 264,
+      "capped": false
+    }
+  ]
+}

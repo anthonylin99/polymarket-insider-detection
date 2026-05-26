@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-05-26T22:58:34.144521+00:00",
+  "input_path": "/Users/anthony_lin_99/Documents/Claude Investment Reports/Inca-Polymarket-Investigation/polymarket-insider-detection/data/markets.csv",
+  "output_path": "/Users/anthony_lin_99/Documents/Claude Investment Reports/Inca-Polymarket-Investigation/polymarket-insider-detection/data/markets_filtered.csv",
+  "window": [
+    "2025-11-01",
+    "2026-05-01"
+  ],
+  "min_volume_usd": 50000.0,
+  "raw_count": 6521,
+  "kept_count": 222,
+  "drop_reasons": {
+    "out_of_window": 1382,
+    "below_volume_floor": 4845,
+    "bucket_not_pop_culture": 46,
+    "not_closed": 13,
+    "excluded_topic": 13
+  },
+  "kept_by_bucket": {
+    "awards": 9,
+    "reality_tv": 20,
+    "release_performance": 193
+  },
+  "kept_by_month": {
+    "2025-11": 3,
+    "2025-12": 132,
+    "2026-01": 11,
+    "2026-02": 50,
+    "2026-03": 12,
+    "2026-04": 14
+  },
+  "total_volume_usd": 227965135.51838586
+}

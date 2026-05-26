@@ -8,3 +8,5 @@ venv/
 data/raw/
 *.sqlite
 *.db
+# Uncompressed trades file — keep only the .gz version in git (144MB raw exceeds GitHub limits)
+data/trades.csv
