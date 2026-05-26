@@ -10,10 +10,16 @@ Investigation submission for the **Inca Digital — Investigations Analyst** tak
 
 | Task | Deliverable | Status |
 |---|---|---|
-| 1. Data collection | `data/markets.csv`, `data/trades.csv` | pending |
+| 1. Data collection | [`data/`](data/README.md) + [`report/task1_data_collection.md`](report/task1_data_collection.md) | **complete** |
 | 2. Heuristics design | [`report/heuristics.md`](report/heuristics.md) | **complete** |
 | 3. Apply heuristics + write findings | `report/report.md`, `data/wallet_scores.csv` | pending |
 | 4. Composite ranking system | `data/top20_flagged.csv` | pending |
+
+## Headline numbers (Task 1)
+
+- **222 resolved pop-culture markets** across 63 events, Nov 1 2025 – May 1 2026
+- **$228M total volume** in the filtered universe
+- **322,899 trades** pulled from 60,916 unique wallets
 
 ## Repo layout
 

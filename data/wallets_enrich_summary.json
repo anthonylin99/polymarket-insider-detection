@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-05-26T23:45:22.074462+00:00",
+  "note": "Run terminated early after top-by-volume coverage was sufficient for Task 3 heuristics. To complete the full 19,257 wallets, re-run enrich_wallets.py \u2014 it will overwrite this file; consider --append support if you want incremental fill.",
+  "unique_wallets_in_trades": 60916,
+  "eligible_wallets": 19257,
+  "wallets_enriched": 2994,
+  "min_trades": 3,
+  "min_volume_usd": 1000.0,
+  "endpoints": [
+    "lb-api.polymarket.com/profit?window=all",
+    "lb-api.polymarket.com/profit?window=30d",
+    "lb-api.polymarket.com/volume?window=all",
+    "data-api.polymarket.com/value"
+  ]
+}
