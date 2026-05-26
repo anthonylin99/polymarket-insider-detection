@@ -4,6 +4,8 @@ Investigation submission for the **Inca Digital — Investigations Analyst** tak
 
 **Objective.** Investigate potential informed or insider trading behavior on Polymarket within Nov 1, 2025 – May 1, 2026, scoped to pop-culture markets (reality TV eliminations, awards ceremonies, movie/music release performance).
 
+**Picking this up?** Start with [`HANDOFF.md`](HANDOFF.md) for the initial brainstorm, design decisions, and the next-engineer playbook.
+
 ## Status
 
 | Task | Deliverable | Status |

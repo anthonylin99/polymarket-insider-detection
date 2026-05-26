@@ -33,17 +33,9 @@ Sub-niches in scope:
 
 Out of scope: celebrity life events (engagements, breakups, deaths), sports, politics, crypto, macro/finance.
 
-## 3. Threat model — what we are actually looking for
+## 3. Threat model
 
-Three archetypes of informed actor, in descending order of detectability:
-
-| Archetype | Description | Best-fit heuristics |
-|---|---|---|
-| **Principal insider** | Direct access to non-public outcome info (production staff, voter, PR rep). Van Dyke / YouTube-editor pattern. | A1, A2, C7, D8 |
-| **Tippee** | Receives info downstream from a principal. Timing slightly less precise, sizing often less aggressive (less conviction in the chain of custody). | A1, A2, B5, D8 |
-| **Coordinated cluster** | Multiple wallets acting on shared info — the Iran 80-wallet pattern. Often share a funder, overlap timing windows, take the same side. | A3, B4, plus Task 4 cluster-detection layer |
-
-The heuristics below are individual-wallet scorers. Cluster detection lives in the Task 4 ranking layer as a multiplier on top of individual scores.
+Deferred until we see the data. A formal actor taxonomy before observing real trade patterns risks anchoring the analysis on archetypes that don't exist in the dataset. The heuristics below are individual-wallet scorers; we'll revisit grouping (principal vs. tippee vs. coordinated cluster) in Task 3 once the top-flagged wallets are in hand and we can characterize the patterns that actually show up.
 
 ## 4. The eight heuristics
 
@@ -221,15 +213,14 @@ Timing carries the largest aggregate weight (45% across A1/A2/A3) because timing
 
 Sensitivity protocol: re-rank the top-50 with each heuristic dropped one-at-a-time. The final top-20 should be stable to ±3 ranks under any single heuristic removal. If a wallet only appears because of one heuristic, it is demoted to the report's "watchlist" section rather than the "flagged" section.
 
-## 7. What these heuristics will not catch
+## 7. Known blind spots (brief)
 
-Explicit limitations, documented up-front so the report does not overclaim:
+Documented for honesty; revisited after Task 3 data review:
 
-- **Insiders who size very small.** A production assistant betting $200 to confirm a hunch will not register on C6 or A1's qualifying gate. The trade-off is acceptable: small bets are not the priority enforcement target.
-- **Insiders using centralized off-ramps.** A wallet funded from Coinbase has no useful on-chain funder graph. Limits the C7 enrichment, not the timing/accuracy signals.
-- **Sophisticated insiders who deliberately spread orders.** Splitting one $20K conviction trade into 40 × $500 trades degrades C6 and partially A2. Partially recovered by Task 4 cluster-detection on funder graph.
-- **Markets without a clearly defined `reveal_window_start`.** Awards work cleanly; box-office windows are softer. The hand-curated reveal-window table in Task 1 should mark uncertain windows and exclude them from A2 scoring.
-- **Information that becomes public just before the wallet trades.** A wallet that trades on a leaked news report 3 minutes before it spreads is *informed* but not strictly *insider*. These heuristics will flag the behavior; the report's case-study section is where each individual wallet's findings get characterized.
+- Small-size insiders (sub-threshold for C6/A1).
+- Wallets funded from centralized exchanges (degrades C7 enrichment only).
+- Order-splitting to defeat C6.
+- Markets without a clean `reveal_window_start` (softens A2).
 
 ## 8. Next steps (Tasks 1, 3, 4)
 
