@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x63274ff0dd147d2b106d4d6b21817e59418be181",
+  "identity": {
+    "name": "tmry-st",
+    "pseudonym": "tmry-st",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 75611901.02005902,
+    "profit_usd": -45805.26460886867,
+    "profit_30d_usd": 625.9174133190154,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-30T10:07:47+00:00",
+    "last_trade_utc": "2026-01-04T02:19:31+00:00",
+    "lifespan_days": 4.7
+  },
+  "trading_summary": {
+    "real_trades": 1958,
+    "real_volume_usd": 2936761.36,
+    "median_trade_usd": 23.01,
+    "max_trade_usd": 154284.0,
+    "distinct_markets": 51,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x63274ff0dd147d2b106d4d6b21817e59418be181",
+    "total_vol_usd": 4282352.91,
+    "wash_vol_usd": 1345591.55,
+    "total_n": 2000,
+    "wash_n": 42,
+    "wash_vol_share": 0.3142,
+    "wash_n_share": 0.021,
+    "clean_vol_usd": 2936761.36,
+    "label": "partial_washer"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "partial_washer",
+    "generalist"
+  ]
+}

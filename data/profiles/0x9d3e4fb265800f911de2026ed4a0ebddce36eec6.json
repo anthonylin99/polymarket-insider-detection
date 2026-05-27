@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x9d3e4fb265800f911de2026ed4a0ebddce36eec6",
+  "identity": {
+    "name": "hild",
+    "pseudonym": "hild",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3049421-025eed12-e5d6-4007-8159-685097192181.png"
+  },
+  "lifetime": {
+    "volume_usd": 25295233.099676996,
+    "profit_usd": -79037.56175061234,
+    "profit_30d_usd": -63916.34226265074,
+    "portfolio_value_usd": 4287.2
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-30T14:26:44+00:00",
+    "last_trade_utc": "2026-05-26T15:00:55+00:00",
+    "lifespan_days": 116.0
+  },
+  "trading_summary": {
+    "real_trades": 1856,
+    "real_volume_usd": 3642196.39,
+    "median_trade_usd": 32.8,
+    "max_trade_usd": 112387.45,
+    "distinct_markets": 72,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x9d3e4fb265800f911de2026ed4a0ebddce36eec6",
+    "total_vol_usd": 4236193.51,
+    "wash_vol_usd": 593997.12,
+    "total_n": 2000,
+    "wash_n": 144,
+    "wash_vol_share": 0.1402,
+    "wash_n_share": 0.072,
+    "clean_vol_usd": 3642196.39,
+    "label": "partial_washer"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "partial_washer",
+    "generalist"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x1fad9860ab0d21c8668a13accf25d6eb3c11b5b2",
+  "identity": {
+    "name": "kamakamakamata",
+    "pseudonym": "kamakamakamata",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 61107421.03944099,
+    "profit_usd": -29287.15104623731,
+    "profit_30d_usd": 236.1115877409975,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-27T14:09:39+00:00",
+    "last_trade_utc": "2026-01-04T02:22:37+00:00",
+    "lifespan_days": 7.5
+  },
+  "trading_summary": {
+    "real_trades": 1922,
+    "real_volume_usd": 3993560.21,
+    "median_trade_usd": 68.99,
+    "max_trade_usd": 140262.62,
+    "distinct_markets": 64,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x1fad9860ab0d21c8668a13accf25d6eb3c11b5b2",
+    "total_vol_usd": 6776458.0,
+    "wash_vol_usd": 2782897.79,
+    "total_n": 2000,
+    "wash_n": 78,
+    "wash_vol_share": 0.4107,
+    "wash_n_share": 0.039,
+    "clean_vol_usd": 3993560.21,
+    "label": "partial_washer"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "partial_washer",
+    "generalist"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+  "identity": {
+    "name": "Kevindoto",
+    "pseudonym": "Kevindoto",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 14350099.137217,
+    "profit_usd": 377550.001593264,
+    "profit_30d_usd": 49230.358559670996,
+    "portfolio_value_usd": 402803.2036
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-30T15:31:16+00:00",
+    "last_trade_utc": "2026-05-27T00:04:20+00:00",
+    "lifespan_days": 116.4
+  },
+  "trading_summary": {
+    "real_trades": 1994,
+    "real_volume_usd": 2590615.58,
+    "median_trade_usd": 46.81,
+    "max_trade_usd": 154631.75,
+    "distinct_markets": 141,
+    "in_scope_volume_usd": 14954.81,
+    "in_scope_volume_share_of_lifetime": 0.001
+  },
+  "wash_stats": {
+    "wallet_address": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+    "total_vol_usd": 2663518.55,
+    "wash_vol_usd": 72902.97,
+    "total_n": 2000,
+    "wash_n": 6,
+    "wash_vol_share": 0.0274,
+    "wash_n_share": 0.003,
+    "clean_vol_usd": 2590615.58,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

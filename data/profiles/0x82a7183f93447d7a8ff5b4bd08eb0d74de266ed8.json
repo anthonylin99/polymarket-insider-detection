@@ -1,0 +1,82 @@
+{
+  "wallet_address": "0x82a7183f93447d7a8ff5b4bd08eb0d74de266ed8",
+  "identity": {
+    "name": "Dripx",
+    "pseudonym": "Dripx",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3319757-854abde4-db3b-4be7-b127-b2721e5f0212.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 7992470.309477,
+    "profit_usd": 55297.28860950835,
+    "profit_30d_usd": 1208.8869145195185,
+    "portfolio_value_usd": 510000.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-09-09T02:35:16+00:00",
+    "last_trade_utc": "2026-05-22T08:35:14+00:00",
+    "lifespan_days": 255.2
+  },
+  "trading_summary": {
+    "real_trades": 907,
+    "real_volume_usd": 7789731.88,
+    "median_trade_usd": 960.0,
+    "max_trade_usd": 449550.0,
+    "distinct_markets": 48,
+    "in_scope_volume_usd": 252619.48,
+    "in_scope_volume_share_of_lifetime": 0.0316
+  },
+  "wash_stats": {
+    "wallet_address": "0x82a7183f93447d7a8ff5b4bd08eb0d74de266ed8",
+    "total_vol_usd": 7789731.88,
+    "wash_vol_usd": 0.0,
+    "total_n": 907,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 7789731.88,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 3,
+  "in_scope_positions_won": 3,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Pope Leo XIV be the #1 searched person on Google this year?",
+      "condition_id": "0xb9b05c3a14c6a7c1c6c00a8c214ed154d4232a885f98ebfd01889204ed252931",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 158092.53,
+      "wavg_buy_price": 0.9989,
+      "n_buys": 5,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Bianca Censori be the #1 searched person on Google this year?",
+      "condition_id": "0x5e9d439604053a0ca5644927fae8ac677b04e30e07507e4b6eb0d24dcc224f4e",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 63432.63,
+      "wavg_buy_price": 0.998,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Kendrick Lamar be the #1 searched person on Google this year?",
+      "condition_id": "0x1c9885eb9bff8ecfdf54f7344532c7f956b54484b85020b577785c4474cbc7bb",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 31094.33,
+      "wavg_buy_price": 0.9903,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

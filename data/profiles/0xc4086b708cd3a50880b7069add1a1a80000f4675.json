@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xc4086b708cd3a50880b7069add1a1a80000f4675",
+  "identity": {
+    "name": "JJo",
+    "pseudonym": "JJo",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-508207-408334b1-8add-4dd3-96b4-52c69671de6c.png"
+  },
+  "lifetime": {
+    "volume_usd": 37658826.54919,
+    "profit_usd": 250023.33012473583,
+    "profit_30d_usd": 18488.596223290097,
+    "portfolio_value_usd": 179670.1787
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-18T11:52:38+00:00",
+    "last_trade_utc": "2026-05-26T23:15:46+00:00",
+    "lifespan_days": 38.5
+  },
+  "trading_summary": {
+    "real_trades": 1968,
+    "real_volume_usd": 2830590.97,
+    "median_trade_usd": 28.27,
+    "max_trade_usd": 135092.52,
+    "distinct_markets": 76,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xc4086b708cd3a50880b7069add1a1a80000f4675",
+    "total_vol_usd": 2960288.07,
+    "wash_vol_usd": 129697.1,
+    "total_n": 2000,
+    "wash_n": 32,
+    "wash_vol_share": 0.0438,
+    "wash_n_share": 0.016,
+    "clean_vol_usd": 2830590.97,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

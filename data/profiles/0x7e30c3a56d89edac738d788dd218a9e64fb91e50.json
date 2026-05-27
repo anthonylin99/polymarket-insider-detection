@@ -1,0 +1,60 @@
+{
+  "wallet_address": "0x7e30c3a56d89edac738d788dd218a9e64fb91e50",
+  "identity": {
+    "name": "Debosnys",
+    "pseudonym": "Debosnys",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/91qulivp67nx_59ee14f9-f48e-421e-bacd-4679bc3773e8_1733120513970.png"
+  },
+  "lifetime": {
+    "volume_usd": 34053816.434946,
+    "profit_usd": 76177.92441950635,
+    "profit_30d_usd": 1356.206165182315,
+    "portfolio_value_usd": 87014.395
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-03-31T19:07:01+00:00",
+    "last_trade_utc": "2026-05-26T17:05:03+00:00",
+    "lifespan_days": 55.9
+  },
+  "trading_summary": {
+    "real_trades": 1918,
+    "real_volume_usd": 3061685.65,
+    "median_trade_usd": 129.77,
+    "max_trade_usd": 99900.0,
+    "distinct_markets": 147,
+    "in_scope_volume_usd": 1193.41,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x7e30c3a56d89edac738d788dd218a9e64fb91e50",
+    "total_vol_usd": 3152081.39,
+    "wash_vol_usd": 90395.74,
+    "total_n": 2000,
+    "wash_n": 82,
+    "wash_vol_share": 0.0287,
+    "wash_n_share": 0.041,
+    "clean_vol_usd": 3061685.65,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by April 30? ",
+      "condition_id": "0xdf72ce355c6405cf62414e6260e99c6de297ce31220c523d2886acd6f5ffd8d9",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 1193.41,
+      "wavg_buy_price": 0.997,
+      "n_buys": 18,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "wallet_address": "0xe4ccbf5b355b5ae2044c3829fa12703365a8d15b",
+  "identity": {
+    "name": "howdoiusethisshit",
+    "pseudonym": "howdoiusethisshit",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 2571913.540928,
+    "profit_usd": -18654.879420714155,
+    "profit_30d_usd": 0.0,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-24T21:58:59+00:00",
+    "last_trade_utc": "2026-02-26T07:57:38+00:00",
+    "lifespan_days": 63.4
+  },
+  "trading_summary": {
+    "real_trades": 522,
+    "real_volume_usd": 2540575.43,
+    "median_trade_usd": 100.45,
+    "max_trade_usd": 241706.52,
+    "distinct_markets": 19,
+    "in_scope_volume_usd": 249165.58,
+    "in_scope_volume_share_of_lifetime": 0.0969
+  },
+  "wash_stats": {
+    "wallet_address": "0xe4ccbf5b355b5ae2044c3829fa12703365a8d15b",
+    "total_vol_usd": 2540575.43,
+    "wash_vol_usd": 0.0,
+    "total_n": 522,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 2540575.43,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 4,
+  "in_scope_positions_won": 4,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by January 31? ",
+      "condition_id": "0x3d109c1fe77572356951368f363ea16c6d8fd0fe78bd0ef2a51af572ae9a4c67",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 148988.63,
+      "wavg_buy_price": 0.9872,
+      "n_buys": 20,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by February 28? ",
+      "condition_id": "0xa6480bbebce112177d153c814e85a7961b16cb2781ba707c33771d247cb51848",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 49510.0,
+      "wavg_buy_price": 0.9902,
+      "n_buys": 5,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by Wednesday? ",
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 33253.89,
+      "wavg_buy_price": 0.9813,
+      "n_buys": 24,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by January 14? ",
+      "condition_id": "0xc4f9c5ce504fe71a5ab7a870b39ce0dd13d527e9656a270bfc55e2ed5d33b83a",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 17413.07,
+      "wavg_buy_price": 0.9953,
+      "n_buys": 6,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "clean"
+  ]
+}

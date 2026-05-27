@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
+  "identity": {
+    "name": "bobe2",
+    "pseudonym": "bobe2",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 230813138.39307597,
+    "profit_usd": 1819722.065253795,
+    "profit_30d_usd": 63556.81819768595,
+    "portfolio_value_usd": 9420247.0975
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-05-18T11:27:10+00:00",
+    "last_trade_utc": "2026-05-26T23:09:25+00:00",
+    "lifespan_days": 8.5
+  },
+  "trading_summary": {
+    "real_trades": 1921,
+    "real_volume_usd": 6887858.91,
+    "median_trade_usd": 289.6,
+    "max_trade_usd": 330938.34,
+    "distinct_markets": 62,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xed107a85a4585a381e48c7f7ca4144909e7dd2e5",
+    "total_vol_usd": 6956345.52,
+    "wash_vol_usd": 68486.61,
+    "total_n": 2000,
+    "wash_n": 79,
+    "wash_vol_share": 0.0098,
+    "wash_n_share": 0.0395,
+    "clean_vol_usd": 6887858.91,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

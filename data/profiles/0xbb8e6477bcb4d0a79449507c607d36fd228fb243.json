@@ -1,0 +1,60 @@
+{
+  "wallet_address": "0xbb8e6477bcb4d0a79449507c607d36fd228fb243",
+  "identity": {
+    "name": "Generator",
+    "pseudonym": "Generator",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 10089837.545753002,
+    "profit_usd": -9604.342202568369,
+    "profit_30d_usd": -14709.477260969988,
+    "portfolio_value_usd": 128975.3237
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-03-11T18:19:29+00:00",
+    "last_trade_utc": "2026-05-26T22:18:45+00:00",
+    "lifespan_days": 441.2
+  },
+  "trading_summary": {
+    "real_trades": 1988,
+    "real_volume_usd": 3478415.39,
+    "median_trade_usd": 146.77,
+    "max_trade_usd": 85000.0,
+    "distinct_markets": 344,
+    "in_scope_volume_usd": 64057.86,
+    "in_scope_volume_share_of_lifetime": 0.0063
+  },
+  "wash_stats": {
+    "wallet_address": "0xbb8e6477bcb4d0a79449507c607d36fd228fb243",
+    "total_vol_usd": 3512027.28,
+    "wash_vol_usd": 33611.89,
+    "total_n": 2000,
+    "wash_n": 12,
+    "wash_vol_share": 0.0096,
+    "wash_n_share": 0.006,
+    "clean_vol_usd": 3478415.39,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by Wednesday? ",
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 64057.86,
+      "wavg_buy_price": 0.99,
+      "n_buys": 4,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

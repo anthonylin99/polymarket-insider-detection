@@ -1,0 +1,115 @@
+{
+  "wallet_address": "0xee324b84546110f1fa5d4b2558edb179c3a4463a",
+  "identity": {
+    "name": "aaa6",
+    "pseudonym": "aaa6",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4049362-75199781-fcd0-41ad-a1bb-865aadeff9a0.jpeg"
+  },
+  "lifetime": {
+    "volume_usd": 4032132.2588449996,
+    "profit_usd": -24232.786796634933,
+    "profit_30d_usd": -0.003378521003469359,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-28T15:31:23+00:00",
+    "last_trade_utc": "2026-02-22T03:05:32+00:00",
+    "lifespan_days": 55.5
+  },
+  "trading_summary": {
+    "real_trades": 1962,
+    "real_volume_usd": 2698683.09,
+    "median_trade_usd": 170.9,
+    "max_trade_usd": 80312.11,
+    "distinct_markets": 105,
+    "in_scope_volume_usd": 207310.67,
+    "in_scope_volume_share_of_lifetime": 0.0514
+  },
+  "wash_stats": {
+    "wallet_address": "0xee324b84546110f1fa5d4b2558edb179c3a4463a",
+    "total_vol_usd": 2833119.66,
+    "wash_vol_usd": 134436.56,
+    "total_n": 2000,
+    "wash_n": 38,
+    "wash_vol_share": 0.0475,
+    "wash_n_share": 0.019,
+    "clean_vol_usd": 2698683.09,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 6,
+  "in_scope_positions_won": 6,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by Wednesday? ",
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 79875.74,
+      "wavg_buy_price": 0.9849,
+      "n_buys": 68,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by January 14? ",
+      "condition_id": "0xc4f9c5ce504fe71a5ab7a870b39ce0dd13d527e9656a270bfc55e2ed5d33b83a",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 44620.8,
+      "wavg_buy_price": 0.8141,
+      "n_buys": 1,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "Will SZA release a new song in 2025?",
+      "condition_id": "0x7b033419a28464e1fababbfe57a6ac63e27add41444192dafd3b8ead700e01a0",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 21342.0,
+      "wavg_buy_price": 0.4889,
+      "n_buys": 8,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Lady Gaga win 3 Grammys?",
+      "condition_id": "0x0d880d85cadbe01cf69b30215a8f7304f0bc3e31f6f92218b0b02c9f145e9780",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 7782.63,
+      "wavg_buy_price": 0.4492,
+      "n_buys": 5,
+      "end_date": "2026-02-01"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by January 31? ",
+      "condition_id": "0x3d109c1fe77572356951368f363ea16c6d8fd0fe78bd0ef2a51af572ae9a4c67",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 6000.0,
+      "wavg_buy_price": 0.5996,
+      "n_buys": 1,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "Will Lady Gaga win 2 Grammys?",
+      "condition_id": "0xc7454e19b073bb973364e504c0c03a32449d467665756d4c83d1cbe1a401cdd9",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 3734.73,
+      "wavg_buy_price": 0.9155,
+      "n_buys": 4,
+      "end_date": "2026-02-01"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

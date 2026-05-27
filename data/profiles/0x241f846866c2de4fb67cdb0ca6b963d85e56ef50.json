@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+  "identity": {
+    "name": "Pestle",
+    "pseudonym": "Pestle",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1793305-ecb4f75a-82a9-4acd-9054-9921831874b4.png"
+  },
+  "lifetime": {
+    "volume_usd": 187129884.515207,
+    "profit_usd": 1900082.144578065,
+    "profit_30d_usd": 1756628.680422556,
+    "portfolio_value_usd": 8.1798
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-19T17:20:58+00:00",
+    "last_trade_utc": "2026-05-26T20:56:34+00:00",
+    "lifespan_days": 37.1
+  },
+  "trading_summary": {
+    "real_trades": 1730,
+    "real_volume_usd": 4845513.6,
+    "median_trade_usd": 0.41,
+    "max_trade_usd": 26397.1,
+    "distinct_markets": 187,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+    "total_vol_usd": 4846901.21,
+    "wash_vol_usd": 1387.61,
+    "total_n": 2000,
+    "wash_n": 270,
+    "wash_vol_share": 0.0003,
+    "wash_n_share": 0.135,
+    "clean_vol_usd": 4845513.6,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

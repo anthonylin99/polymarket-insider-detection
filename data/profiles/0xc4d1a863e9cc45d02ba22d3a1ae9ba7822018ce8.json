@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xc4d1a863e9cc45d02ba22d3a1ae9ba7822018ce8",
+  "identity": {
+    "name": "rdba",
+    "pseudonym": "rdba",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 37971305.227136,
+    "profit_usd": 245827.1923197251,
+    "profit_30d_usd": -88280.47682793916,
+    "portfolio_value_usd": 3537695.2266
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-02-28T19:55:53+00:00",
+    "last_trade_utc": "2026-05-18T12:07:11+00:00",
+    "lifespan_days": 78.7
+  },
+  "trading_summary": {
+    "real_trades": 1996,
+    "real_volume_usd": 11542031.41,
+    "median_trade_usd": 231.19,
+    "max_trade_usd": 969515.01,
+    "distinct_markets": 43,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xc4d1a863e9cc45d02ba22d3a1ae9ba7822018ce8",
+    "total_vol_usd": 11676739.0,
+    "wash_vol_usd": 134707.59,
+    "total_n": 2000,
+    "wash_n": 4,
+    "wash_vol_share": 0.0115,
+    "wash_n_share": 0.002,
+    "clean_vol_usd": 11542031.41,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

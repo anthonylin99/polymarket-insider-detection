@@ -1,0 +1,82 @@
+{
+  "wallet_address": "0x0a543bb97015206f67e1bc5ead7c2d60baf64a03",
+  "identity": {
+    "name": "yyyy77777yyyyy777yyy",
+    "pseudonym": "yyyy77777yyyyy777yyy",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6996845-72b4ff1b-1859-4295-97bd-e34ec426702a.png"
+  },
+  "lifetime": {
+    "volume_usd": 15522788.169848999,
+    "profit_usd": 27690.355044902168,
+    "profit_30d_usd": 15528.651306354068,
+    "portfolio_value_usd": 7057.3629
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-27T12:32:04+00:00",
+    "last_trade_utc": "2026-05-26T17:14:33+00:00",
+    "lifespan_days": 29.2
+  },
+  "trading_summary": {
+    "real_trades": 1958,
+    "real_volume_usd": 11564871.61,
+    "median_trade_usd": 298.8,
+    "max_trade_usd": 279156.23,
+    "distinct_markets": 242,
+    "in_scope_volume_usd": 17111.6,
+    "in_scope_volume_share_of_lifetime": 0.0011
+  },
+  "wash_stats": {
+    "wallet_address": "0x0a543bb97015206f67e1bc5ead7c2d60baf64a03",
+    "total_vol_usd": 11619229.43,
+    "wash_vol_usd": 54357.82,
+    "total_n": 2000,
+    "wash_n": 42,
+    "wash_vol_share": 0.0047,
+    "wash_n_share": 0.021,
+    "clean_vol_usd": 11564871.61,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 3,
+  "in_scope_positions_won": 3,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Drake officially release Iceman by April 30, 2026?",
+      "condition_id": "0x1081498f18c528f543e0342046f5a0a638168b9a3cb9197d4529addb1e76f8e1",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 9915.57,
+      "wavg_buy_price": 0.9974,
+      "n_buys": 8,
+      "end_date": "2026-04-30"
+    },
+    {
+      "market": "Will Drake officially release Iceman by June 30, 2026?",
+      "condition_id": "0x38219338712a8356b39fe2adcb159eb9c3b59a2423965261f208e16c63f67c0b",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 5179.77,
+      "wavg_buy_price": 0.9987,
+      "n_buys": 1,
+      "end_date": "2026-04-30"
+    },
+    {
+      "market": "Will Drake officially release Iceman by May 31, 2026?",
+      "condition_id": "0x9b2492bc9651044a3ef44aec558b6530b42e1de27a8290e0b09a9d4383e38f5f",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 2016.26,
+      "wavg_buy_price": 0.9961,
+      "n_buys": 2,
+      "end_date": "2026-04-30"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

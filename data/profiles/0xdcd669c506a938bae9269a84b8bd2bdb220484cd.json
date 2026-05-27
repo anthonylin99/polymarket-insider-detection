@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xdcd669c506a938bae9269a84b8bd2bdb220484cd",
+  "identity": {
+    "name": "thegreengem",
+    "pseudonym": "thegreengem",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4541140-fd24c37f-9b76-4dbe-a209-88516b35983b.png"
+  },
+  "lifetime": {
+    "volume_usd": 21580492.909870002,
+    "profit_usd": 139859.1860881209,
+    "profit_30d_usd": 14607.708547186292,
+    "portfolio_value_usd": 1078851.9449
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-03-16T03:03:11+00:00",
+    "last_trade_utc": "2026-05-26T21:51:59+00:00",
+    "lifespan_days": 71.8
+  },
+  "trading_summary": {
+    "real_trades": 1996,
+    "real_volume_usd": 5801658.27,
+    "median_trade_usd": 102.65,
+    "max_trade_usd": 259740.0,
+    "distinct_markets": 68,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xdcd669c506a938bae9269a84b8bd2bdb220484cd",
+    "total_vol_usd": 5844353.39,
+    "wash_vol_usd": 42695.12,
+    "total_n": 2000,
+    "wash_n": 4,
+    "wash_vol_share": 0.0073,
+    "wash_n_share": 0.002,
+    "clean_vol_usd": 5801658.27,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

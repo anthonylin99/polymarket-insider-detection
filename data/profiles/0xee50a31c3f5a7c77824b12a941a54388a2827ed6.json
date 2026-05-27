@@ -1,0 +1,114 @@
+{
+  "wallet_address": "0xee50a31c3f5a7c77824b12a941a54388a2827ed6",
+  "identity": {
+    "name": "0xafEe",
+    "pseudonym": "0xafEe",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-516599-ac53e3aa-8f7b-426f-8e3e-0faa33258dce.webp"
+  },
+  "lifetime": {
+    "volume_usd": 7914116.014199,
+    "profit_usd": 929251.4418669573,
+    "profit_30d_usd": 0.0,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-11-17T16:45:57+00:00",
+    "last_trade_utc": "2025-12-04T02:43:37+00:00",
+    "lifespan_days": 16.4
+  },
+  "trading_summary": {
+    "real_trades": 1986,
+    "real_volume_usd": 2083004.37,
+    "median_trade_usd": 24.78,
+    "max_trade_usd": 189127.75,
+    "distinct_markets": 29,
+    "in_scope_volume_usd": 1322166.34,
+    "in_scope_volume_share_of_lifetime": 0.1671
+  },
+  "wash_stats": {
+    "wallet_address": "0xee50a31c3f5a7c77824b12a941a54388a2827ed6",
+    "total_vol_usd": 2099904.32,
+    "wash_vol_usd": 16899.95,
+    "total_n": 2000,
+    "wash_n": 14,
+    "wash_vol_share": 0.008,
+    "wash_n_share": 0.007,
+    "clean_vol_usd": 2083004.37,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 6,
+  "in_scope_positions_won": 6,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Pope Leo XIV be the #1 searched person on Google this year?",
+      "condition_id": "0xb9b05c3a14c6a7c1c6c00a8c214ed154d4232a885f98ebfd01889204ed252931",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 474306.02,
+      "wavg_buy_price": 0.5586,
+      "n_buys": 669,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Donald Trump be the #1 searched person on Google this year?",
+      "condition_id": "0x7a461888f0011b1730d74422388d76626b800033eb10a8fff4643984fb9f8806",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 446832.74,
+      "wavg_buy_price": 0.9136,
+      "n_buys": 96,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Bianca Censori be the #1 searched person on Google this year?",
+      "condition_id": "0x5e9d439604053a0ca5644927fae8ac677b04e30e07507e4b6eb0d24dcc224f4e",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 340235.24,
+      "wavg_buy_price": 0.8694,
+      "n_buys": 123,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Zohran Mamdani be the #1 searched person on Google this year?",
+      "condition_id": "0xc911270562115b23c039a7332acfef95066fcf9fe8c675752c67766d997cbe64",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 48249.99,
+      "wavg_buy_price": 0.965,
+      "n_buys": 3,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will d4vd be the #1 searched person on Google this year?",
+      "condition_id": "0xea17b1284d10617a57f910b2ea63bdef481b1724a4b899d454ff104bea67b657",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 10650.04,
+      "wavg_buy_price": 0.0617,
+      "n_buys": 125,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Squid Game be the #1 searched TV show on Google this year?",
+      "condition_id": "0xd730e31c172055955a3e1ce2157a357ef57025795e2c785cea292d2066bc2260",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 457.4,
+      "wavg_buy_price": 0.3003,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean"
+  ]
+}

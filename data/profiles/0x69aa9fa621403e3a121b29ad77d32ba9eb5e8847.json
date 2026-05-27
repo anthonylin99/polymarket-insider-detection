@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x69aa9fa621403e3a121b29ad77d32ba9eb5e8847",
+  "identity": {
+    "name": "tsekinming01",
+    "pseudonym": "tsekinming01",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 51908217.425879,
+    "profit_usd": -114151.18776494297,
+    "profit_30d_usd": -8365.733353525415,
+    "portfolio_value_usd": 496156.6043
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-03-24T23:59:21+00:00",
+    "last_trade_utc": "2026-05-27T00:27:43+00:00",
+    "lifespan_days": 63.0
+  },
+  "trading_summary": {
+    "real_trades": 1998,
+    "real_volume_usd": 5872241.96,
+    "median_trade_usd": 104.61,
+    "max_trade_usd": 342942.67,
+    "distinct_markets": 113,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x69aa9fa621403e3a121b29ad77d32ba9eb5e8847",
+    "total_vol_usd": 5873208.46,
+    "wash_vol_usd": 966.5,
+    "total_n": 2000,
+    "wash_n": 2,
+    "wash_vol_share": 0.0002,
+    "wash_n_share": 0.001,
+    "clean_vol_usd": 5872241.96,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

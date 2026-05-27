@@ -1,0 +1,47 @@
+{
+  "wallet_address": "0x2785e7022dc20757108204b13c08cea8613b70ae",
+  "identity": {
+    "name": "poorsob",
+    "pseudonym": "poorsob",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 241724454.92680496,
+    "profit_usd": 240415.623402711,
+    "profit_30d_usd": 21778.54968275843,
+    "portfolio_value_usd": 7313702.67
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-05-09T18:46:25+00:00",
+    "last_trade_utc": "2026-05-26T15:25:34+00:00",
+    "lifespan_days": 16.9
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 43985350.73,
+    "median_trade_usd": 1742.03,
+    "max_trade_usd": 1998000.0,
+    "distinct_markets": 13,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x2785e7022dc20757108204b13c08cea8613b70ae",
+    "total_vol_usd": 43985350.73,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 43985350.73,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean"
+  ]
+}

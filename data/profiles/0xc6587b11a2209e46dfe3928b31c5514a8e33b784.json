@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xc6587b11a2209e46dfe3928b31c5514a8e33b784",
+  "identity": {
+    "name": "Erasmus.",
+    "pseudonym": "Erasmus.",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-642445-92826f3c-3576-4719-880c-027883552860.png"
+  },
+  "lifetime": {
+    "volume_usd": 135584352.21343097,
+    "profit_usd": -4236.41659703097,
+    "profit_30d_usd": 177880.53426149063,
+    "portfolio_value_usd": 1448314.6795
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-12T12:44:18+00:00",
+    "last_trade_utc": "2026-05-26T15:59:50+00:00",
+    "lifespan_days": 134.1
+  },
+  "trading_summary": {
+    "real_trades": 1992,
+    "real_volume_usd": 11570247.88,
+    "median_trade_usd": 195.35,
+    "max_trade_usd": 369352.54,
+    "distinct_markets": 110,
+    "in_scope_volume_usd": 40053.66,
+    "in_scope_volume_share_of_lifetime": 0.0003
+  },
+  "wash_stats": {
+    "wallet_address": "0xc6587b11a2209e46dfe3928b31c5514a8e33b784",
+    "total_vol_usd": 11742657.34,
+    "wash_vol_usd": 172409.47,
+    "total_n": 2000,
+    "wash_n": 8,
+    "wash_vol_share": 0.0147,
+    "wash_n_share": 0.004,
+    "clean_vol_usd": 11570247.88,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

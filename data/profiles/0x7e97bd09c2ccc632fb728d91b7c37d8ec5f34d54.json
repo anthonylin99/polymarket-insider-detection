@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x7e97bd09c2ccc632fb728d91b7c37d8ec5f34d54",
+  "identity": {
+    "name": "lfg321",
+    "pseudonym": "lfg321",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 42958207.69147699,
+    "profit_usd": 194622.05503786376,
+    "profit_30d_usd": 5100.753920892785,
+    "portfolio_value_usd": 96092.3486
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-02-04T19:07:21+00:00",
+    "last_trade_utc": "2026-05-22T08:57:43+00:00",
+    "lifespan_days": 106.6
+  },
+  "trading_summary": {
+    "real_trades": 1996,
+    "real_volume_usd": 23024226.93,
+    "median_trade_usd": 999.0,
+    "max_trade_usd": 849230.9,
+    "distinct_markets": 37,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x7e97bd09c2ccc632fb728d91b7c37d8ec5f34d54",
+    "total_vol_usd": 23024428.14,
+    "wash_vol_usd": 201.21,
+    "total_n": 2000,
+    "wash_n": 4,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.002,
+    "clean_vol_usd": 23024226.93,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

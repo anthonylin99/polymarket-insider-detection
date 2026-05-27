@@ -1,0 +1,71 @@
+{
+  "wallet_address": "0x70bbae8501e8f346168c06c32e9f7d42afc1b180",
+  "identity": {
+    "name": "Just2ofUs",
+    "pseudonym": "Just2ofUs",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 13045399.082504999,
+    "profit_usd": 12142.467273533128,
+    "profit_30d_usd": 6.0479999999997744,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-11-26T23:45:29+00:00",
+    "last_trade_utc": "2026-05-02T10:01:16+00:00",
+    "lifespan_days": 156.4
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 8599857.15,
+    "median_trade_usd": 398.8,
+    "max_trade_usd": 1344117.29,
+    "distinct_markets": 670,
+    "in_scope_volume_usd": 23560.88,
+    "in_scope_volume_share_of_lifetime": 0.0018
+  },
+  "wash_stats": {
+    "wallet_address": "0x70bbae8501e8f346168c06c32e9f7d42afc1b180",
+    "total_vol_usd": 8599857.15,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 8599857.15,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 2,
+  "in_scope_positions_won": 2,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will 'The Life of a Showgirl' be #1 for 7 straight weeks?",
+      "condition_id": "0x9838eea1f40bf6520c91bbd684a566720f43a23bc102051ef9debbd8206053a2",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 12571.98,
+      "wavg_buy_price": 0.9989,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will 'The Life of a Showgirl' be #1 for 8 straight weeks?",
+      "condition_id": "0xa96e3a9ef1df68ebd52ece4c7a2ca13e5ec4025a18a12c20bd74bdcccf305a86",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 10988.9,
+      "wavg_buy_price": 0.9975,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

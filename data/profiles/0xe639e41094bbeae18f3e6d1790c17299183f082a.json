@@ -1,0 +1,71 @@
+{
+  "wallet_address": "0xe639e41094bbeae18f3e6d1790c17299183f082a",
+  "identity": {
+    "name": "0xe639e41094bbeae18g3e6d1790c17299183f082a",
+    "pseudonym": "0xe639e41094bbeae18g3e6d1790c17299183f082a",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 36431037.673195,
+    "profit_usd": 458205.7332497909,
+    "profit_30d_usd": 16874.78767250078,
+    "portfolio_value_usd": 818034.8972
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-03-15T06:27:19+00:00",
+    "last_trade_utc": "2026-05-27T01:40:28+00:00",
+    "lifespan_days": 72.8
+  },
+  "trading_summary": {
+    "real_trades": 1964,
+    "real_volume_usd": 6075762.71,
+    "median_trade_usd": 109.94,
+    "max_trade_usd": 877360.0,
+    "distinct_markets": 31,
+    "in_scope_volume_usd": 48624.11,
+    "in_scope_volume_share_of_lifetime": 0.0013
+  },
+  "wash_stats": {
+    "wallet_address": "0xe639e41094bbeae18f3e6d1790c17299183f082a",
+    "total_vol_usd": 6097041.3,
+    "wash_vol_usd": 21278.59,
+    "total_n": 2000,
+    "wash_n": 36,
+    "wash_vol_share": 0.0035,
+    "wash_n_share": 0.018,
+    "clean_vol_usd": 6075762.71,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 2,
+  "in_scope_positions_won": 2,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by March 31? ",
+      "condition_id": "0x294759deb30aa52efdee2af1711411961c4cdaf696179c8a1d5ac08674814a52",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 48373.97,
+      "wavg_buy_price": 0.996,
+      "n_buys": 10,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by April 30? ",
+      "condition_id": "0xdf72ce355c6405cf62414e6260e99c6de297ce31220c523d2886acd6f5ffd8d9",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 250.14,
+      "wavg_buy_price": 0.992,
+      "n_buys": 5,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

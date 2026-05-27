@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xc24b14745136bb9b11f2af924fcad419d2037281",
+  "identity": {
+    "name": "Shalvon",
+    "pseudonym": "Shalvon",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 462830.4841959999,
+    "profit_usd": -20778.003073576572,
+    "profit_30d_usd": 0.35207312938100044,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-04-25T14:41:50+00:00",
+    "last_trade_utc": "2026-02-03T19:10:48+00:00",
+    "lifespan_days": 284.2
+  },
+  "trading_summary": {
+    "real_trades": 59,
+    "real_volume_usd": 20144.59,
+    "median_trade_usd": 3.69,
+    "max_trade_usd": 19794.8,
+    "distinct_markets": 54,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xc24b14745136bb9b11f2af924fcad419d2037281",
+    "total_vol_usd": 219475.92,
+    "wash_vol_usd": 199331.33,
+    "total_n": 70,
+    "wash_n": 11,
+    "wash_vol_share": 0.9082,
+    "wash_n_share": 0.1571,
+    "clean_vol_usd": 20144.59,
+    "label": "volume_farmer"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "volume_farmer",
+    "generalist"
+  ]
+}

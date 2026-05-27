@@ -1,0 +1,71 @@
+{
+  "wallet_address": "0xa102b434ce441a3119e146f75ed6276ee1a836d9",
+  "identity": {
+    "name": "tf2",
+    "pseudonym": "tf2",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 23079279.162763998,
+    "profit_usd": 83536.48541656222,
+    "profit_30d_usd": -10705.42486713993,
+    "portfolio_value_usd": 2598.2967
+  },
+  "activity_window": {
+    "first_trade_utc": "2024-12-11T06:30:17+00:00",
+    "last_trade_utc": "2026-05-25T14:05:39+00:00",
+    "lifespan_days": 530.3
+  },
+  "trading_summary": {
+    "real_trades": 1944,
+    "real_volume_usd": 14939670.84,
+    "median_trade_usd": 366.26,
+    "max_trade_usd": 247542.62,
+    "distinct_markets": 211,
+    "in_scope_volume_usd": 129987.22,
+    "in_scope_volume_share_of_lifetime": 0.0056
+  },
+  "wash_stats": {
+    "wallet_address": "0xa102b434ce441a3119e146f75ed6276ee1a836d9",
+    "total_vol_usd": 15291425.11,
+    "wash_vol_usd": 351754.27,
+    "total_n": 2000,
+    "wash_n": 56,
+    "wash_vol_share": 0.023,
+    "wash_n_share": 0.028,
+    "clean_vol_usd": 14939670.84,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 2,
+  "in_scope_positions_won": 2,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will MrBeast reach 450 million subscribers in 2025?",
+      "condition_id": "0x16d0091ceb7205446bbad250bf51f4f0d9f95265f8945422289c97dc4926cffd",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 108864.88,
+      "wavg_buy_price": 0.8441,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will SZA release a new song in 2025?",
+      "condition_id": "0x7b033419a28464e1fababbfe57a6ac63e27add41444192dafd3b8ead700e01a0",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 1142.38,
+      "wavg_buy_price": 0.925,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

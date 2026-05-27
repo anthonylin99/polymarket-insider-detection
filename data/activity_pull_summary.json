@@ -1,0 +1,8 @@
+{
+  "generated_at_utc": "2026-05-27T01:59:21.040330+00:00",
+  "top_n_target": 500,
+  "wallets_with_activity": 500,
+  "total_activity_records": 743871,
+  "endpoint": "https://data-api.polymarket.com/activity",
+  "note": "Activity endpoint captures both BUY and SELL legs, including the wash-trade pairs that data-api/trades dropped from the original backfill."
+}

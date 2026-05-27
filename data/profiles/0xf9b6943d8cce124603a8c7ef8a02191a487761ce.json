@@ -1,0 +1,60 @@
+{
+  "wallet_address": "0xf9b6943d8cce124603a8c7ef8a02191a487761ce",
+  "identity": {
+    "name": "\ud83c\udf5d\ud83d\udc79",
+    "pseudonym": "\ud83c\udf5d\ud83d\udc79",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ab894d731fd20111884a0e777e51b1ee_1a948369-3689-4f86-833d-916743b9ce2f_1722811770559.png"
+  },
+  "lifetime": {
+    "volume_usd": 10991274.015948998,
+    "profit_usd": 76901.41725621438,
+    "profit_30d_usd": 0.0,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-02-13T20:04:29+00:00",
+    "last_trade_utc": "2025-04-30T14:30:55+00:00",
+    "lifespan_days": 75.8
+  },
+  "trading_summary": {
+    "real_trades": 1932,
+    "real_volume_usd": 2732106.8,
+    "median_trade_usd": 196.13,
+    "max_trade_usd": 78148.21,
+    "distinct_markets": 91,
+    "in_scope_volume_usd": 78782.56,
+    "in_scope_volume_share_of_lifetime": 0.0072
+  },
+  "wash_stats": {
+    "wallet_address": "0xf9b6943d8cce124603a8c7ef8a02191a487761ce",
+    "total_vol_usd": 3023182.34,
+    "wash_vol_usd": 291075.54,
+    "total_n": 2000,
+    "wash_n": 68,
+    "wash_vol_share": 0.0963,
+    "wash_n_share": 0.034,
+    "clean_vol_usd": 2732106.8,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will xAI have a #1 AI model this year?",
+      "condition_id": "0xe3a003c3bdb158a523c1162957676e798bb978abd7dcee922da9d968c82d8687",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 78782.56,
+      "wavg_buy_price": 0.9968,
+      "n_buys": 15,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

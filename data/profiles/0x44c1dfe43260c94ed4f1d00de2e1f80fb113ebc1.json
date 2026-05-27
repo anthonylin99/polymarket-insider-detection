@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+  "identity": {
+    "name": "aenews2",
+    "pseudonym": "aenews2",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-154436-a84dabd0-06ee-40d3-be95-e454283cdfc0.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 221178079.265074,
+    "profit_usd": 1893754.1735139003,
+    "profit_30d_usd": -7222.710868511007,
+    "portfolio_value_usd": 613315.119
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-21T03:59:34+00:00",
+    "last_trade_utc": "2026-05-27T00:06:31+00:00",
+    "lifespan_days": 35.8
+  },
+  "trading_summary": {
+    "real_trades": 1988,
+    "real_volume_usd": 5799859.27,
+    "median_trade_usd": 44.89,
+    "max_trade_usd": 351816.98,
+    "distinct_markets": 212,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+    "total_vol_usd": 6259228.83,
+    "wash_vol_usd": 459369.57,
+    "total_n": 2000,
+    "wash_n": 12,
+    "wash_vol_share": 0.0734,
+    "wash_n_share": 0.006,
+    "clean_vol_usd": 5799859.27,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

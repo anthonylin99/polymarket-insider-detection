@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x8f7a4b414417911e7e9bd738399874792cdbdb40",
+  "identity": {
+    "name": "duderr",
+    "pseudonym": "duderr",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/the_big_lebowski_1_f9b1d40b-4c7d-4627-90b0-0b211cba1e1c_1735689450470.png"
+  },
+  "lifetime": {
+    "volume_usd": 34081256.482916996,
+    "profit_usd": 197587.67776666555,
+    "profit_30d_usd": -4350.116355246677,
+    "portfolio_value_usd": 26098.5858
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-24T18:51:32+00:00",
+    "last_trade_utc": "2026-05-25T04:01:23+00:00",
+    "lifespan_days": 30.4
+  },
+  "trading_summary": {
+    "real_trades": 1944,
+    "real_volume_usd": 2933498.43,
+    "median_trade_usd": 36.99,
+    "max_trade_usd": 81292.24,
+    "distinct_markets": 95,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x8f7a4b414417911e7e9bd738399874792cdbdb40",
+    "total_vol_usd": 3022793.09,
+    "wash_vol_usd": 89294.66,
+    "total_n": 2000,
+    "wash_n": 56,
+    "wash_vol_share": 0.0295,
+    "wash_n_share": 0.028,
+    "clean_vol_usd": 2933498.43,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

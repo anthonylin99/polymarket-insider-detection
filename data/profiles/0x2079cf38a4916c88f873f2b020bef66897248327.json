@@ -1,0 +1,71 @@
+{
+  "wallet_address": "0x2079cf38a4916c88f873f2b020bef66897248327",
+  "identity": {
+    "name": "VegemiteLover",
+    "pseudonym": "VegemiteLover",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4623839-393b58b6-3d74-43ed-a034-b0d13c3bc614.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 3303663.4185659997,
+    "profit_usd": 2193.1606201567506,
+    "profit_30d_usd": 2167.4438054564966,
+    "portfolio_value_usd": 26326.3716
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-19T10:18:32+00:00",
+    "last_trade_utc": "2026-04-19T14:24:16+00:00",
+    "lifespan_days": 121.2
+  },
+  "trading_summary": {
+    "real_trades": 1367,
+    "real_volume_usd": 3240905.68,
+    "median_trade_usd": 249.0,
+    "max_trade_usd": 379917.02,
+    "distinct_markets": 279,
+    "in_scope_volume_usd": 88284.12,
+    "in_scope_volume_share_of_lifetime": 0.0267
+  },
+  "wash_stats": {
+    "wallet_address": "0x2079cf38a4916c88f873f2b020bef66897248327",
+    "total_vol_usd": 3242907.67,
+    "wash_vol_usd": 2001.99,
+    "total_n": 1369,
+    "wash_n": 2,
+    "wash_vol_share": 0.0006,
+    "wash_n_share": 0.0015,
+    "clean_vol_usd": 3240905.68,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 2,
+  "in_scope_positions_won": 2,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Olivia Rodrigo release an album in 2025?",
+      "condition_id": "0xe601d5047ffb85c43758f1cbd5fe5faa5e646f0020f56fcc2534b17741ed9521",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 48418.72,
+      "wavg_buy_price": 0.545,
+      "n_buys": 15,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will BL\u0245\u03fdKPI\u0418K release an album before 2026?",
+      "condition_id": "0x8abe71036e148e592c12aee32b2417e79984d0d3f36a7e016cae3f0b44301b2c",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 77.62,
+      "wavg_buy_price": 0.996,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

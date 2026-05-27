@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xe1194d05876b71b05572c1b59bd49a157f21e30f",
+  "identity": {
+    "name": "jwp9999",
+    "pseudonym": "jwp9999",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 21105283.096440002,
+    "profit_usd": 38917.668551993906,
+    "profit_30d_usd": -4405.2140751587485,
+    "portfolio_value_usd": 192913.6061
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-03-18T21:46:35+00:00",
+    "last_trade_utc": "2026-05-16T07:09:11+00:00",
+    "lifespan_days": 58.4
+  },
+  "trading_summary": {
+    "real_trades": 1996,
+    "real_volume_usd": 4686974.49,
+    "median_trade_usd": 49.3,
+    "max_trade_usd": 319209.04,
+    "distinct_markets": 48,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xe1194d05876b71b05572c1b59bd49a157f21e30f",
+    "total_vol_usd": 5077077.02,
+    "wash_vol_usd": 390102.53,
+    "total_n": 2000,
+    "wash_n": 4,
+    "wash_vol_share": 0.0768,
+    "wash_n_share": 0.002,
+    "clean_vol_usd": 4686974.49,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

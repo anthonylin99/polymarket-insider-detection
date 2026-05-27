@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xa3e961ce67034afb60cbdd862df04db6f37b1279",
+  "identity": {
+    "name": "tir1234",
+    "pseudonym": "tir1234",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 5709265.362891,
+    "profit_usd": -40554.716284145405,
+    "profit_30d_usd": 27.95451654093813,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-02-03T07:55:54+00:00",
+    "last_trade_utc": "2026-04-17T13:26:34+00:00",
+    "lifespan_days": 73.2
+  },
+  "trading_summary": {
+    "real_trades": 1988,
+    "real_volume_usd": 3350764.01,
+    "median_trade_usd": 79.95,
+    "max_trade_usd": 118680.0,
+    "distinct_markets": 55,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xa3e961ce67034afb60cbdd862df04db6f37b1279",
+    "total_vol_usd": 3369990.13,
+    "wash_vol_usd": 19226.12,
+    "total_n": 2000,
+    "wash_n": 12,
+    "wash_vol_share": 0.0057,
+    "wash_n_share": 0.006,
+    "clean_vol_usd": 3350764.01,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

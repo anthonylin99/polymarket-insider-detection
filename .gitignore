@@ -8,8 +8,11 @@ venv/
 data/raw/
 *.sqlite
 *.db
-# Uncompressed trades file — keep only the .gz version in git (144MB raw exceeds GitHub limits)
+# Uncompressed large CSVs — keep only the .gz versions in git
 data/trades.csv
+data/activity.csv
+data/activity_clean.csv
+data/activity_wash.csv
 # Report PDFs are local-only — never push to GitHub
 report/*.pdf
 *.pdf

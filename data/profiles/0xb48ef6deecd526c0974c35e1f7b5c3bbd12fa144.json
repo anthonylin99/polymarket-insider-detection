@@ -1,0 +1,60 @@
+{
+  "wallet_address": "0xb48ef6deecd526c0974c35e1f7b5c3bbd12fa144",
+  "identity": {
+    "name": "100x",
+    "pseudonym": "100x",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 10906884.80065,
+    "profit_usd": 157595.40006545474,
+    "profit_30d_usd": -29222.359616802598,
+    "portfolio_value_usd": 216041.8653
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-02-19T13:37:36+00:00",
+    "last_trade_utc": "2026-05-26T22:25:42+00:00",
+    "lifespan_days": 96.4
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 3499904.34,
+    "median_trade_usd": 26.03,
+    "max_trade_usd": 149850.0,
+    "distinct_markets": 73,
+    "in_scope_volume_usd": 80168.16,
+    "in_scope_volume_share_of_lifetime": 0.0074
+  },
+  "wash_stats": {
+    "wallet_address": "0xb48ef6deecd526c0974c35e1f7b5c3bbd12fa144",
+    "total_vol_usd": 3499904.34,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 3499904.34,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by April 30? ",
+      "condition_id": "0xdf72ce355c6405cf62414e6260e99c6de297ce31220c523d2886acd6f5ffd8d9",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 80168.16,
+      "wavg_buy_price": 0.998,
+      "n_buys": 1,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

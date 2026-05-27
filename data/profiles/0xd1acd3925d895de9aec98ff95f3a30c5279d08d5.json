@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
+  "identity": {
+    "name": "Kickstand7",
+    "pseudonym": "Kickstand7",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/0x47bc4b50a8d0c4a07b22bfd949f9c6afb8aec043_c396c188-aff2-47b3-bf31-b7ea4a6a7ff2_1721230013186.png"
+  },
+  "lifetime": {
+    "volume_usd": 67264384.29759501,
+    "profit_usd": 1404610.459340419,
+    "profit_30d_usd": 493.5606783628382,
+    "portfolio_value_usd": 571608.4678
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-30T19:16:10+00:00",
+    "last_trade_utc": "2026-05-25T19:39:30+00:00",
+    "lifespan_days": 115.0
+  },
+  "trading_summary": {
+    "real_trades": 1990,
+    "real_volume_usd": 3965813.79,
+    "median_trade_usd": 96.03,
+    "max_trade_usd": 417311.09,
+    "distinct_markets": 47,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
+    "total_vol_usd": 3995940.07,
+    "wash_vol_usd": 30126.28,
+    "total_n": 2000,
+    "wash_n": 10,
+    "wash_vol_share": 0.0075,
+    "wash_n_share": 0.005,
+    "clean_vol_usd": 3965813.79,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

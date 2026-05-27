@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xeb0e667a861f9534a8ed37d4568733f537c22d95",
+  "identity": {
+    "name": "Wyntheris",
+    "pseudonym": "Wyntheris",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 459161.576401,
+    "profit_usd": -17223.366668567473,
+    "profit_30d_usd": 1.1183989680530027,
+    "portfolio_value_usd": 90.0868
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-03-30T11:21:15+00:00",
+    "last_trade_utc": "2025-12-05T12:01:53+00:00",
+    "lifespan_days": 250.0
+  },
+  "trading_summary": {
+    "real_trades": 57,
+    "real_volume_usd": 17531.6,
+    "median_trade_usd": 3.5,
+    "max_trade_usd": 17110.0,
+    "distinct_markets": 55,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xeb0e667a861f9534a8ed37d4568733f537c22d95",
+    "total_vol_usd": 212113.77,
+    "wash_vol_usd": 194582.17,
+    "total_n": 72,
+    "wash_n": 15,
+    "wash_vol_share": 0.9173,
+    "wash_n_share": 0.2083,
+    "clean_vol_usd": 17531.6,
+    "label": "volume_farmer"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "volume_farmer",
+    "generalist"
+  ]
+}

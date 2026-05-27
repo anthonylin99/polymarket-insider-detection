@@ -1,0 +1,59 @@
+{
+  "wallet_address": "0x08ce2678c929934de9edea698a998aea9dbc295e",
+  "identity": {
+    "name": "scoobydoolover",
+    "pseudonym": "scoobydoolover",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 29191693.628738005,
+    "profit_usd": 310261.6900479128,
+    "profit_30d_usd": 0.0,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-11-21T01:02:03+00:00",
+    "last_trade_utc": "2025-12-04T13:34:59+00:00",
+    "lifespan_days": 13.5
+  },
+  "trading_summary": {
+    "real_trades": 1984,
+    "real_volume_usd": 3266782.48,
+    "median_trade_usd": 63.93,
+    "max_trade_usd": 202253.03,
+    "distinct_markets": 16,
+    "in_scope_volume_usd": 18589.29,
+    "in_scope_volume_share_of_lifetime": 0.0006
+  },
+  "wash_stats": {
+    "wallet_address": "0x08ce2678c929934de9edea698a998aea9dbc295e",
+    "total_vol_usd": 3283198.63,
+    "wash_vol_usd": 16416.15,
+    "total_n": 2000,
+    "wash_n": 16,
+    "wash_vol_share": 0.005,
+    "wash_n_share": 0.008,
+    "clean_vol_usd": 3266782.48,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Zohran Mamdani be the #1 searched person on Google this year?",
+      "condition_id": "0xc911270562115b23c039a7332acfef95066fcf9fe8c675752c67766d997cbe64",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 18589.29,
+      "wavg_buy_price": 0.916,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean"
+  ]
+}

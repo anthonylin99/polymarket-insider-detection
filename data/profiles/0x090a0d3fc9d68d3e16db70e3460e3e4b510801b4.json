@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
+  "identity": {
+    "name": "slight-",
+    "pseudonym": "slight-",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 48207290.469281,
+    "profit_usd": 334866.316360897,
+    "profit_30d_usd": -3.3547712926520035,
+    "portfolio_value_usd": 42.1575
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-18T07:26:00+00:00",
+    "last_trade_utc": "2026-02-08T08:17:43+00:00",
+    "lifespan_days": 21.0
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 2870575.14,
+    "median_trade_usd": 11.24,
+    "max_trade_usd": 163186.51,
+    "distinct_markets": 70,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
+    "total_vol_usd": 2870575.14,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 2870575.14,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

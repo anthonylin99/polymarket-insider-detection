@@ -1,0 +1,47 @@
+{
+  "wallet_address": "0x0e5bd76779e74304d08e759072abf126d87da593",
+  "identity": {
+    "name": "JAHODA",
+    "pseudonym": "JAHODA",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4022081-dd91cedf-b011-4ed5-abc4-1f5fa88846d4.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 62110071.84556001,
+    "profit_usd": 267285.1604944745,
+    "profit_30d_usd": 38534.04216572136,
+    "portfolio_value_usd": 1311506.272
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-05-08T09:56:16+00:00",
+    "last_trade_utc": "2026-05-26T22:12:24+00:00",
+    "lifespan_days": 18.5
+  },
+  "trading_summary": {
+    "real_trades": 1938,
+    "real_volume_usd": 3256826.92,
+    "median_trade_usd": 12.14,
+    "max_trade_usd": 389779.83,
+    "distinct_markets": 23,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x0e5bd76779e74304d08e759072abf126d87da593",
+    "total_vol_usd": 3300756.5,
+    "wash_vol_usd": 43929.59,
+    "total_n": 2000,
+    "wash_n": 62,
+    "wash_vol_share": 0.0133,
+    "wash_n_share": 0.031,
+    "clean_vol_usd": 3256826.92,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean"
+  ]
+}

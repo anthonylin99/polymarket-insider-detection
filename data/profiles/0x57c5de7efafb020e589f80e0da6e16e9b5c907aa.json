@@ -1,0 +1,115 @@
+{
+  "wallet_address": "0x57c5de7efafb020e589f80e0da6e16e9b5c907aa",
+  "identity": {
+    "name": "poptree",
+    "pseudonym": "poptree",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 17291237.989161,
+    "profit_usd": 297408.2607748432,
+    "profit_30d_usd": 1317.471724241157,
+    "portfolio_value_usd": 505274.1115
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-06-01T21:08:45+00:00",
+    "last_trade_utc": "2026-05-25T23:51:26+00:00",
+    "lifespan_days": 358.1
+  },
+  "trading_summary": {
+    "real_trades": 1950,
+    "real_volume_usd": 6987444.77,
+    "median_trade_usd": 136.81,
+    "max_trade_usd": 399600.0,
+    "distinct_markets": 130,
+    "in_scope_volume_usd": 180592.11,
+    "in_scope_volume_share_of_lifetime": 0.0104
+  },
+  "wash_stats": {
+    "wallet_address": "0x57c5de7efafb020e589f80e0da6e16e9b5c907aa",
+    "total_vol_usd": 7144068.25,
+    "wash_vol_usd": 156623.48,
+    "total_n": 2000,
+    "wash_n": 50,
+    "wash_vol_share": 0.0219,
+    "wash_n_share": 0.025,
+    "clean_vol_usd": 6987444.77,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 6,
+  "in_scope_positions_won": 5,
+  "in_scope_win_rate": 0.8333,
+  "top_in_scope_markets": [
+    {
+      "market": "Will d4vd be the #1 searched person on Google this year?",
+      "condition_id": "0xea17b1284d10617a57f910b2ea63bdef481b1724a4b899d454ff104bea67b657",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 59830.0,
+      "wavg_buy_price": 0.9972,
+      "n_buys": 21,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Bianca Censori be the #1 searched person on Google this year?",
+      "condition_id": "0x5e9d439604053a0ca5644927fae8ac677b04e30e07507e4b6eb0d24dcc224f4e",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 50159.79,
+      "wavg_buy_price": 0.999,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Pope Leo XIV be the #1 searched person on Google this year?",
+      "condition_id": "0xb9b05c3a14c6a7c1c6c00a8c214ed154d4232a885f98ebfd01889204ed252931",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 36962.99,
+      "wavg_buy_price": 0.999,
+      "n_buys": 6,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by January 31? ",
+      "condition_id": "0x3d109c1fe77572356951368f363ea16c6d8fd0fe78bd0ef2a51af572ae9a4c67",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 14296.64,
+      "wavg_buy_price": 0.9848,
+      "n_buys": 1,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by Wednesday? ",
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 9568.31,
+      "wavg_buy_price": 0.491,
+      "n_buys": 6,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "Will Bad Bunny be the top Spotify artist for 2025?",
+      "condition_id": "0xfccc16f3bba1210d40db55ee1b71c741be5b14dc3512aba5dc32de5c6e0c4bde",
+      "side_outcome": "No",
+      "resolved_outcome": "Yes",
+      "won": false,
+      "buy_volume_usd": 108.83,
+      "wavg_buy_price": 0.009,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

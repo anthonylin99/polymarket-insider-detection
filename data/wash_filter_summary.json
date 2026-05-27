@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-05-27T02:05:21.906665+00:00",
+  "input_records": 743871,
+  "wash_records": 166500,
+  "clean_records": 577371,
+  "total_volume_usd": 609806989.28,
+  "wash_volume_usd": 161006073.22,
+  "wash_volume_share": 0.264,
+  "wash_definition": {
+    "max_pair_hours": 48.0,
+    "price_tolerance_bps": 300,
+    "size_tolerance_pct": 0.1
+  },
+  "wallet_labels": {
+    "volume_farmer": 152,
+    "partial_washer": 198,
+    "clean": 150
+  }
+}

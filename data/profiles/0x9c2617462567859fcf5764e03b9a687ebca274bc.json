@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x9c2617462567859fcf5764e03b9a687ebca274bc",
+  "identity": {
+    "name": "Tigerofthehood",
+    "pseudonym": "Tigerofthehood",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4345330-a907192b-6700-4c24-bbd2-fc21826f2ada.webp"
+  },
+  "lifetime": {
+    "volume_usd": 24344973.747059003,
+    "profit_usd": 127557.85894215699,
+    "profit_30d_usd": 57098.4218700062,
+    "portfolio_value_usd": 516500.8573
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-29T07:44:02+00:00",
+    "last_trade_utc": "2026-05-27T01:01:12+00:00",
+    "lifespan_days": 27.7
+  },
+  "trading_summary": {
+    "real_trades": 1998,
+    "real_volume_usd": 4416512.23,
+    "median_trade_usd": 19.17,
+    "max_trade_usd": 210650.06,
+    "distinct_markets": 34,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x9c2617462567859fcf5764e03b9a687ebca274bc",
+    "total_vol_usd": 4418639.59,
+    "wash_vol_usd": 2127.36,
+    "total_n": 2000,
+    "wash_n": 2,
+    "wash_vol_share": 0.0005,
+    "wash_n_share": 0.001,
+    "clean_vol_usd": 4416512.23,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

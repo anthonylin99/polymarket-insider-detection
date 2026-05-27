@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xd748c701ad93cfec32a3420e10f3b08e68612125",
+  "identity": {
+    "name": "TealV",
+    "pseudonym": "TealV",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3144810-9697d911-553c-4817-bf88-6ff0882d3540.jpeg"
+  },
+  "lifetime": {
+    "volume_usd": 16064416.529980002,
+    "profit_usd": 326359.1691959943,
+    "profit_30d_usd": 8.249597158282995e-05,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-01-24T02:13:06+00:00",
+    "last_trade_utc": "2026-04-01T07:37:35+00:00",
+    "lifespan_days": 67.2
+  },
+  "trading_summary": {
+    "real_trades": 1998,
+    "real_volume_usd": 2525482.85,
+    "median_trade_usd": 44.5,
+    "max_trade_usd": 182383.44,
+    "distinct_markets": 41,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xd748c701ad93cfec32a3420e10f3b08e68612125",
+    "total_vol_usd": 2529504.48,
+    "wash_vol_usd": 4021.63,
+    "total_n": 2000,
+    "wash_n": 2,
+    "wash_vol_share": 0.0016,
+    "wash_n_share": 0.001,
+    "clean_vol_usd": 2525482.85,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

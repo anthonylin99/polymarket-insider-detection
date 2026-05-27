@@ -1,0 +1,71 @@
+{
+  "wallet_address": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
+  "identity": {
+    "name": "ExhaustedBoyBilly",
+    "pseudonym": "ExhaustedBoyBilly",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/WechatIMG118_93218104-1225-4353-8241-6729471688f0_1721516404749.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 134948520.438668,
+    "profit_usd": 470935.1348251087,
+    "profit_30d_usd": 8688.688696666824,
+    "portfolio_value_usd": 68494.9802
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-31T09:03:53+00:00",
+    "last_trade_utc": "2026-05-23T14:43:46+00:00",
+    "lifespan_days": 143.2
+  },
+  "trading_summary": {
+    "real_trades": 1900,
+    "real_volume_usd": 2752363.44,
+    "median_trade_usd": 19.98,
+    "max_trade_usd": 69930.0,
+    "distinct_markets": 131,
+    "in_scope_volume_usd": 31450.55,
+    "in_scope_volume_share_of_lifetime": 0.0002
+  },
+  "wash_stats": {
+    "wallet_address": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
+    "total_vol_usd": 2957595.65,
+    "wash_vol_usd": 205232.2,
+    "total_n": 2000,
+    "wash_n": 100,
+    "wash_vol_share": 0.0694,
+    "wash_n_share": 0.05,
+    "clean_vol_usd": 2752363.44,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 2,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 0.5,
+  "top_in_scope_markets": [
+    {
+      "market": "Will SZA release a new song in 2025?",
+      "condition_id": "0x7b033419a28464e1fababbfe57a6ac63e27add41444192dafd3b8ead700e01a0",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 15698.05,
+      "wavg_buy_price": 0.496,
+      "n_buys": 4,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Olivia Rodrigo release an album in 2025?",
+      "condition_id": "0xe601d5047ffb85c43758f1cbd5fe5faa5e646f0020f56fcc2534b17741ed9521",
+      "side_outcome": "Yes",
+      "resolved_outcome": "No",
+      "won": false,
+      "buy_volume_usd": 1.26,
+      "wavg_buy_price": 0.003,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

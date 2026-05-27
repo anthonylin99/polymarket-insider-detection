@@ -63,6 +63,36 @@ column for Task 1 manual curation needed by heuristic A2.
 Decompress with `gunzip -k data/trades.csv.gz` before running heuristics. The
 raw `trades.csv` is gitignored to stay under GitHub's 100MB per-file limit.
 
+### `activity.csv.gz`, `activity_clean.csv.gz`, `activity_wash.csv.gz` (gzipped)
+
+Per-wallet complete trade history pulled from `data-api.polymarket.com/activity`
+for the top 500 wallets by in-window USD volume. The `_clean` file has wash-trade
+pairs removed by `src/wash_filter.py`; the `_wash` file is the complement (the
+removed pairs). The activity endpoint captures both BUY and SELL legs reliably,
+unlike the per-market `/trades` endpoint used in `trades.csv`. Decompress with
+`gunzip -k data/activity*.csv.gz`.
+
+### `wallet_wash_stats.csv` — per-wallet wash classification
+
+For each of the 500 enriched wallets: `wash_vol_share`, `wash_n_share`,
+`clean_vol_usd`, and a `label` of `volume_farmer` (>=50% wash), `partial_washer`
+(10-50% wash), or `clean` (<10% wash). 152 wallets are volume farmers, 198
+partial, 150 clean.
+
+### `wallet_scores_clean.csv` + `top20_clean.csv` + `top20_h1_evidence.csv`
+
+Heuristic scoring on the wash-filtered dataset. `wallet_scores_clean.csv` ranks
+the 348 wallets that pass the eligibility floor (in-scope volume >= $5K AND
+wash_vol_share < 0.50). The `_h1_evidence` file enumerates every middling-price
+conviction trade that contributed to a top-20 wallet's H1 score with full
+context (price, size, hours to resolution, implied profit).
+
+### `profiles/<addr>.json` — polysights-style wallet dossiers
+
+55 individual wallet dossiers covering identity, lifetime stats, activity
+window, trading summary, wash stats, top in-scope positions, and behavioral
+tags. `profiles/INDEX.csv` is the cross-wallet summary.
+
 
 One row per trade. Pulled from `data-api.polymarket.com/trades?market=<conditionId>`
 with offset-based pagination (page size 500, cap of 10,000 per market).

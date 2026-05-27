@@ -1,0 +1,115 @@
+{
+  "wallet_address": "0xdf1b70066e58788c7b05c53dd9cc4fd412d2b963",
+  "identity": {
+    "name": "BoringPunter",
+    "pseudonym": "BoringPunter",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3539213-6dfd56f9-9dc8-405d-b1ef-1e5a0c9bb62e.jpeg"
+  },
+  "lifetime": {
+    "volume_usd": 54031931.212917,
+    "profit_usd": 16817.319131626246,
+    "profit_30d_usd": 0.0,
+    "portfolio_value_usd": 100.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-02-06T16:26:35+00:00",
+    "last_trade_utc": "2026-04-18T07:52:42+00:00",
+    "lifespan_days": 70.6
+  },
+  "trading_summary": {
+    "real_trades": 1950,
+    "real_volume_usd": 4282059.3,
+    "median_trade_usd": 116.88,
+    "max_trade_usd": 249742.11,
+    "distinct_markets": 132,
+    "in_scope_volume_usd": 273260.35,
+    "in_scope_volume_share_of_lifetime": 0.0051
+  },
+  "wash_stats": {
+    "wallet_address": "0xdf1b70066e58788c7b05c53dd9cc4fd412d2b963",
+    "total_vol_usd": 4343586.97,
+    "wash_vol_usd": 61527.67,
+    "total_n": 2000,
+    "wash_n": 50,
+    "wash_vol_share": 0.0142,
+    "wash_n_share": 0.025,
+    "clean_vol_usd": 4282059.3,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 6,
+  "in_scope_positions_won": 6,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 125M and 150M views in its first 7 days?",
+      "condition_id": "0x2749c8d903eb43d4be7ec2c3dc9608613089175450dab63022bf2dab042544f6",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 118371.81,
+      "wavg_buy_price": 0.9762,
+      "n_buys": 30,
+      "end_date": "2026-02-15"
+    },
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 75M and 100M views in its first 7 days?",
+      "condition_id": "0xe210052575420133d6b2fd2a160803e58fbf0b861bd7a22d0951ef25d0c2eac4",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 39061.56,
+      "wavg_buy_price": 0.4953,
+      "n_buys": 21,
+      "end_date": "2026-02-15"
+    },
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get at least 150M views in its first 7 days?",
+      "condition_id": "0x8ba0968026142248f3d6cfc1b817f3519de767703598fe4eb2b8f38ed5713d08",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 24865.55,
+      "wavg_buy_price": 0.999,
+      "n_buys": 30,
+      "end_date": "2026-02-15"
+    },
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get fewer than 50M views in its first 7 days?",
+      "condition_id": "0x10ca642cf60ff9f0e4b92510d2bb384658ae34c14bad704e21f589cd0a719736",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 24406.48,
+      "wavg_buy_price": 0.999,
+      "n_buys": 12,
+      "end_date": "2026-02-15"
+    },
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 100M and 125M views in its first 7 days?",
+      "condition_id": "0xf95dfcdf72d98c59381df5b2d015e67aa7b7caf59258881c549d79400490a579",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 12049.75,
+      "wavg_buy_price": 0.4973,
+      "n_buys": 6,
+      "end_date": "2026-02-15"
+    },
+    {
+      "market": "Will the 2026 Bad Bunny Super Bowl halftime show video get between 50M and 75M views in its first 7 days?",
+      "condition_id": "0x8d2f0853d11bf809a5c5dafd713f4d7aa93ec2e3020e8c8d60350f897b0f1984",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 550.04,
+      "wavg_buy_price": 0.999,
+      "n_buys": 1,
+      "end_date": "2026-02-15"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

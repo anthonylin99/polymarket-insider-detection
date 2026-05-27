@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+  "identity": {
+    "name": "AgricultureSecretary",
+    "pseudonym": "AgricultureSecretary",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/1000087447_633f4599-e763-4ec8-8570-3658945641e7_1737237202196.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 37324278.267915,
+    "profit_usd": 550244.8424700656,
+    "profit_30d_usd": 13454.934423041925,
+    "portfolio_value_usd": 377279.8358
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-11T23:55:31+00:00",
+    "last_trade_utc": "2026-05-26T13:03:07+00:00",
+    "lifespan_days": 44.5
+  },
+  "trading_summary": {
+    "real_trades": 1998,
+    "real_volume_usd": 2570481.91,
+    "median_trade_usd": 19.83,
+    "max_trade_usd": 406779.64,
+    "distinct_markets": 456,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+    "total_vol_usd": 2573525.07,
+    "wash_vol_usd": 3043.16,
+    "total_n": 2000,
+    "wash_n": 2,
+    "wash_vol_share": 0.0012,
+    "wash_n_share": 0.001,
+    "clean_vol_usd": 2570481.91,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

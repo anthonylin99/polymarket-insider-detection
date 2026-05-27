@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0xa022ba0a68e11a78348382ff168601012d4d77f8",
+  "identity": {
+    "name": "yungstalin",
+    "pseudonym": "yungstalin",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6756952-77c4b700-1a4c-4d36-970a-91b881f9bb77.webp"
+  },
+  "lifetime": {
+    "volume_usd": 19651749.605071,
+    "profit_usd": 82201.14124670152,
+    "profit_30d_usd": -16547.539280103996,
+    "portfolio_value_usd": 448067.3074
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-05-06T09:50:48+00:00",
+    "last_trade_utc": "2026-05-27T00:23:44+00:00",
+    "lifespan_days": 20.6
+  },
+  "trading_summary": {
+    "real_trades": 1998,
+    "real_volume_usd": 2594886.37,
+    "median_trade_usd": 58.29,
+    "max_trade_usd": 106933.46,
+    "distinct_markets": 86,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0xa022ba0a68e11a78348382ff168601012d4d77f8",
+    "total_vol_usd": 2598752.18,
+    "wash_vol_usd": 3865.82,
+    "total_n": 2000,
+    "wash_n": 2,
+    "wash_vol_share": 0.0015,
+    "wash_n_share": 0.001,
+    "clean_vol_usd": 2594886.37,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

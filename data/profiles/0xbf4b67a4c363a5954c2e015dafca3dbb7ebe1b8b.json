@@ -1,0 +1,60 @@
+{
+  "wallet_address": "0xbf4b67a4c363a5954c2e015dafca3dbb7ebe1b8b",
+  "identity": {
+    "name": "wiq",
+    "pseudonym": "wiq",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 2880182.718041,
+    "profit_usd": -2978.573084079493,
+    "profit_30d_usd": -0.5400000000008731,
+    "portfolio_value_usd": 2120.915
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-01T13:31:04+00:00",
+    "last_trade_utc": "2026-04-27T22:38:40+00:00",
+    "lifespan_days": 147.4
+  },
+  "trading_summary": {
+    "real_trades": 1213,
+    "real_volume_usd": 2645699.81,
+    "median_trade_usd": 99.8,
+    "max_trade_usd": 104932.78,
+    "distinct_markets": 234,
+    "in_scope_volume_usd": 42844.74,
+    "in_scope_volume_share_of_lifetime": 0.0149
+  },
+  "wash_stats": {
+    "wallet_address": "0xbf4b67a4c363a5954c2e015dafca3dbb7ebe1b8b",
+    "total_vol_usd": 2650611.69,
+    "wash_vol_usd": 4911.89,
+    "total_n": 1219,
+    "wash_n": 6,
+    "wash_vol_share": 0.0019,
+    "wash_n_share": 0.0049,
+    "clean_vol_usd": 2645699.81,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 1,
+  "in_scope_positions_won": 1,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Olivia Rodrigo release an album in 2025?",
+      "condition_id": "0xe601d5047ffb85c43758f1cbd5fe5faa5e646f0020f56fcc2534b17741ed9521",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 42844.74,
+      "wavg_buy_price": 0.9201,
+      "n_buys": 21,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "wallet_address": "0x1295269296e51cd28a3db85fa6728c0e352b5cfd",
+  "identity": {
+    "name": "FlyingPlaty",
+    "pseudonym": "FlyingPlaty",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 21917445.885617997,
+    "profit_usd": -299899.06744139397,
+    "profit_30d_usd": 3500.190940162569,
+    "portfolio_value_usd": 384926.7717
+  },
+  "activity_window": {
+    "first_trade_utc": "2026-04-10T21:36:43+00:00",
+    "last_trade_utc": "2026-05-27T01:05:00+00:00",
+    "lifespan_days": 46.1
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 5051379.6,
+    "median_trade_usd": 188.55,
+    "max_trade_usd": 149850.0,
+    "distinct_markets": 160,
+    "in_scope_volume_usd": 0,
+    "in_scope_volume_share_of_lifetime": 0.0
+  },
+  "wash_stats": {
+    "wallet_address": "0x1295269296e51cd28a3db85fa6728c0e352b5cfd",
+    "total_vol_usd": 5051379.6,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 5051379.6,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 0,
+  "in_scope_positions_won": 0,
+  "in_scope_win_rate": null,
+  "top_in_scope_markets": [],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

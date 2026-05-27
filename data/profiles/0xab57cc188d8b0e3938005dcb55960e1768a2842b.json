@@ -1,0 +1,126 @@
+{
+  "wallet_address": "0xab57cc188d8b0e3938005dcb55960e1768a2842b",
+  "identity": {
+    "name": "big6big8",
+    "pseudonym": "big6big8",
+    "bio": "",
+    "profile_image": ""
+  },
+  "lifetime": {
+    "volume_usd": 8313770.4094239995,
+    "profit_usd": 256808.27231517487,
+    "profit_30d_usd": -0.015802473499206826,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2024-09-02T02:27:31+00:00",
+    "last_trade_utc": "2026-04-20T02:15:10+00:00",
+    "lifespan_days": 595.0
+  },
+  "trading_summary": {
+    "real_trades": 2000,
+    "real_volume_usd": 3066837.62,
+    "median_trade_usd": 127.53,
+    "max_trade_usd": 240507.45,
+    "distinct_markets": 317,
+    "in_scope_volume_usd": 23265.66,
+    "in_scope_volume_share_of_lifetime": 0.0028
+  },
+  "wash_stats": {
+    "wallet_address": "0xab57cc188d8b0e3938005dcb55960e1768a2842b",
+    "total_vol_usd": 3066837.62,
+    "wash_vol_usd": 0.0,
+    "total_n": 2000,
+    "wash_n": 0,
+    "wash_vol_share": 0.0,
+    "wash_n_share": 0.0,
+    "clean_vol_usd": 3066837.62,
+    "label": "clean"
+  },
+  "in_scope_positions_resolved": 7,
+  "in_scope_positions_won": 6,
+  "in_scope_win_rate": 0.8571,
+  "top_in_scope_markets": [
+    {
+      "market": "Will Luigi Mangione be the #1 searched person on Google this year?",
+      "condition_id": "0xb2fb1b5f67a707d2659f63fad534285a66feac3e58f32fad8663a326eb809f03",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 16916.81,
+      "wavg_buy_price": 0.95,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Bianca Censori be the #1 searched person on Google this year?",
+      "condition_id": "0x5e9d439604053a0ca5644927fae8ac677b04e30e07507e4b6eb0d24dcc224f4e",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 2640.0,
+      "wavg_buy_price": 0.88,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Taylor Swift be the second most streamed Spotify artist for 2025?",
+      "condition_id": "0x5530784023a1218c416fd815c4f7209abd927dd504b6380d94cfc2146e2bb51f",
+      "side_outcome": "Yes",
+      "resolved_outcome": "Yes",
+      "won": true,
+      "buy_volume_usd": 1716.86,
+      "wavg_buy_price": 0.975,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will BL\u0245\u03fdKPI\u0418K release an album before 2026?",
+      "condition_id": "0x8abe71036e148e592c12aee32b2417e79984d0d3f36a7e016cae3f0b44301b2c",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 1142.69,
+      "wavg_buy_price": 0.951,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Jimmy Kimmel be the #1 searched person on Google this year?",
+      "condition_id": "0xe6579dbe57c1a39bb0c95f5c174c24a5d980acd86ebf1fd73bc18c11951f377b",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 466.5,
+      "wavg_buy_price": 0.933,
+      "n_buys": 2,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will Zohran Mamdani be the #1 searched person on Google this year?",
+      "condition_id": "0xc911270562115b23c039a7332acfef95066fcf9fe8c675752c67766d997cbe64",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 193.0,
+      "wavg_buy_price": 0.965,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "Will d4vd be the #1 searched person on Google this year?",
+      "condition_id": "0xea17b1284d10617a57f910b2ea63bdef481b1724a4b899d454ff104bea67b657",
+      "side_outcome": "No",
+      "resolved_outcome": "Yes",
+      "won": false,
+      "buy_volume_usd": 189.8,
+      "wavg_buy_price": 0.949,
+      "n_buys": 1,
+      "end_date": "2025-12-31"
+    }
+  ],
+  "tags": [
+    "clean",
+    "generalist"
+  ]
+}

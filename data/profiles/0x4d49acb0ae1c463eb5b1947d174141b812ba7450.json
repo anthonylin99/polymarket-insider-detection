@@ -1,0 +1,104 @@
+{
+  "wallet_address": "0x4d49acb0ae1c463eb5b1947d174141b812ba7450",
+  "identity": {
+    "name": "no1yet",
+    "pseudonym": "no1yet",
+    "bio": "",
+    "profile_image": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1229093-a83fa312-d2b6-44f2-87bb-a1c3fdbafcd0.jpg"
+  },
+  "lifetime": {
+    "volume_usd": 11202979.957752997,
+    "profit_usd": 62354.78228127054,
+    "profit_30d_usd": 6697.919238508652,
+    "portfolio_value_usd": 0.0
+  },
+  "activity_window": {
+    "first_trade_utc": "2025-12-12T10:15:02+00:00",
+    "last_trade_utc": "2026-05-24T07:32:00+00:00",
+    "lifespan_days": 162.9
+  },
+  "trading_summary": {
+    "real_trades": 1600,
+    "real_volume_usd": 8032798.81,
+    "median_trade_usd": 347.02,
+    "max_trade_usd": 446363.64,
+    "distinct_markets": 90,
+    "in_scope_volume_usd": 1019274.7,
+    "in_scope_volume_share_of_lifetime": 0.091
+  },
+  "wash_stats": {
+    "wallet_address": "0x4d49acb0ae1c463eb5b1947d174141b812ba7450",
+    "total_vol_usd": 9952638.86,
+    "wash_vol_usd": 1919840.05,
+    "total_n": 2000,
+    "wash_n": 400,
+    "wash_vol_share": 0.1929,
+    "wash_n_share": 0.2,
+    "clean_vol_usd": 8032798.81,
+    "label": "partial_washer"
+  },
+  "in_scope_positions_resolved": 5,
+  "in_scope_positions_won": 5,
+  "in_scope_win_rate": 1.0,
+  "top_in_scope_markets": [
+    {
+      "market": "New \"Stranger Things\" episode released by January 31? ",
+      "condition_id": "0x3d109c1fe77572356951368f363ea16c6d8fd0fe78bd0ef2a51af572ae9a4c67",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 498256.05,
+      "wavg_buy_price": 0.981,
+      "n_buys": 48,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by January 14? ",
+      "condition_id": "0xc4f9c5ce504fe71a5ab7a870b39ce0dd13d527e9656a270bfc55e2ed5d33b83a",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 250707.51,
+      "wavg_buy_price": 0.9973,
+      "n_buys": 22,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by Wednesday? ",
+      "condition_id": "0xc111415f3e8d30760497cafd642d2672ce63c476769e4ddf95472e02e3931aea",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 125749.22,
+      "wavg_buy_price": 0.9859,
+      "n_buys": 26,
+      "end_date": "2026-01-07"
+    },
+    {
+      "market": "Will Olivia Rodrigo release an album in 2025?",
+      "condition_id": "0xe601d5047ffb85c43758f1cbd5fe5faa5e646f0020f56fcc2534b17741ed9521",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 98339.23,
+      "wavg_buy_price": 0.9983,
+      "n_buys": 12,
+      "end_date": "2025-12-31"
+    },
+    {
+      "market": "New \"Stranger Things\" episode released by February 28? ",
+      "condition_id": "0xa6480bbebce112177d153c814e85a7961b16cb2781ba707c33771d247cb51848",
+      "side_outcome": "No",
+      "resolved_outcome": "No",
+      "won": true,
+      "buy_volume_usd": 46222.69,
+      "wavg_buy_price": 0.988,
+      "n_buys": 17,
+      "end_date": "2026-01-07"
+    }
+  ],
+  "tags": [
+    "partial_washer",
+    "generalist"
+  ]
+}
