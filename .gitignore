@@ -10,3 +10,6 @@ data/raw/
 *.db
 # Uncompressed trades file — keep only the .gz version in git (144MB raw exceeds GitHub limits)
 data/trades.csv
+# Report PDFs are local-only — never push to GitHub
+report/*.pdf
+*.pdf

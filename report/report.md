@@ -26,15 +26,19 @@ below were selected against that frame:
 | # | Wallet | What it did | Why it matters |
 |---|---|---|---|
 | **1** | **`Shalvon`** (`0xc24b14...7281`) | Fresh account (opened 4/23/2025). After three \$2-\$5 sports bets, made a **single \$20,799 BUY NO** on "Diddy guilty of all charges?" at price **\$0.62**, **60 days before** the verdict. Bet won. | Textbook insider profile: fresh wallet, sudden size escalation (3500× the wallet's own median trade), middling price (true uncertainty), pre-event timing, single-shot conviction, eventually-correct outcome. |
-| **2** | **Suspected cluster** of 6 fantasy-named wallets (`Jaxorian`, `Amdaris`, `Vexlir`, `Xalveth`, `Jorelle`, `Evryxen`) | All opened within a 4-week window (3/22–4/29 2025). Each made a single \$15K–\$47K bet at middling prices (0.56–0.68) on "Will X have a #1 AI model this year?" or "Will Rihanna release an album in 2025?" type markets. **All resolved correctly.** | The Iran-strike "80 wallets at 98% hit rate" cluster pattern in miniature: same vintage, similar names, identical trade morphology, no other in-scope activity. Single-wallet heuristics would miss this entirely. |
+| **2** | **Vintage-clustered group** of 6 fantasy-named wallets (`Jaxorian`, `Amdaris`, `Vexlir`, `Xalveth`, `Jorelle`, `Evryxen`) | All opened within a 4-week window (3/22–4/29 2025). Each made a single \$15K–\$47K bet at middling prices (0.56–0.68) on AI-of-the-year or Rihanna album release markets. All resolved correctly. | The naming convention and trade morphology are unusually uniform across the six wallets. **Worth investigating further** — but with the on-chain analysis we have run, we can only confirm each safe has a distinct EOA owner. Funder-graph analysis is needed before claiming this is coordinated; without it, this is a *pattern-of-life observation*, not a substantiated cluster. |
 | **3** | **`bobe2`** (`0xed107a8...d2e5`) | \$230M lifetime sharp. Built a **\$1.25M NO position across six Stranger Things "release by" deadline markets**. Most striking: **\$89,673 NO at 4.5h to resolution at price 0.998**. All Netflix-controlled outcomes. 100% in-window win rate. | The exception to the "$0.99 sweeping" rule: the *consistency* across six different Netflix-controlled outcomes makes the directional purity hard to explain as luck or generic conviction. Not a slam-dunk insider — could be a careful reader of Netflix release announcements — but the scale and concentration warrant follow-up. |
 
 **Honest caveats:**
 
-- Shalvon is the only case in this investigation that we would put forward
-  as a strong insider-trading candidate on its own merits. The cluster and
-  `bobe2` are pattern-of-life findings that would require **funder-graph
-  analysis** (deferred — see §5) to upgrade to high-confidence insider calls.
+- **Shalvon is the only case in this investigation we put forward as a
+  strong insider-trading candidate on its own merits.** The vintage-clustered
+  group and `bobe2` are pattern-of-life observations — interesting and
+  worth investigating further, but the on-chain verification we ran
+  (Polygon RPC, Safe `getOwners()`) confirms each safe has a distinct
+  EOA owner. Substantiating either case as coordination or insider
+  activity requires funder-graph analysis with an Etherscan API key,
+  which is deferred — see §6.
 - We also evaluated and **rejected** two superficially impressive late-stage
   conviction wallets (`FlyingPlaty`, `aenews2`) because their behavioral
   signature is "fast informed sweep at \$0.99", not insider asymmetry.
@@ -217,11 +221,14 @@ identifying information.
 - Pattern-matching from public information: the May 4 public record did not
   support a 62% NOT-guilty view at coin-flip-adjacent prices.
 
-## Case 2 — Suspected cluster of six fantasy-named wallets
+## Case 2 — Vintage-clustered group of six fantasy-named wallets (pattern-of-life observation)
 
-**Pattern:** six wallets created in the same 4-week window, fantasy-style
-names, each placing a single mid-price 5-figure bet on a related set of
-markets, all resolving correctly.
+**Pattern:** six wallets that share a striking set of surface features —
+naming convention, vintage, trade morphology — across an otherwise uncorrelated
+set of bets. We flag this as a **pattern-of-life observation** rather than a
+substantiated insider or coordination finding, because the on-chain
+verification we have run only confirms each safe is owned by a *distinct*
+EOA. The decisive test (funder-graph analysis) is documented in §6.
 
 | Wallet | Name | First activity | Single bet | Price | Market |
 |---|---|---|---|---|---|
@@ -232,43 +239,47 @@ markets, all resolving correctly.
 | `0x6a1b7fb...1bd8` | `Evryxen`  | 2025-04-06 | \$15,513 | 0.680 | Meta #1 AI model 2025? (NO) |
 | `0xcbd53c3...6962` | `Jorelle`  | 2025-04-29 | \$38,335 | 0.670 | Rihanna release album in 2025? (NO) |
 
-### Why this looks like a coordinated cluster
+### What we observed
 
 - **Vintage:** all six wallets first transacted on Polymarket within a
   4-week window (March 22 – April 29, 2025).
-- **Naming convention:** the display names follow an unmistakably similar
-  fantasy / RPG-style pattern (Xalveth, Jaxorian, Amdaris, Vexlir, Evryxen,
-  Jorelle). The probability that six wallets independently chose names with
-  this stylistic match is low.
+- **Naming:** display names follow a similar fantasy / RPG-style pattern
+  (Xalveth, Jaxorian, Amdaris, Vexlir, Evryxen, Jorelle). This is suggestive
+  but not dispositive — independent users can pick stylistically similar
+  pseudonyms by coincidence.
 - **Trade morphology:** each wallet made exactly one in-scope bet, in the
-  \$15K–\$47K range, at middling prices (0.56–0.68), on a year-end "Will X
-  thing happen in 2025?" market. Each bet was on the eventually-correct
+  \$15K–\$47K range, at middling prices (0.56–0.68), on a year-end
+  "Will X happen in 2025?" market. Each bet was on the eventually-correct
   outcome. No follow-up trades on the same market by the same wallet.
-- **Market clustering:** the underlying markets share a small number of
-  resolution categories — AI-of-the-year and Rihanna album release — that
-  resolved 8+ months after the bets were placed.
-- **Lifetime profile:** each wallet has \$200K–\$850K of lifetime volume
-  (so not strictly "fresh"), but with single-event conviction characteristics
-  that don't match a typical generalist's footprint.
+- **Lifetime profile:** each wallet has \$200K–\$850K of lifetime volume,
+  with single-event-conviction characteristics that don't match a typical
+  generalist's footprint.
 
-### Why this is *not* a slam-dunk insider call
+### What we verified on-chain
+
+We checked each safe's `getOwners()` via Polygon RPC. **All six safes have
+distinct EOA owners** — i.e., no single EOA controls multiple safes in this
+group. This rules out the simplest Sybil hypothesis (one person, eight
+proxies). It does **not** rule out coordinated trading by separate
+individuals, nor does it rule out a single operator using eight separate
+EOAs funded from one source.
+
+### Why we are not making a stronger claim
 
 The bets were placed 6,000+ hours (8+ months) before resolution. That's a
-long-dated prediction, not a short-window tip. Multiple of these calls
-("Rihanna won't release an album in 2025", "no startup will displace
+long-dated prediction, not a short-window tip. Several of these calls
+("Rihanna won't release an album in 2025", "no upstart will displace
 GPT-class models from #1 by year-end") could be made by a thoughtful reader
-of public information. The cluster signal is the *uniformity* of behavior
-across the six wallets, not any single bet.
+of public information. The uniformity across six wallets is **interesting**
+but does not by itself substantiate insider trading.
 
 ### What would elevate confidence
 
-The decisive test is **funder-graph analysis**: trace the EOA (externally
-owned account) that originally funded each of the six Polygon proxy wallets.
-If two or more share a funder, the cluster is confirmed. Polygonscan v1 API
-is now deprecated; running this analysis requires an Etherscan v2 API key
-which is a 30-minute follow-up.
-
-Listed as the highest-priority follow-up in §5.
+**Funder-graph analysis** — trace the address that originally sent MATIC to
+each of the six owner EOAs. If two or more share a funding source, the
+coordination hypothesis upgrades from "pattern-of-life" to "documented
+cluster." Polygonscan v1 is deprecated; this analysis requires an Etherscan v2
+API key and is the highest-priority follow-up listed in §6.
 
 ## Case 3 — `bobe2` (`0xed107a85a4585a381e48c7f7ca4144909e7dd2e5`)
 
@@ -411,10 +422,12 @@ Documented for honesty:
   pattern requires role-conflict enrichment per market (Stranger Things →
   Netflix; specific shows → specific producers; specific awards → specific
   voting bodies). This is the natural next step.
-- **Funder-graph confirmation of the suspected cluster.** Polygonscan v1
-  API was deprecated mid-investigation; Etherscan v2 with an API key
-  resolves this in a single batch query against the six suspected addresses
-  plus `Shalvon`.
+- **Funder-graph confirmation of the vintage-clustered group.** We verified
+  via Polygon RPC that the six wallets have distinct safe-owner EOAs, but
+  the inbound MATIC funding source for each owner is the decisive Sybil
+  test we have not yet run. Polygonscan v1 API was deprecated mid-investigation;
+  Etherscan v2 with an API key resolves this in a single batch query against
+  the six addresses plus `Shalvon` and `bobe2`.
 - **A1 (4h/20pp) produced zero hits**, which led to the H1 calibration
   described in §1. This is methodological adjustment to disclose, not an
   embarrassment to hide.
