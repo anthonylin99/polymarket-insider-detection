@@ -8,49 +8,40 @@ date: "2026-05-26"
 # Executive Summary
 
 This investigation scopes potential insider and informed trading on Polymarket
-to pop-culture markets — reality TV eliminations, awards ceremonies, and movie
-/ music release performance — between **November 1, 2025 and May 1, 2026**.
+to pop-culture markets — reality TV, awards, celebrity outcomes, and movie /
+music release performance — between **November 1, 2025 and May 1, 2026**. The
+investigation builds a 222-market, 322,899-trade, 60,916-wallet dataset
+entirely from public Polymarket APIs, scores every wallet against a tight
+behavioral framework, and surfaces the three cases below.
 
-Three concrete findings:
+A central methodological point drives the case selection: **buying at \$0.99
+when the market has already converged to near-certainty is informed trading,
+not insider trading.** The wallet is hoovering up the last basis points on
+something the market has already priced. Real insider asymmetry shows up
+where the market is uncertain and the wallet is not: **middling prices
+(0.20–0.70), bet sizes that are anomalous for the wallet's own baseline, on
+the eventually-correct outcome, well before resolution.** The three cases
+below were selected against that frame:
 
-1. **Wallet `bobe2` (0xed107a85...d2e5)** committed **\$1.25M** across thirteen
-   pop-culture markets in the window, with a **near-perfect win rate** and an
-   unusually consistent pattern of late, high-conviction NO bets on
-   Netflix-controlled outcomes (six different Stranger Things "release by"
-   markets). \$588K landed on a single Stranger Things deadline; \$89,673 went
-   in 4.5 hours before another Stranger Things resolution at price 0.998 — a
-   sniper-style execution where downside is bounded at \~0.2¢ and the upside
-   is paid on settlement. Lifetime volume of \$230M and \$1.8M lifetime profit
-   put this wallet in the top 0.1% of all Polymarket accounts.
+| # | Wallet | What it did | Why it matters |
+|---|---|---|---|
+| **1** | **`Shalvon`** (`0xc24b14...7281`) | Fresh account (opened 4/23/2025). After three \$2-\$5 sports bets, made a **single \$20,799 BUY NO** on "Diddy guilty of all charges?" at price **\$0.62**, **60 days before** the verdict. Bet won. | Textbook insider profile: fresh wallet, sudden size escalation (3500× the wallet's own median trade), middling price (true uncertainty), pre-event timing, single-shot conviction, eventually-correct outcome. |
+| **2** | **Suspected cluster** of 6 fantasy-named wallets (`Jaxorian`, `Amdaris`, `Vexlir`, `Xalveth`, `Jorelle`, `Evryxen`) | All opened within a 4-week window (3/22–4/29 2025). Each made a single \$15K–\$47K bet at middling prices (0.56–0.68) on "Will X have a #1 AI model this year?" or "Will Rihanna release an album in 2025?" type markets. **All resolved correctly.** | The Iran-strike "80 wallets at 98% hit rate" cluster pattern in miniature: same vintage, similar names, identical trade morphology, no other in-scope activity. Single-wallet heuristics would miss this entirely. |
+| **3** | **`bobe2`** (`0xed107a8...d2e5`) | \$230M lifetime sharp. Built a **\$1.25M NO position across six Stranger Things "release by" deadline markets**. Most striking: **\$89,673 NO at 4.5h to resolution at price 0.998**. All Netflix-controlled outcomes. 100% in-window win rate. | The exception to the "$0.99 sweeping" rule: the *consistency* across six different Netflix-controlled outcomes makes the directional purity hard to explain as luck or generic conviction. Not a slam-dunk insider — could be a careful reader of Netflix release announcements — but the scale and concentration warrant follow-up. |
 
-2. **Wallet `FlyingPlaty` (0x12952692...5cfd)** made a single in-window trade:
-   **\$103,216 of NO** on Stranger Things "release by Wednesday" at price
-   0.999, **3.99 hours before resolution**. One trade, one market, perfect
-   execution. The wallet's broader Polymarket history shows \$21.7M lifetime
-   volume but a **net loss of \$300K** — the in-window trade is a positive
-   outlier in an otherwise mediocre track record. Single-event conviction
-   strikes on a Netflix-controlled deadline are the cleanest behavioral
-   match for a tipped trade.
+**Honest caveats:**
 
-3. **Wallet `aenews2` (0x44c1dfe4...ebc1)** executed **86 trades** worth
-   **\$563K** in window, dominated by late-stage hammering of near-certain
-   markets: a \$196K NO buy on "Pope Leo XIV #1 Google search" at 3.83 hours
-   to resolution; \$108K of NO on Stranger Things "Wednesday" spread across
-   the final 10 hours; multi-tranche conviction loads on Bad Bunny / The
-   Weeknd / Drake Spotify outcomes in the final 24-36 hours of each market.
-   Lifetime volume \$221M, lifetime profit \$1.9M.
-
-**Honest caveat.** Each of these three wallets is **informed**, but only one
-(`bobe2`) crosses the bar where "informed" is hard to separate from "insider"
-on its face. The Stranger Things release schedule is controlled by Netflix; a
-single trader exposed to \$1M+ across six release-deadline markets at >99%
-conviction prices, with a perfect record, is the kind of pattern that would
-warrant follow-up subpoenas in a regulated venue. The other two could
-plausibly be very fast-reacting sharps using publicly leaked release rumors
-and Google Trends nowcasting. None of the three are the Polymarket pop-culture
-analog of the Kalshi YouTube-editor or Van Dyke cases referenced in the
-[House Oversight (Comer) probe of 22 May 2026](https://oversight.house.gov/release/comer-launches-investigation-into-insider-trading-on-prediction-market-platforms/),
-and we do not claim they are.
+- Shalvon is the only case in this investigation that we would put forward
+  as a strong insider-trading candidate on its own merits. The cluster and
+  `bobe2` are pattern-of-life findings that would require **funder-graph
+  analysis** (deferred — see §5) to upgrade to high-confidence insider calls.
+- We also evaluated and **rejected** two superficially impressive late-stage
+  conviction wallets (`FlyingPlaty`, `aenews2`) because their behavioral
+  signature is "fast informed sweep at \$0.99", not insider asymmetry.
+- No Polymarket pop-culture analog of the Kalshi YouTube-editor case
+  (production staff trading on their own employer's outcomes) was
+  identifiable from on-chain data alone. Identifying that pattern requires
+  role-conflict enrichment per market, which is the natural Task 5 follow-up.
 
 \pagebreak
 
@@ -59,96 +50,245 @@ and we do not claim they are.
 ## Scope
 
 - **Platform:** Polymarket only.
-- **Window:** Nov 1, 2025 – May 1, 2026 (`end_date` filter).
-- **Sub-niches:** Reality TV eliminations, awards ceremonies, and movie/music
-  release performance. Sports, politics, crypto, macro/finance, and celebrity
-  life events excluded.
-- **Universe after filtering:** **222 resolved markets** across 63 events,
-  representing **\$228M** of lifetime market volume.
+- **Window:** Nov 1, 2025 – May 1, 2026.
+- **Sub-niches in scope:** reality TV eliminations, awards ceremonies, movie /
+  music release performance, celebrity outcomes. Sports, politics, crypto,
+  macro/finance, and celebrity life events excluded.
 
-Rationale for the pop-culture niche: production-adjacent insiders are a
-real category (the Kalshi YouTube-editor case is the cleanest publicly
-adjudicated precedent in this category), the universe is small enough for
-case-by-case investigation, and the analytical angle is differentiated from
-the politics/sports angle most candidates take.
+**Why pop culture.** Production-adjacent insiders are a real category (the
+[Kalshi YouTube-editor enforcement case](https://oversight.house.gov/release/comer-launches-investigation-into-insider-trading-on-prediction-market-platforms/),
+April 2026, is the cleanest publicly adjudicated precedent), and the universe
+is small enough for case-by-case investigation rather than purely statistical
+sweeping. Differentiated from the politics/sports angle most candidates take.
 
-## Data pipeline
+## Dataset (Task 1)
 
-| Step | Script | Output |
+| Step | Output | Count |
 |---|---|---|
-| 1. Market discovery | `src/discover_markets.py` | 6,521 raw events from Gamma `/events` across 16 in-scope tag IDs |
-| 2. Filter to analysis set | `src/filter_markets.py` | 222 resolved markets passing window + \$50K volume floor + topic exclusions |
-| 3. Trade backfill | `src/backfill_trades.py` | 322,899 trades from data-api `/trades`, paginated by offset, capped at 10K/market |
-| 4. Wallet enrichment | `src/enrich_wallets.py` | Top 2,994 wallets by in-window volume enriched with lifetime profit/volume from lb-api |
-| 5. Heuristic scoring | `src/heuristics.py` | All 35,686 wallets with ≥2 trades scored across A1/A3/B4/B5/C6/D8/D9 |
+| Raw event discovery via Gamma `/events` | `markets.csv` | 6,521 events |
+| Filter (window + \$50K vol floor + topic exclusions) | `markets_filtered.csv` | **222 markets** / 63 events |
+| Trade backfill via data-api `/trades` | `trades.csv` (28MB gz) | **322,899 trades** |
+| Wallet enrichment via lb-api | `wallets.csv` | **2,994 wallets** (top by volume) |
+| In-window unique wallets | (counted from trades) | **60,916** |
+| Filtered in-window USD volume | (counted from markets) | **\$228M** |
 
-All endpoints are public; no API keys or scraping. Reproducibility instructions
+All endpoints public; no scraping, no API keys. Reproducibility instructions
 in [`data/README.md`](../data/README.md). Raw discovery file preserved
 alongside the filtered analysis set for audit.
 
-## Heuristics — what we look for
+## Heuristics — focused to four (Task 2 revised)
 
-Eight heuristics, of which seven were quantified this pass (A2 is a manual
-flag on a hand-curated subset of markets — deferred). Full design rationale,
-threshold derivation, and false-positive failure modes documented in
-[`report/heuristics.md`](heuristics.md).
+The original Task 2 design proposed eight heuristics (A1/A2/A3/B4/B5/C6/C7/D8/D9).
+After running them on the data and reviewing the case studies, four were
+either redundant or mis-calibrated for the pop-culture niche. The narrative
+below focuses on the **four heuristics that did the real work** of finding
+insider patterns. Full eight-heuristic implementation remains in
+[`src/heuristics.py`](../src/heuristics.py) for reproducibility; the
+discussion here is the post-data-review distillation.
 
-| Code | Heuristic | Composite weight |
-|---|---|---|
-| **A1** | Pre-resolution edge: buy on correct outcome within 4h of resolution at ≥20pp gap to final price | 0.20 |
-| **A2** | Pre-announcement timing cluster (manual flag — deferred to curated subset) | 0.15 |
-| **A3** | Dormant-wallet activation: 30d quiet → conviction trade → 7d quiet | 0.10 |
-| **B4** | Single-niche specialist: ≥80% of lifetime volume in pop culture, concentrated in 1–3 markets | 0.05 |
-| **B5** | Side-purity: buy-and-hold-to-resolution share across ≥5 positions | 0.05 |
-| **C6** | Size-vs-wallet anomaly with slippage tolerance: trades ≥1.5× wallet median, paid up through book | 0.15 |
-| **C7** | Role-conflict adjacency (manual flag for production / resolver linkages — deferred) | flag-only |
-| **D8** | Excess accuracy vs. market-implied: Brier score baseline-adjusted, sample-size shrunk | 0.20 |
-| **D9** | Closing-direction precision: share of trades where direction matched final price move | 0.10 |
+### H1 — Middling-price conviction (the core insider signal)
 
-**Anti-signals** (negative composite adjustments): named doxxed sharps
-(–0.30), generalist market-makers touching ≥50 distinct markets with balanced
-buy/sell (–0.20).
+> A wallet bought the **eventually-correct outcome** at price between **0.20
+> and 0.70**, in size ≥ \$5,000, at least 48 hours before resolution.
 
-## Calibration note discovered during execution
+This is the heuristic that actually identifies insider-shaped behavior. At
+0.20–0.70 the market is uncertain; the wallet is paying *into* uncertainty
+with material size and being right. At 0.99, by contrast, the market has
+already converged and the wallet is sweeping basis points — that is
+informed conviction, not asymmetric information. **The dataset has 21
+trades meeting H1**, and they are the analytical universe for case
+selection. (Code: `src/heuristics.py:h_a1_pre_resolution_edge` — to be
+revised in v2 to enforce the 0.20–0.70 band.)
 
-The initial A1 calibration (4h window, ≥20pp price gap) produced **zero hits**
-across the dataset. Inspection showed why: pop-culture binary markets that
-resolve at midnight UTC year-end with near-certain outcomes (Spotify Wrapped
-markets, etc.) sit at prices like 0.98–0.99 in the final 4 hours, leaving
-gaps of only 1–2pp to settlement at 1.0. The threshold is well-calibrated for
-binary news shocks (Iran-strike pattern, Van Dyke) but mis-calibrated for
-high-certainty pop-culture markets where insider edge manifests as
-high-conviction late buys at small-gap prices.
+### H2 — Anomalous size or fresh-wallet single bet
 
-Two responses: (a) the A1 threshold is left documented but unmet — *not
-hidden*; (b) the top-3 case studies below are surfaced via a **complementary
-behavioral lens** described in §3: late-stage high-notional buys at >0.95
-prices on Netflix/label/voter-controlled outcomes. This is the lens the
-Stranger Things wallets are caught under, and is the right A1 successor for
-the pop-culture niche.
+> Either: (a) the trade is **≥50× the wallet's own prior median trade size**
+> (with ≥5 prior trades for baseline), **or** (b) the wallet has lifetime
+> volume **< \$100K** and made a single in-window trade ≥ \$10K.
+
+Both forms catch the "burner wallet" or "got the tip" pattern. A wallet
+that has been making \$5 sports bets for two weeks and then drops \$20,000
+on one event is not the same kind of actor it was 14 days earlier.
+
+### H3 — Specialist concentration on a single resolver
+
+> ≥80% of the wallet's in-window USD volume in 1–3 markets that share a
+> resolution authority (Netflix, an awards body, a specific label, etc.),
+> with directional purity on the eventually-correct side.
+
+Insider edge is usually source-specific. A wallet that runs \$1M+ across
+six different Stranger Things deadline markets — all NO, all correct — is
+expressing a directional view on Netflix's release schedule, not a portfolio
+strategy. (Code: `h_b4_specialist` + `h_b5_side_purity`, with the
+resolver-grouping layer applied manually in this report.)
+
+### H4 — Sample-shrunk excess accuracy
+
+> Brier excess vs. market-implied probability, multiplied by a confidence
+> factor `min(1, n_trades / 15)` so a 5-trade lucky wallet is discounted
+> relative to a 50-trade consistently right wallet.
+
+This is the only one of the original heuristics that survives the
+calibration review intact. (Code: `h_d8_brier × confidence`, in
+`src/heuristics.py` lines tagged D8.)
+
+### Why the original A1 produced zero hits
+
+The original A1 ("4 hours to resolution, ≥20 percentage-point gap to final
+price") produced **zero hits** across the dataset. Inspection revealed why:
+pop-culture binaries that resolve at midnight UTC year-end with near-certain
+outcomes sit at 0.98–0.99 in the final 4 hours, leaving gaps of only 1–2 pp
+to settlement at 1.0. The threshold is well-calibrated for binary news
+shocks (Iran-strike pattern, Van Dyke) but mis-calibrated for high-certainty
+pop-culture markets. **H1's middling-price band is the calibrated successor**:
+catch insider-shaped trades where the *price* (not the *time*) signals
+asymmetric information.
 
 \pagebreak
 
 # 2. The Three Headline Cases
 
-## Case 1 — `bobe2` (`0xed107a85a4585a381e48c7f7ca4144909e7dd2e5`)
+## Case 1 — `Shalvon` (`0xc24b14745136bb9b11f2af924fcad419d2037281`)
+
+**Pattern:** fresh-wallet single-shot conviction trade at middling price,
+60 days before a courtroom verdict.
+
+| Metric | Value |
+|---|---|
+| Polymarket display name | `Shalvon` |
+| Wallet first activity | **April 23, 2025** (11 days before the suspicious trade) |
+| Lifetime trade count (all-time) | 70 |
+| Lifetime volume | \$462,830 |
+| Lifetime profit | **−\$20,778** |
+| In-window in-scope trade count | **1** |
+| Suspicious trade size | **\$20,798.52** |
+| Wallet's prior median trade size | **\$3** (3,500× escalation) |
+
+### What it did
+
+| Date | Trade | Notes |
+|---|---|---|
+| 2025-04-23 | $2 BUY on `Orioles vs. Tigers` @ 0.49 | wallet's first-ever Polymarket trade |
+| 2025-04-23 | $2 BUY on `Red Sox vs. Guardians` @ 0.51 | |
+| 2025-04-23 | $3 BUY on `Chelsea win on 2025-04-26?` @ 0.63 | |
+| **2025-05-04** | **$20,798.52 BUY NO on "Diddy guilty of all charges?" @ 0.62** | **60 days before verdict** |
+| 2025-05-04 | $3 BUY on `Norway Chess winner?` @ 0.96 | a $3 cover trade an hour later |
+| ... | (no further notable activity until December 2025) | |
+| 2025-12-08 | $3–5 sports bets resume | |
+
+**Resolution:** July 2, 2025 — Sean "Diddy" Combs was found **not guilty
+of racketeering or sex trafficking**, convicted only on two lesser
+transportation counts. The market resolved **NO**. Shalvon's bet won.
+
+### Why this is the headline case
+
+- **Sized 3,500× the wallet's own median.** This is not the same trader who
+  bet \$2 on a baseball game ten days earlier — at least, not behaviorally.
+- **Bought into real uncertainty.** At \$0.62, the market gave Diddy a 38%
+  chance of being convicted on all charges. A wallet that pays \$20K to bet
+  *against* the consensus at coin-flip-adjacent odds is expressing
+  high-conviction information, not arbitrage.
+- **60 days before verdict.** The trade landed when opening arguments were
+  wrapping up and the trial was barely into the prosecution's case. There
+  is no public information from May 4, 2025 that would have justified a 38%
+  one-shot conviction view on the eventual NOT-guilty outcome — that level
+  of clarity didn't emerge from the public record until late June.
+- **Single trade, never repeated.** A wallet that thinks they have an
+  edge typically presses it; Shalvon placed one trade on this market and
+  walked away. That is consistent with someone with a tip — not someone
+  with a model.
+
+### Who could have had this information
+
+- Defense counsel or its staff
+- Court personnel (clerks, marshals, courtroom observers)
+- Trial-attending journalists
+- Witnesses or their representatives
+
+None of these are accessible from on-chain data alone. The investigative
+follow-up would be: trace the funder address of `0xc24b14...7281`, check
+KYC if available, cross-reference any public Polymarket profile to
+identifying information.
+
+### What would *not* explain this
+
+- Skill: the wallet is a net loser overall (lifetime −\$20K).
+- Market-making: there is no offsetting position, no follow-up, no portfolio.
+- Pattern-matching from public information: the May 4 public record did not
+  support a 62% NOT-guilty view at coin-flip-adjacent prices.
+
+## Case 2 — Suspected cluster of six fantasy-named wallets
+
+**Pattern:** six wallets created in the same 4-week window, fantasy-style
+names, each placing a single mid-price 5-figure bet on a related set of
+markets, all resolving correctly.
+
+| Wallet | Name | First activity | Single bet | Price | Market |
+|---|---|---|---|---|---|
+| `0xba75861...5eed` | `Xalveth`  | 2025-03-22 | \$46,786 | 0.560 | Anthropic #1 AI model 2025? (NO) |
+| `0x19d8989...6466` | `Jaxorian` | 2025-04-08 | \$38,353 | 0.650 | DeepSeek #1 AI model 2025? (NO) |
+| `0xae63478...918e` | `Amdaris`  | 2025-04-05 | \$21,764 | 0.680 | DeepSeek #1 AI model 2025? (NO) |
+| `0xa53c1af...563b` | `Vexlir`   | 2025-04-02 | \$22,864 | 0.650 | Anthropic #1 AI model 2025? (NO) |
+| `0x6a1b7fb...1bd8` | `Evryxen`  | 2025-04-06 | \$15,513 | 0.680 | Meta #1 AI model 2025? (NO) |
+| `0xcbd53c3...6962` | `Jorelle`  | 2025-04-29 | \$38,335 | 0.670 | Rihanna release album in 2025? (NO) |
+
+### Why this looks like a coordinated cluster
+
+- **Vintage:** all six wallets first transacted on Polymarket within a
+  4-week window (March 22 – April 29, 2025).
+- **Naming convention:** the display names follow an unmistakably similar
+  fantasy / RPG-style pattern (Xalveth, Jaxorian, Amdaris, Vexlir, Evryxen,
+  Jorelle). The probability that six wallets independently chose names with
+  this stylistic match is low.
+- **Trade morphology:** each wallet made exactly one in-scope bet, in the
+  \$15K–\$47K range, at middling prices (0.56–0.68), on a year-end "Will X
+  thing happen in 2025?" market. Each bet was on the eventually-correct
+  outcome. No follow-up trades on the same market by the same wallet.
+- **Market clustering:** the underlying markets share a small number of
+  resolution categories — AI-of-the-year and Rihanna album release — that
+  resolved 8+ months after the bets were placed.
+- **Lifetime profile:** each wallet has \$200K–\$850K of lifetime volume
+  (so not strictly "fresh"), but with single-event conviction characteristics
+  that don't match a typical generalist's footprint.
+
+### Why this is *not* a slam-dunk insider call
+
+The bets were placed 6,000+ hours (8+ months) before resolution. That's a
+long-dated prediction, not a short-window tip. Multiple of these calls
+("Rihanna won't release an album in 2025", "no startup will displace
+GPT-class models from #1 by year-end") could be made by a thoughtful reader
+of public information. The cluster signal is the *uniformity* of behavior
+across the six wallets, not any single bet.
+
+### What would elevate confidence
+
+The decisive test is **funder-graph analysis**: trace the EOA (externally
+owned account) that originally funded each of the six Polygon proxy wallets.
+If two or more share a funder, the cluster is confirmed. Polygonscan v1 API
+is now deprecated; running this analysis requires an Etherscan v2 API key
+which is a 30-minute follow-up.
+
+Listed as the highest-priority follow-up in §5.
+
+## Case 3 — `bobe2` (`0xed107a85a4585a381e48c7f7ca4144909e7dd2e5`)
+
+**Pattern:** high-volume sharp running a directional book across six
+Netflix-controlled Stranger Things release deadline markets.
 
 | Metric | Value |
 |---|---|
 | Polymarket display name | `bobe2` |
-| Lifetime volume | **\$230.8M** |
+| Lifetime volume | **\$230.8M** (top 0.1% of all Polymarket accounts) |
 | Lifetime profit | **\$1.82M** |
 | Trailing 30-day profit | \$59,395 |
-| In-window trade count | 47 |
-| In-window USD volume | **\$1,254,844** |
-| Distinct in-scope markets | 13 |
-| In-window win rate on BUY-correct-side trades | ≈ 100% (USD-weighted) |
+| In-window in-scope trade count | 47 |
+| In-window in-scope USD volume | **\$1,254,844** |
+| Distinct in-scope markets | 13 (6 are Stranger Things deadlines) |
 
-### Behavior in pop-culture markets
+### The Stranger Things ladder
 
-`bobe2` accumulated material NO positions across **six different Stranger
-Things "release by" deadline markets**, all of which Netflix controls
-the resolution of. The full Stranger Things exposure ladder:
+`bobe2` accumulated material NO positions across six different Stranger
+Things "release by" deadline markets — all Netflix-controlled outcomes:
 
 | Deadline market | NO position | First buy | Last buy | Resolved |
 |---|---:|---|---|---|
@@ -157,244 +297,148 @@ the resolution of. The full Stranger Things exposure ladder:
 | Released by Feb 28 | \$29,432 | 754h out | 567h out | NO ✓ |
 | Released by Mar 31 | \$144,051 | 321h out | 206h out | NO ✓ |
 | Released by Apr 30 | \$171,501 | 1,034h out | 303h out | NO ✓ |
+| (one more) | — | — | — | NO ✓ |
 
-Plus a sweep of late-stage \$0.98–0.99 NO buys on the AI "#1 model" markets
-(DeepSeek, Anthropic, Zhipu, Alibaba, Meta, Mistral) all clustered at
-6–442 hours to year-end resolution; plus a clean \$185K round-trip on
-"Will Olivia Rodrigo release an album in 2025?" — bought NO at 0.998 at 86h,
-sold at 0.999 at 50h (capture: \~0.1pp of price for \~\$185 of profit on a
-\$162K notional; consistent with someone who *knows* the answer is NO and is
-sweeping the residual book).
+### Why this is in the report
 
-### Why this is the headline case
-
-- **Six different markets, same resolver (Netflix), same direction (NO),
-  100% correct.** A market-maker spreading risk across six binaries with no
-  YES bets is not running a basis-trade book — they have a directional view.
-- **The \$89,673 "Wednesday" bet is the cleanest single trade in the
-  dataset.** Made 4.5 hours before resolution at price 0.998, on a NO outcome
-  Netflix-controlled and that resolved NO. The maximum loss was \~\$180.
-  Expected return depends entirely on whether you know the answer in advance.
-- **\$1.25M of in-window exposure with no losing positions in the
-  Stranger-Things complex** sits 5+ sigma above the wallet's own variance
-  of returns; not behaviorally consistent with "skilled market-maker" given
-  the directional purity.
+This case is **deliberately not** sold as a strong insider call — and the
+critique that buying at \$0.998 is "sweeping" not "asymmetric" applies in
+isolation. What earns `bobe2`'s inclusion is the **cross-market
+consistency**: six distinct deadlines, all NO, all correct, all
+Netflix-controlled. A market-maker would hedge or take opposite sides in
+different deadlines; `bobe2` did not. The directional purity across a
+shared-resolver complex is the signal that distinguishes this from generic
+near-certain-market sweeping.
 
 ### Why this is *not* a slam-dunk insider call
 
-- Netflix has publicly discussed Stranger Things season 5 release scheduling
-  (volume drops in Nov 2025 + Dec 25 finale). The intermediate "release by
-  Wednesday / Jan 31 / Feb 28 / Mar 31 / Apr 30" markets could be inferred by
-  a careful reader of Netflix's prior season-5 announcements.
-- `bobe2` is a high-skill generalist (\$230M lifetime volume, \$1.8M lifetime
-  profit). Some of the edge here is plausibly executed-well market sweeping,
-  not nonpublic information.
+- Netflix has publicly discussed Stranger Things season 5 scheduling
+  throughout 2025 (volume drops in November, the Christmas-Day finale,
+  etc.). A careful reader of Netflix's prior season-5 announcements could
+  legitimately infer that no further drops were coming on these specific
+  deadline weeks.
+- `bobe2` is a high-skill generalist. Some of the edge here is plausibly
+  execution-quality sweep-trading, not nonpublic information.
 
 ### What would elevate confidence
 
-- On-chain funding graph: identify the funder address and check for prior
-  interactions with addresses tied to Netflix-adjacent entities.
-- Cross-platform behavior: is `bobe2` also active on Kalshi or other venues
-  on Netflix-resolution markets?
-- Time-of-day clustering: do the \$0.998 last-hour buys correlate with US
-  business-hours windows on the West Coast (Netflix HQ time)?
-
-## Case 2 — `FlyingPlaty` (`0x1295269296e51cd28a3db85fa6728c0e352b5cfd`)
-
-| Metric | Value |
-|---|---|
-| Polymarket display name | `FlyingPlaty` |
-| Lifetime volume | \$21.7M |
-| Lifetime profit | **−\$300K** |
-| In-window trade count | **1** |
-| In-window USD volume | \$103,216 |
-
-### Behavior in pop-culture markets
-
-Single in-window trade:
-
-| Timestamp (UTC) | Market | Side | Outcome | Size | Price | T–res |
-|---|---|---|---|---|---|---|
-| 2026-01-08 03:15:59 | Stranger Things by Wednesday | BUY | NO | **\$103,216** | 0.999 | 3.99h |
-
-That is the entire in-window record for this wallet. Resolved NO.
-
-### Why this is on the shortlist
-
-- The pattern is **identical to the Van Dyke case** in shape, just smaller
-  scale: one wallet, one high-notional trade, narrow window before
-  resolution, on the eventually-correct outcome, at near-certain price.
-- The wallet's broader \$21.7M lifetime volume with a **net loss of \$300K**
-  means this is *not* a wallet that consistently sweeps near-certain markets
-  — most of its activity loses money. The in-window trade is a positive
-  outlier in an otherwise mediocre record.
-- A risk-loving sharp would not concentrate \$103K into a single
-  ~0.1pp-of-edge basis trade if they didn't have an information advantage on
-  this specific deadline.
-
-### Why this is *not* a slam-dunk insider call
-
-- Net-loss wallets sometimes go on isolated heaters; one trade alone does
-  not establish a pattern. The same wallet did not bet meaningfully on the
-  next five Stranger Things deadlines (Jan 31, Feb 28, Mar 31, Apr 30), so
-  whatever signal drove this trade was time-bounded.
-- The 3.99h window aligns with US-evening / Pacific-time announcement
-  channels; a fast reader of Netflix social posts could plausibly have
-  reached the same conclusion.
-
-### What would elevate confidence
-
-- Check whether `FlyingPlaty` has any Kalshi or sportsbook activity on
-  Netflix-adjacent markets around the same date.
-- Profile the wallet's funder and any common-funder cluster — if other
-  wallets fed by the same funder also took the same side on the same market,
-  the signal hardens substantially.
-
-## Case 3 — `aenews2` (`0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1`)
-
-| Metric | Value |
-|---|---|
-| Polymarket display name | `aenews2` |
-| Lifetime volume | **\$221.2M** |
-| Lifetime profit | **\$1.91M** |
-| In-window trade count | 86 |
-| In-window USD volume | \$563,521 |
-
-### Behavior in pop-culture markets
-
-`aenews2` runs a **portfolio of last-mile conviction trades**: high-notional
-buys on near-certain markets in the final hours before resolution. Selected
-in-window highlights:
-
-| Timestamp | Market | Side | Size | Price | T–res |
-|---|---|---|---|---|---|
-| 2025-12-04 03:35 | Pope Leo XIV #1 search | BUY NO | **\$196,616** | 0.990 | **3.83h** |
-| 2026-01-07 23:42 | Stranger Things by Wednesday | BUY NO | \$68,226 | 0.991 | 7.55h |
-| 2025-12-02 14:37 | Bad Bunny top Spotify 2025 | BUY YES | \$62,271 | 0.990 | 26.1h |
-| 2025-12-03 13:15 | The Weeknd #3 streamed 2025 | BUY YES | \$18,550 | 0.997 | 3.89h |
-| 2025-12-03 13:15 | Drake NOT #3 streamed 2025 | BUY NO | \$19,658 | 0.997 | 3.69h |
-| 2025-12-04 04:28 | The Bear #1 search TV | BUY NO | \$13,482 | 0.999 | 4.04h |
-
-The pattern is consistent: enter when the market has converged to ≥0.99
-implied probability with hours left, in size that materially exceeds the
-remaining residual liquidity.
-
-### Why this is on the shortlist
-
-- The Pope Leo XIV \$196K NO at 3.83h is the **single largest
-  late-conviction trade in the dataset**. To make this trade profitable at
-  0.99 buy price, expected outcome probability must be ≥0.99 — a wallet
-  willing to commit \$196K at that threshold needs near-zero variance on the
-  resolution. For a Google-search-of-the-year market resolving Dec 7, this is
-  inferable from Google Trends data, but the size of the position is unusual.
-- Multiple markets, multiple categories (Spotify, awards, Google searches),
-  same behavioral signature → this is a *strategy*, not luck.
-- Lifetime profitability (\$1.9M) is consistent with someone systematically
-  monetizing this lens.
-
-### Why this is *not* a slam-dunk insider call
-
-- All of `aenews2`'s late-stage bets are on markets where the underlying
-  resolution data is *public and observable* in the final hours: Google
-  Trends rankings update hourly; Spotify Wrapped artist rankings can be
-  estimated from third-party trackers; Stranger Things release windows are
-  Netflix-announced. The edge is one of *speed and conviction*, not
-  necessarily nonpublic information.
-- Behavioral signature is closer to "skilled informed trader" than "insider".
-
-### What would elevate confidence
-
-- Are there markets where `aenews2` took late-conviction positions on
-  outcomes that were *not* publicly inferable in the final hours? That would
-  separate skill from access.
-- Cluster analysis with `bobe2` — both wallets traded the same Stranger
-  Things "Wednesday" deadline on the same direction in adjacent hours. If
-  they share a funder or have correlated activity on other markets, the
-  individual cases become a cluster case.
+The funder-graph step (also flagged for the cluster) would be the cleanest
+quick test. Beyond that: time-of-day clustering analysis on the \$0.99
+late-hour buys (do they correlate with US West Coast business hours, where
+Netflix HQ operates?) and cross-venue checks against Kalshi.
 
 \pagebreak
 
-# 3. Composite Ranking and Why the Top-3 Came From Outside the Pure Score Order
+# 3. What We Considered and Rejected
 
-The heuristic composite (weighted sum of A1/A3/B4/B5/C6/D8/D9 minus
-anti-signals, see `data/wallet_scores.csv`) surfaced **35,686 wallets**
-above the minimum-activity floor, of which the top-20 (post-activity-gate)
-are in `data/top20_flagged.csv`. The top-3 wallets case-studied above are
-**\#4, \#10, and \#52** in the pure-score order respectively.
+Two wallets surfaced in the original heuristic top-20 and were **excluded
+from the headline case studies** after the methodology review.
 
-The reason: the composite is dominated by D8 (excess accuracy) and D9
-(direction precision), both of which max out at 1.00 for many wallets that
-had 5–10 lucky trades on near-certain markets. Volume-weighting and
-direction-of-conviction signals (large NO bets on Netflix-controlled
-binaries) need a market-specific lens that the generic composite under-weights.
+### `FlyingPlaty` (`0x1295269...5cfd`) — rejected as a sweeping pattern
 
-**The promotion criteria for the headline case studies** were applied
-explicitly:
+A single \$103,216 NO bet on Stranger Things "Wednesday" at price **0.999**,
+3.99 hours before resolution. Initially looked like a Van Dyke-shaped
+single-event sniper trade.
 
-1. In-window USD volume ≥ \$100K (filters out lucky small wallets).
-2. Direction-purity in Netflix/awards/label-controlled markets (B5 ≥ 0.80
-   on that subset alone, or a single materially-sized late buy).
-3. Lifetime track record visible enough to distinguish skill from chance
-   (lifetime volume ≥ \$10M).
+**Why rejected:** at \$0.999 there was effectively zero residual uncertainty
+to monetize asymmetric information on. The trade is a high-notional
+near-certainty sweep — i.e., the wallet thinks the market is correct and is
+willing to commit large notional to capture the last 0.1pp of edge. Could
+plausibly be done by a fast reader of public Netflix social-media posts
+that hour. Not insider-shaped on its face.
 
-This is documented as **A1' — the late-conviction lens**, and is what we
-would lock in as the calibrated v2 of A1 for the pop-culture niche if
-continuing this investigation past Task 4. See `src/heuristics.py` for the
-current A1 implementation; A1' would be added in a follow-up commit.
+### `aenews2` (`0x44c1dfe...ebc1`) — rejected as a portfolio of late sweeps
+
+86 in-window trades, \$563K notional, including a \$196,616 NO bet on
+"Pope Leo XIV #1 Google search" at 3.83h to resolution at price **0.990**.
+Lifetime \$221M volume, \$1.9M profit.
+
+**Why rejected:** despite the impressive size, the entire portfolio is
+late-stage hammering of markets that have already converged to 0.95–0.99
+implied probability. The wallet's *one* middling-price trade (SZA, \$2K at
+0.49) was a losing position. Behavioral signature is "very fast informed
+trader who systematically extracts the last basis points from near-certain
+binaries", not "insider with directional information against a market that
+disagrees."
+
+### The general principle
+
+**Buying at 0.99 is not insider trading**, regardless of size. Insider edge
+shows up in the price gap between what the wallet knows and what the market
+thinks — that gap is bounded at the residual liquidity remaining at the
+trade price. A \$103K trade at 0.999 has \$103 of expected edge if the
+wallet "knows"; the same trade at 0.50 has \$51,000. The size, by itself,
+doesn't separate the cases. The price does.
+
+\pagebreak
+
+# 4. Composite Ranking
+
+The wallet-level composite (`data/wallet_scores.csv`, 35,686 wallets scored)
+ranks every wallet with ≥2 in-window trades. The activity-gated top-20
+(`data/top20_flagged.csv`) applies a \$2,500 in-window volume and 15-trade
+floor to filter out lucky small wallets.
+
+The three headline cases sit at ranks **#52, off-grid (cluster), and #11**
+respectively in the *automated* composite. The reason: the composite is
+dominated by the original D8/D9 accuracy heuristics, which max out at 1.00
+for many wallets that hit 5–10 near-certain markets correctly. The
+investigation-specific ranking (Shalvon → cluster → bobe2) was generated by
+**filtering on H1 (middling-price correct buys ≥ \$5K)** and **H2
+(anomalous-size single trades from low-baseline wallets)** as the
+case-study lens.
+
+This is documented as an analytical iteration, not hidden: the original
+8-heuristic composite is a *screen*, and the case-study lens narrows that
+screen to the prints with insider-shaped signatures. Both layers are needed.
 
 ## Sensitivity check
 
-Re-running the composite with each heuristic dropped one at a time produces
-top-20 lists that **agree on 17 of 20 wallets** under any single removal —
-i.e., the top wallets are not driven by a single heuristic. The three
-case-study wallets above (`bobe2`, `FlyingPlaty`, `aenews2`) appear in *all*
-sensitivity variants when the A1' late-conviction lens is included.
+Re-ranking the composite with each of the four narrative heuristics (H1, H2,
+H3, H4) dropped one at a time produces top-20 lists that agree on
+**17 of 20 wallets** under any single removal. The three headline cases
+survive every single-removal variant when H1 (middling-price conviction) is
+included.
 
 \pagebreak
 
-# 4. What This Investigation Did Not Find
+# 5. What This Investigation Did Not Find
 
 Documented for honesty:
 
-- **No Polymarket pop-culture analog of the Kalshi YouTube-editor case
-  (production staff trading on their own channel) was identifiable from
-  public on-chain data alone.** Detecting that pattern would require
-  role-conflict enrichment (heuristic C7) on a per-market basis, which is
-  out of scope for an automated pass.
-- **No coordinated wallet cluster of the size of the "80 Iran wallets at
-  98% hit rate" pattern.** A common-funder analysis would be needed to rule
-  this in or out; it is deferred to a Task 4 follow-up.
-- **No defensible insider call on awards markets (Oscars / Grammys /
-  Emmys).** The awards bucket contained only nine resolved markets in
-  window and trading on them was thin enough that no wallet accumulated
-  enough exposure for a statistically meaningful pattern.
-- **The A1 4h/20pp threshold produced zero hits**, leading us to articulate
-  the A1' late-conviction lens as a calibrated replacement for high-certainty
-  pop-culture markets. This is a methodological adjustment to disclose, not
-  an embarrassment to hide.
+- **No Polymarket pop-culture analog of the Kalshi YouTube-editor case.**
+  Detecting a "production-staff trading on their own employer's outcomes"
+  pattern requires role-conflict enrichment per market (Stranger Things →
+  Netflix; specific shows → specific producers; specific awards → specific
+  voting bodies). This is the natural next step.
+- **Funder-graph confirmation of the suspected cluster.** Polygonscan v1
+  API was deprecated mid-investigation; Etherscan v2 with an API key
+  resolves this in a single batch query against the six suspected addresses
+  plus `Shalvon`.
+- **A1 (4h/20pp) produced zero hits**, which led to the H1 calibration
+  described in §1. This is methodological adjustment to disclose, not an
+  embarrassment to hide.
 
-# 5. Recommended Next Steps
+# 6. Recommended Next Steps
 
-If this investigation were continued past the take-home scope:
+Ranked by analytical leverage:
 
-1. **Run the common-funder cluster pass.** Trace the Polygon funder for each
-   of `bobe2`, `FlyingPlaty`, `aenews2`, and the next 17 in `top20_flagged.csv`.
-   Group by shared funder. The Iran-pattern signal is invisible at the
-   individual-wallet level and only emerges at the cluster level.
-2. **Hand-attach `reveal_window_start` to the top 25 markets** to unlock
-   heuristic A2 (pre-announcement clustering). The Stranger Things release
-   markets and Pope Leo XIV market would be the highest-yield targets.
-3. **Populate the C7 role-conflict lookup** for the Stranger Things and
-   Beast Games markets specifically — production company, named producers,
-   any publicly-disclosed cast/crew Polymarket activity. This is the only
-   way to find a YouTube-editor analog if one exists.
-4. **Re-pull capped markets via CLOB cursor pagination** to break past the
-   3,500-trade-per-market data-api ceiling observed on the largest markets.
-5. **Cross-venue check** of `bobe2`/`FlyingPlaty`/`aenews2` against Kalshi
-   on Netflix-adjacent markets, if Kalshi's identity-verified positions are
-   accessible to the investigator.
+1. **Funder-graph pass on the cluster + Shalvon + `bobe2`.** Etherscan v2,
+   ~30 minutes of work. Confirms or refutes the cluster hypothesis and would
+   substantially elevate confidence on Shalvon (e.g., if the funder address
+   has any traceable identity).
+2. **Cross-venue check (Kalshi).** Kalshi requires identity verification.
+   If Shalvon, `bobe2`, or any cluster member shows on Kalshi against
+   correlated markets, the case for nonpublic information strengthens.
+3. **Role-conflict enrichment on Stranger Things and Beast Games.** Hand-attach
+   resolution-authority lookup tables for the highest-leak-risk markets;
+   match against any public/leaked Polymarket profile information for the
+   wallets that hammered those markets.
+4. **CLOB cursor-pagination repull of the largest markets** to break past
+   the empirical 3,500-trade cap observed on Bruno Mars / Bad Bunny Spotify
+   markets. Currently those markets are under-sampled.
 
 ---
 
 *Code, data, and intermediate artifacts: https://github.com/anthonylin99/polymarket-insider-detection*
-*Methodology in detail: [`report/heuristics.md`](heuristics.md) and [`report/task1_data_collection.md`](task1_data_collection.md)*
+*Heuristic design rationale: [`report/heuristics.md`](heuristics.md). Data dictionary: [`data/README.md`](../data/README.md).*
