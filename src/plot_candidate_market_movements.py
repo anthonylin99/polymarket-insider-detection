@@ -32,7 +32,8 @@ CHART_META = {
         "subtitle": "$10.5k YES, 45.3c average entry",
         "color": "#0f4c3f",
         "first_offset": (18, 40),
-        "last_offset": (-76, -96),
+        "last_label_y": 15,
+        "last_label_ha": "right",
         "low_offset": (28, 22),
     },
     "Will Drake be the third most streamed Spotify artist for 2025?": {
@@ -41,7 +42,8 @@ CHART_META = {
         "subtitle": "$5.5k NO, 40.9c average entry",
         "color": "#d28b45",
         "first_offset": (20, 20),
-        "last_offset": (16, -34),
+        "last_label_y": 12,
+        "last_label_ha": "left",
         "low_offset": (16, 22),
     },
     "Will 'Arirang' - BTS debut week album sales be less than 3m?": {
@@ -50,7 +52,8 @@ CHART_META = {
         "subtitle": "$5.7k YES, 71.6c average entry",
         "color": "#496a9a",
         "first_offset": (22, 40),
-        "last_offset": (20, -44),
+        "last_label_y": 13,
+        "last_label_ha": "left",
         "low_offset": (22, 14),
     },
     "Will a contestant numbered 151 - 175 win Beast Games: Season 2?": {
@@ -59,7 +62,8 @@ CHART_META = {
         "subtitle": "$5.8k YES, 78.2c average entry",
         "color": "#7b4c7e",
         "first_offset": (45, -6),
-        "last_offset": (26, -46),
+        "last_label_y": 13,
+        "last_label_ha": "left",
         "low_offset": (22, 16),
     },
 }
@@ -131,14 +135,14 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
         zorder=8,
     )
     if last_x != first_x:
-        ax.annotate(
+        ax.text(
+            last_x,
+            meta["last_label_y"],
             f"last buy\n{cents(last_buy['price']):.0f}c",
-            xy=(last_x, cents(last_buy["price"])),
-            xytext=meta["last_offset"],
-            textcoords="offset points",
-            arrowprops={"arrowstyle": "->", "color": "#555555", "lw": 0.8},
             fontsize=8,
             color="#33423d",
+            ha=meta["last_label_ha"],
+            va="bottom",
             bbox={"boxstyle": "round,pad=0.15", "fc": "#fffdf8", "ec": "none", "alpha": 0.94},
             zorder=8,
         )
