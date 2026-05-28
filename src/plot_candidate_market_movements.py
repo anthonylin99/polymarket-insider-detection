@@ -32,7 +32,7 @@ CHART_META = {
         "subtitle": "$10.5k YES, 45.3c average entry",
         "color": "#0f4c3f",
         "first_offset": (18, 40),
-        "last_offset": (-120, -58),
+        "last_offset": (-76, -96),
         "low_offset": (28, 22),
     },
     "Will Drake be the third most streamed Spotify artist for 2025?": {

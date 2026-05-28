@@ -138,6 +138,7 @@ function imageParagraph(filename, width = 340, height = 141) {
     children: [
       new ImageRun({
         data: fs.readFileSync(path.join(CHARTS, filename)),
+        type: "png",
         transformation: { width, height },
       }),
     ],
