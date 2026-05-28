@@ -32,7 +32,7 @@ CHART_META = {
         "subtitle": "$10.5k YES, 45.3c average entry",
         "color": "#0f4c3f",
         "first_offset": (18, 40),
-        "last_offset": (-70, -40),
+        "last_offset": (-120, -58),
         "low_offset": (28, 22),
     },
     "Will Drake be the third most streamed Spotify artist for 2025?": {
@@ -127,6 +127,8 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
         arrowprops={"arrowstyle": "->", "color": "#111111", "lw": 0.8},
         fontsize=8,
         color="#17201c",
+        bbox={"boxstyle": "round,pad=0.15", "fc": "#fffdf8", "ec": "none", "alpha": 0.94},
+        zorder=8,
     )
     if last_x != first_x:
         ax.annotate(
@@ -137,6 +139,8 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
             arrowprops={"arrowstyle": "->", "color": "#555555", "lw": 0.8},
             fontsize=8,
             color="#33423d",
+            bbox={"boxstyle": "round,pad=0.15", "fc": "#fffdf8", "ec": "none", "alpha": 0.94},
+            zorder=8,
         )
     if worst_x != first_x or abs(worst["price"] - first_buy["price"]) > 0.001:
         ax.annotate(
@@ -147,6 +151,8 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
             arrowprops={"arrowstyle": "->", "color": "#c44536", "lw": 0.8},
             fontsize=8,
             color="#6f211a",
+            bbox={"boxstyle": "round,pad=0.12", "fc": "#fffdf8", "ec": "none", "alpha": 0.9},
+            zorder=8,
         )
     ax.set_title(meta["title"], fontsize=11, loc="left", color="#102b24", pad=10)
     ax.text(0, 1.01, meta["subtitle"], transform=ax.transAxes, ha="left", va="bottom", fontsize=8.5, color="#53605b")
