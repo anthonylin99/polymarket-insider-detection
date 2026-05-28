@@ -1,7 +1,7 @@
 """
 wallet_profile.py
 -----------------
-Builds polysights-style organized dossiers for a set of target wallets.
+Builds organized dossiers for a set of target wallets.
 Reads data/activity_clean.csv (wash-filtered), data/wallets.csv (lifetime
 stats), data/markets_filtered.csv (resolution metadata), and produces:
 
@@ -10,10 +10,10 @@ stats), data/markets_filtered.csv (resolution metadata), and produces:
 
 Each profile includes:
   - identity (address, display name, pseudonym, bio, profile image)
-  - lifetime stats (lifetime volume / profit / 30d profit / portfolio value)
+  - lifetime stats (lifetime volume, profit, 30-day profit, portfolio value)
   - in-window activity summary (real and wash split)
   - top markets by USD exposure (real trades)
-  - resolved-position outcomes (win rate, average price, P&L)
+  - resolved-position outcomes (win rate, average price, profit and loss)
   - trade-size distribution
   - vintage (first ever activity timestamp)
   - behavioral tags (volume_farmer / partial_washer / clean ; specialist / generalist)
@@ -111,7 +111,7 @@ def build_profile(addr: str, all_acts: list[dict], wash_stats: dict | None,
         by_mkt[cid]["title"] = a.get("title", "")
     distinct_markets = len(by_mkt)
 
-    # In-scope markets (those in our filtered pop-culture set)
+    # In-scope markets from the reviewed media and attention set.
     in_scope_mkts = {cid: data for cid, data in by_mkt.items() if cid in markets}
     in_scope_vol = sum(d["vol"] for d in in_scope_mkts.values())
 

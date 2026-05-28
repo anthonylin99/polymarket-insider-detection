@@ -1,0 +1,19 @@
+{
+  "generated_at_utc": "2026-05-27T22:33:42.875704+00:00",
+  "proxy_wallet": "0xee50a31c3f5a7c77824b12a941a54388a2827ed6",
+  "method": "Called the getOwners() selector 0xa0e67e2b through a public Polygon node.",
+  "owner_wallets": [
+    "0xaf6ccd55faa9f977f13fbfab6f9ec81dc2028062"
+  ],
+  "polygon_node_endpoint": "https://polygon-bor-rpc.publicnode.com",
+  "errors": [],
+  "notes": [
+    "This is owner attribution for the Polymarket proxy wallet only.",
+    "A full funder graph still requires an explorer key or indexed transaction dataset."
+  ],
+  "contract_code_present": true,
+  "polygonscan_proxy_url": "https://polygonscan.com/address/0xee50a31c3f5a7c77824b12a941a54388a2827ed6",
+  "polygonscan_owner_urls": [
+    "https://polygonscan.com/address/0xaf6ccd55faa9f977f13fbfab6f9ec81dc2028062"
+  ]
+}

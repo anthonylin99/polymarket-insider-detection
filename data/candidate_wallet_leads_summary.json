@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-05-28T19:25:27.121926+00:00",
+  "candidate_rows": 38,
+  "selected_follow_up_wallets": [
+    "0x614ef98a8be021de3a974942b2fb98794ff34f1b",
+    "0x8564848285e54c65f6cc2e3930b49362fbd84b2e",
+    "0xcd71fd5370880f3d92bb941e628c05840fe0d127"
+  ],
+  "selected_follow_up_rows": 4,
+  "screen": {
+    "window_start": "2025-11-01T00:00:00+00:00",
+    "window_end": "2026-05-01T23:59:59+00:00",
+    "price_band": [
+      0.2,
+      0.85
+    ],
+    "min_hours_pre_resolution": 24.0,
+    "min_signal_notional_usd": 3000.0
+  }
+}

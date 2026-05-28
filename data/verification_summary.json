@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-05-28T19:33:29.770769+00:00",
+  "markets_checked": 154,
+  "candidate_rows_checked": 38,
+  "candidate_movement_rows_checked": 4,
+  "selected_follow_up_wallets": [
+    "0x614ef98a8be021de3a974942b2fb98794ff34f1b",
+    "0x8564848285e54c65f6cc2e3930b49362fbd84b2e",
+    "0xcd71fd5370880f3d92bb941e628c05840fe0d127"
+  ],
+  "selected_follow_up_rows": 4,
+  "capped_wallets_in_activity_sample": 332,
+  "errors": [],
+  "warnings": []
+}

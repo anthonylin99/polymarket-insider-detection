@@ -11,15 +11,14 @@ Wash-trade definition (operational, conservative):
   a matched wash pair. Both legs of the pair are excluded from the clean set.
 
 Operator background: Polymarket confirmed a POLY token airdrop on
-2025-10-24 (CMO Matthew Modabber). Anticipation of volume-weighted airdrop
+2025-10-24 (chief marketing officer Matthew Modabber). Anticipation of volume-weighted airdrop
 allocation drove a wave of wash trading. A Columbia University study
 (published 2025-11-07) estimated ~25% of Polymarket volume is wash trading,
-peaking at 60% in Dec 2024 and resurging through Q4 2025. This filter is
+peaking at 60% in December 2024 and resurging through the fourth quarter of 2025. This filter is
 calibrated to that operational reality.
 
 References:
   https://decrypt.co/347842/columbia-study-25-polymarket-volume-wash-trading
-  https://docs.polymarket.com/polymarket-learn/FAQ/wen-token
 """
 
 from __future__ import annotations

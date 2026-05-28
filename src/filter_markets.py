@@ -4,20 +4,18 @@ filter_markets.py
 Reads data/markets.csv (raw Gamma discovery) and produces data/markets_filtered.csv,
 the analysis set used downstream by backfill_trades.py and the heuristics scoring.
 
-The raw dataset is preserved intact so the next engineer can audit / re-derive.
+The raw dataset is preserved intact so another analyst can audit or re-derive
+the universe.
 This step applies:
 
 1.  Hard date filter: end_date in [2025-11-01, 2026-05-01] (inclusive).
 2.  Closed/resolved-only (heuristics need resolution outcome).
 3.  Volume floor: $50,000 lifetime market volume — enough liquidity that trade
     behavior is meaningful, not noise. Configurable via --min-volume.
-4.  Reclassify the 'other' bucket using a richer pop-culture keyword set
+4.  Reclassify the 'other' bucket using a richer media and attention keyword set
     (Google searches, YouTube creators, celebrity events, awards leaks).
-5.  Hard exclude sports/politics/crypto/fights/macro that bled through generic
-    tags like 'music' or 'celebrities'.
-6.  Hand-attached `reveal_window_start` is left blank here — Task 1 manual
-    curation step. Heuristic A2 (pre-announcement clustering) requires this
-    to be populated before scoring.
+5.  Hard exclude sports, politics, cryptocurrency, fights, and macroeconomics
+    that bled through generic tags like 'music' or 'celebrities'.
 """
 
 from __future__ import annotations
@@ -47,11 +45,11 @@ HARD_EXCLUDE = [
     "supreme leader", "iran's next", "venezuela", "maduro", "nato", "ceasefire",
     "obama divorce",  # tabloid politics-adjacent, low info content
     "fed ", "fomc", "rate cut", "rate hike", "interest rate",
-    # crypto
+    # cryptocurrency
     "bitcoin", "ethereum", "btc ", "eth ", "doge", "solana", "memecoin",
 ]
 
-# Keyword-based reclassification of the 'other' bucket → pop-culture sub-buckets.
+# Keyword-based reclassification of the 'other' bucket into media and attention sub-buckets.
 RECLASSIFY: list[tuple[str, str]] = [
     # (regex, bucket)
     (r"#1 searched (person|tv show|movie|song) on google", "release_performance"),
@@ -65,11 +63,11 @@ RECLASSIFY: list[tuple[str, str]] = [
     (r"stranger things|new episode|season \d+|series premiere|series finale", "reality_tv"),
 ]
 
-POP_CULTURE_BUCKETS = {"reality_tv", "awards", "release_performance"}
+MEDIA_ATTENTION_BUCKETS = {"reality_tv", "awards", "release_performance"}
 
 
 def reclassify_bucket(title: str, current: str) -> str:
-    if current in POP_CULTURE_BUCKETS:
+    if current in MEDIA_ATTENTION_BUCKETS:
         return current
     t = title.lower()
     for pat, bucket in RECLASSIFY:
@@ -125,8 +123,8 @@ def main() -> int:
 
         new_bucket = reclassify_bucket(r.get("event_title", ""), r.get("bucket", "other"))
         r["bucket"] = new_bucket
-        if new_bucket not in POP_CULTURE_BUCKETS:
-            drop_reasons["bucket_not_pop_culture"] += 1
+        if new_bucket not in MEDIA_ATTENTION_BUCKETS:
+            drop_reasons["bucket_not_media_attention"] += 1
             continue
 
         # Heuristic A2 will need this; left blank for manual curation pass.

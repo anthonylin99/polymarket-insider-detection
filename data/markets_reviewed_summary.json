@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-05-27T22:33:42.776232+00:00",
+  "input_path": "/Users/anthony_lin_99/Documents/Claude Investment Reports/Inca-Polymarket-Investigation/polymarket-insider-detection/data/markets.csv",
+  "output_path": "/Users/anthony_lin_99/Documents/Claude Investment Reports/Inca-Polymarket-Investigation/polymarket-insider-detection/data/markets_reviewed.csv",
+  "excluded_output_path": "/Users/anthony_lin_99/Documents/Claude Investment Reports/Inca-Polymarket-Investigation/polymarket-insider-detection/data/markets_excluded.csv",
+  "window": [
+    "2025-11-01",
+    "2026-05-01"
+  ],
+  "min_volume_usd": 50000.0,
+  "raw_count": 6521,
+  "kept_count": 154,
+  "kept_distinct_events": 42,
+  "kept_total_lifetime_volume_usd": 211944952.09,
+  "drop_reasons": {
+    "out_of_window": 1382,
+    "below_volume_floor": 4853,
+    "not_media_attention_index": 57,
+    "not_closed": 13,
+    "celebrity_legal_or_personal_life": 20,
+    "ai_model_benchmark": 8,
+    "sports_framed_market": 34
+  },
+  "kept_by_topic": {
+    "attention_index_google_search": 32,
+    "awards": 9,
+    "creator_platform_metric": 1,
+    "entertainment_release": 27,
+    "music_streaming_rank": 85
+  },
+  "kept_volume_by_topic": {
+    "attention_index_google_search": 57571168.56,
+    "awards": 1481473.05,
+    "creator_platform_metric": 8495812.45,
+    "entertainment_release": 36788905.83,
+    "music_streaming_rank": 107607592.2
+  },
+  "removed_by_review_count": 68,
+  "removed_by_review_lifetime_volume_usd": 16020183.43
+}

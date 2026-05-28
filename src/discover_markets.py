@@ -1,17 +1,18 @@
 """
 discover_markets.py
 -------------------
-Polymarket pop-culture market discovery for the Inca Investigations Analyst challenge.
+Polymarket media and attention market discovery for the Inca Investigations
+Analyst challenge.
 
-Pulls events from the public Gamma API across in-scope tag IDs (reality TV, awards,
-music/film release performance, celebrities), filters to the challenge window
-(Nov 1, 2025 - May 1, 2026), expands each event into its constituent binary markets,
-and writes data/markets.csv.
+Pulls events from the public Gamma endpoints across in-scope tag identifiers
+(reality television, awards, music and film release performance, celebrities),
+filters to the challenge window (November 1, 2025 to May 1, 2026), expands
+each event into its constituent binary markets, and writes data/markets.csv.
 
 Window is applied on `endDate` (resolution date), which is what matters for the
 heuristics in report/heuristics.md.
 
-API reference:
+Endpoint reference:
 - https://gamma-api.polymarket.com/events
 - https://gamma-api.polymarket.com/tags
 """
@@ -33,9 +34,10 @@ GAMMA = "https://gamma-api.polymarket.com"
 WINDOW_START = datetime(2025, 11, 1, tzinfo=timezone.utc)
 WINDOW_END = datetime(2026, 5, 1, tzinfo=timezone.utc)
 
-# In-scope tag IDs (slug — label), curated from /tags scan on 2026-05-26.
-# Reality-TV bucket: tv, season-finale, top-model, bachelorette, plus broad celebrities/celebrity
-# Awards bucket: (no first-class awards tag — captured via keyword fallback below)
+# In-scope tag identifiers, curated from a public tag scan on May 26, 2026.
+# Reality television bucket: tv, season-finale, top-model, bachelorette,
+# plus broad celebrities and celebrity tags.
+# Awards bucket: no first-class awards tag, so captured via keyword fallback.
 # Release-performance bucket: music, music-industry, albums, charts, apple-music,
 #                              release-date, public-release, animated-feature-film
 IN_SCOPE_TAG_IDS: list[int] = [
@@ -43,7 +45,7 @@ IN_SCOPE_TAG_IDS: list[int] = [
     286,     # celebrities
     330,     # season-finale
     429,     # music-industry
-    448,     # swift (Taylor Swift markets — pop culture)
+    448,     # swift, including Taylor Swift media markets
     724,     # charts
     1310,    # albums
     1344,    # public-release
@@ -78,7 +80,8 @@ REALITY_KEYWORDS = [
 ]
 ALL_KEYWORDS = AWARDS_KEYWORDS + RELEASE_KEYWORDS + REALITY_KEYWORDS
 
-# Hard excludes (avoid sports/politics/crypto bleeding through generic tags like "music")
+# Hard excludes prevent unrelated sports, politics, cryptocurrency, and macro
+# markets from bleeding through generic tags like "music".
 EXCLUDE_KEYWORDS = [
     "nfl", "nba", "mlb", "nhl", "ufc", "f1 ", "premier league", "champions league",
     "world cup", "super bowl", "election", "president", "trump", "biden", "harris",
@@ -202,7 +205,8 @@ def main() -> int:
 
             window_ok = in_window(end_iso)
             kw_ok = keyword_match(title)
-            # Keep if (a) endDate in window AND tag is in-scope, OR (b) keyword-matches our pop-culture lists
+            # Keep if the end date is in-window and the tag is in-scope, or if
+            # the event title matches the media and attention keyword lists.
             if not (window_ok or kw_ok):
                 continue
             if not window_ok and not kw_ok:

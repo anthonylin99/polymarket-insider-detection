@@ -1,0 +1,21 @@
+wallet_address,confidence_label,composite_rank,composite_score,in_scope_trade_count,in_scope_volume_usd,clean_activity_records,raw_activity_records,activity_capped,wash_vol_share,wash_label,primary_conviction_signal,primary_signal_trade_count,primary_signal_notional_usd,primary_signal_implied_profit_usd,size_anomaly_signal,size_anomaly_trade_count,scope_concentration_signal,middling_price_accuracy_signal,middling_price_trade_count,middling_price_hit_rate,sweep_penalty,near_certain_correct_share
+0xee50a31c3f5a7c77824b12a941a54388a2827ed6,Lead,1,0.8885,1025,1322166.34,1986,2000,True,0.008,clean,1.0,14,257423.27,181301.16,1.0,38,0.6345,1.0,50,1.0,0.3749,0.3749
+0x069acf9916370eef6c6a541f12cd96632ed44634,Watchlist,2,0.2993,121,45451.56,139,141,False,0.0009,clean,0.0,0,0,0,1.0,5,0.9928,0.0,0,0.0,0.0,0.0
+0xaa0f9278293573f4f8ec1b7cdc19ba6fa480ab1c,Watchlist,3,0.2132,431,159403.4,448,474,False,0.0012,clean,0.0,0,0,0,0.6,3,0.9325,0.0,7,0.0,0.0,0.0
+0x8795bcb2fe129d1ea3e3d73bc13a3d8078047544,Insufficient data,4,0.1872,149,95877.16,1878,2000,True,0.0259,clean,0.0,0,0,0,1.0,5,0.0688,0.0,0,0.0,0.0982,0.7988
+0xc1259ddd92f58aded52d029e37e3fbbebafaa4c1,Insufficient data,5,0.1693,46,41062.37,51,51,False,0.0,clean,0.0,0,0,0,0.4,2,0.9163,0.0,1,0.0,0.0115,0.2566
+0xcf73add1c409656c18b3d44b2e2aed28d6cbc54f,Insufficient data,6,0.128,126,32735.04,203,203,False,0.0,clean,0.0,0,0,0,0.2,1,0.8805,0.0,0,0.0,0.0,0.0
+0x710dc6879d28f9f078ad04fb493129790a9e33d3,Insufficient data,8,0.1,1,24968.39,1,1,False,0.0,clean,0.0,0,0,0,0.0,0,1.0,0.0,1,0.0,0.0,0.0
+0xebaa32ef12d502ab6ade6cdc7abe6d30902298a5,Insufficient data,9,0.1,26,23797.43,26,26,False,0.0,clean,0.0,0,0,0,0.0,0,1.0,0.0,1,0.0,0.0,0.0
+0x69b84bac876e7f993b585a571b71039a7583d47c,Insufficient data,10,0.0869,5,11993.2,148,148,False,0.0,clean,0.0,0,0,0,0.0,0,0.869,0.0,0,0.0,0.0001,1.0
+0x5fc105bdeef10a6c2a8131b951ff45cba317717d,Insufficient data,11,0.0859,1,9985.0,8,8,False,0.0,clean,0.0,0,0,0,0.0,0,0.8586,0.0,0,0.0,0.0,0.0
+0x6b592c31f9a267ffeea69b889ab4b212320ad12a,Insufficient data,12,0.0858,565,18165.76,704,725,False,0.1131,partial_washer,0.0,0,0,0,0.2,1,0.4576,0.0,0,0.0,0.0,0.0
+0x9db778f46b7c9b458045764a67ff4afcae917e1f,Insufficient data,13,0.0817,2,31564.94,1764,2000,True,0.0823,clean,0.0,0,0,0,0.4,2,0.0168,0.0,0,0.0,0.0,0.0
+0xda475f640892d0014c086b7e4f25317f5778f40a,Benign sharp,14,0.0738,63,76302.53,1295,2000,True,0.4346,partial_washer,0.0,0,0,0,1.0,5,0.071,0.25,5,1.0,0.7915,0.7915
+0x4c784587f81cd53fd3c4e9bf9842dadfb4560fa5,Insufficient data,15,0.0721,42,9995.0,42,42,False,0.0,clean,0.0,0,0,0,0.0,0,1.0,0.0,0,0.0,0.1395,0.8354
+0x59d59ae47618f3b340482d175dfc8cf13b2ba273,Insufficient data,16,0.0716,57,22295.21,390,390,False,0.0,clean,0.0,0,0,0,0.2,1,0.3162,0.0,0,0.0,0.0,0.0
+0xfd19367c558497716fcc5752b27b228e9d729e0d,Insufficient data,17,0.0654,4,11200.8,139,139,False,0.0,clean,0.0,0,0,0,0.0,0,0.8337,0.0,0,0.0,0.0898,0.998
+0xff0c984ab8f31600bc1faa15c7c8a14ab0e49193,Insufficient data,18,0.0567,2,9437.11,15,15,False,0.0,clean,0.0,0,0,0,0.0,0,0.5665,0.0,0,0.0,0.0,0.0
+0xc709c24cda148fe2adcc98e91c63b3c360473365,Insufficient data,19,0.0551,6,9215.0,7,7,False,0.0,clean,0.0,0,0,0,0.0,0,0.9021,0.0,0,0.0,0.1758,0.9767
+0xda9f7647c58deb560ca7d85e2b7ea55ef489d7f6,Insufficient data,21,0.0526,170,29568.56,217,217,False,0.0,clean,0.0,0,0,0,0.0,0,0.5258,0.0,0,0.0,0.0,0.0
+0x8564848285e54c65f6cc2e3930b49362fbd84b2e,Insufficient data,22,0.0488,72,21194.12,1828,2000,True,0.1481,partial_washer,0.0,0,0,0,0.2,1,0.0379,0.05,1,1.0,0.0,0.0

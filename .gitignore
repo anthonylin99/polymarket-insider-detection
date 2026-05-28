@@ -13,6 +13,7 @@ data/trades.csv
 data/activity.csv
 data/activity_clean.csv
 data/activity_wash.csv
-# Report PDFs are local-only — never push to GitHub
+# Keep generated PDFs out of version control except for the final report.
 report/*.pdf
 *.pdf
+!report/report.pdf

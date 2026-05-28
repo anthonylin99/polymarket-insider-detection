@@ -1,19 +1,19 @@
 """
 backfill_trades.py
 ------------------
-For each market in data/markets_filtered.csv, pull all available trades from the
-public Polymarket data-api and write them to data/trades.csv.
+For each market in data/markets_filtered.csv, pull available trades from the
+public Polymarket trade endpoint and write them to data/trades.csv.
 
-API:
+Endpoint:
   GET https://data-api.polymarket.com/trades
   Params: market=<conditionId>, limit (max 500), offset
 
-Pagination notes (empirical, 2026-05):
+Pagination notes from May 2026 testing:
   - limit is hard-capped at 500 per call.
   - offset paginates server-side. We page in 500-row steps until an empty page
     or until --max-trades-per-market is hit.
-  - Very high-volume markets (>$5M) can have tens of thousands of trades; we cap
-    per-market to keep the dataset tractable and avoid runaway runtime.
+  - Very high-volume markets above $5 million can have tens of thousands of
+    trades; we cap per-market to keep the dataset tractable and avoid runaway runtime.
     The cap is recorded per-market in trades_backfill_summary.json so the
     next engineer knows where coverage is partial.
 
@@ -112,7 +112,7 @@ def main() -> int:
             ts_iso = datetime.fromtimestamp(int(ts_unix), tz=timezone.utc).isoformat() if ts_unix else ""
             price = float(t.get("price") or 0)
             size_shares = float(t.get("size") or 0)
-            size_usd = price * size_shares  # data-api `size` is in shares; USD = price * shares
+            size_usd = price * size_shares  # endpoint `size` is in shares; value = price * shares
             writer.writerow({
                 "trade_id": tid,
                 "timestamp_utc": ts_iso,

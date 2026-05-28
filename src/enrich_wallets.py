@@ -1,25 +1,24 @@
 """
 enrich_wallets.py
 -----------------
-For each unique wallet that appears in data/trades.csv, hit the public Polymarket
-profile / leaderboard endpoints and write data/wallets.csv.
+For each unique wallet that appears in data/trades.csv, query the public
+Polymarket profile and leaderboard endpoints and write data/wallets.csv.
 
-Endpoints used (all public, no auth):
+Endpoints used, all public and unauthenticated:
   lb-api.polymarket.com/profit?window=all&address=<addr>   -> lifetime $ profit
   lb-api.polymarket.com/profit?window=30d&address=<addr>   -> 30-day $ profit
   lb-api.polymarket.com/volume?window=all&address=<addr>   -> lifetime $ volume
   data-api.polymarket.com/value?user=<addr>                -> current portfolio value
 
-These metrics feed multiple heuristics:
-  - D8/D9 baseline accuracy and direction precision require lifetime volume + P&L
-    to normalize the in-window resolved performance against the wallet's broader
-    track record.
-  - Anti-signals (doxxed sharps, market-makers) need lifetime volume + name/
-    pseudonym to identify named accounts.
-  - B4 single-niche specialist needs lifetime volume to compare against
-    in-window pop-culture volume share.
+These metrics support wallet scoring:
+  - lifetime volume and profit normalize the in-window resolved performance
+    against the wallet's broader track record;
+  - anti-signals such as named sharps and market makers need lifetime volume,
+    name, and pseudonym fields;
+  - specialist screens need lifetime volume to compare against reviewed-market
+    volume share.
 
-Run is rate-limited to ~5 req/s per endpoint to be polite to the public API.
+Run is rate-limited to roughly five requests per second per endpoint.
 """
 
 from __future__ import annotations

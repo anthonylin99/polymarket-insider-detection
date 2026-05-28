@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-05-27T22:33:45.287653+00:00",
+  "markets_used": 154,
+  "wallets_scored": 498,
+  "eligible_ranked_wallets": 103,
+  "confidence_label_counts": {
+    "Lead": 1,
+    "Watchlist": 2,
+    "Insufficient data": 309,
+    "Volume farmer": 150,
+    "Benign sharp": 36
+  },
+  "wallets_with_primary_signal": 1,
+  "wallets_with_size_anomaly": 67,
+  "wallets_activity_capped": 332,
+  "weights": {
+    "primary_conviction_signal": 0.6,
+    "size_anomaly_signal": 0.2,
+    "scope_concentration_signal": 0.1,
+    "middling_price_accuracy_signal": 0.1,
+    "sweep_penalty": -0.2
+  },
+  "thresholds": {
+    "primary_signal_price_band": [
+      0.2,
+      0.7
+    ],
+    "primary_signal_min_size_usd": 5000.0,
+    "primary_signal_min_hours_pre_resolution": 48.0,
+    "size_anomaly_min_prior_trades": 30,
+    "size_anomaly_median_multiplier": 50.0,
+    "volume_farmer_wash_share": 0.5,
+    "activity_cap_records": 2000
+  }
+}
