@@ -20,6 +20,8 @@ and broad enough to test for information advantages.
 | Deliverable | Path |
 |---|---|
 | Short written report | `report/report.md` and `report/report.pdf` |
+| Editable submission memo | `report/Inca_Polymarket_Submission_Memo.docx` |
+| Optional non-GitHub support package | `report/Inca_Polymarket_Supporting_Artifacts.zip` |
 | Market universe | `data/markets_reviewed.csv` |
 | Excluded market audit file | `data/markets_excluded.csv` |
 | Wallet scores | `data/wallet_scores_reviewed.csv` |
@@ -63,5 +65,6 @@ python3 src/score_wallets.py
 python3 src/identify_candidate_leads.py
 python3 src/analyze_candidate_markets.py
 python3 src/plot_candidate_market_movements.py
+node src/build_word_memo.js
 python3 src/verify_submission.py
 ```

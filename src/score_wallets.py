@@ -19,6 +19,10 @@ from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 
+# Tier 1 (ranking) thresholds. Stricter than the Tier 2 triage screen in
+# identify_candidate_leads.py (20-85c / $3,000 / 24h) on purpose: this stage
+# ranks the whole wallet universe, so a tighter band keeps the score precise.
+# See report/heuristics.md "Two-tier screening".
 PRIMARY_PRICE_LO = 0.20
 PRIMARY_PRICE_HI = 0.70
 PRIMARY_MIN_SIZE_USD = 5_000.0

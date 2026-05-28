@@ -24,6 +24,10 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 WINDOW_START = datetime.fromisoformat("2025-11-01T00:00:00+00:00")
 WINDOW_END = datetime.fromisoformat("2026-05-01T23:59:59+00:00")
 
+# Tier 2 (triage) thresholds. Wider than the Tier 1 ranking screen in
+# score_wallets.py (20-70c / $5,000 / 48h) on purpose: this stage casts a
+# broad net to surface names for manual review, then the report applies
+# stricter judgement. See report/heuristics.md "Two-tier screening".
 MIN_SIGNAL_NOTIONAL_USD = 3_000.0
 MIN_HOURS_PRE_RESOLUTION = 24.0
 PRICE_LO = 0.20

@@ -40,6 +40,27 @@ entry average, worst price after first buy, worst price after last buy, last
 pre-resolution trade, and settlement direction. `src/plot_candidate_market_movements.py`
 turns those price points into the chart used in the report.
 
+## Two-Tier Screening
+
+The project deliberately uses two different screens at two different stages.
+They are not meant to match, and the numbers in the report should be read with
+the stage that produced them in mind.
+
+| Tier | Script | Price band | Min notional | Min lead time | Role |
+|---|---|---|---|---|---|
+| Tier 1 — ranking | `score_wallets.py` | 20–70 cents | $5,000 | 48 hours | Scores and ranks the **whole wallet universe** for Task 4. A tighter band keeps the population score precise and conservative. |
+| Tier 2 — triage | `identify_candidate_leads.py` | 20–85 cents | $3,000 | 24 hours | Casts a **wider net** to surface wallet-market rows for manual review. Feeds the report's candidate detail. |
+
+The funnel runs Tier 1 → Tier 2 → manual review. The ranking score is the
+conservative population-level instrument; the lead queue is a more permissive
+triage net that still excludes near-certain 99-cent sweeps. This is why a
+candidate such as `cookiejar` can appear in the report: its 78.2-cent entry
+clears the Tier 2 band (≤85 cents) even though it sits above the stricter
+Tier 1 ranking band (≤70 cents), which is part of why it is ranked priority 3
+rather than priority 1. Every figure in the report's candidate-detail tables
+comes from the Tier 2 lead queue; the ranking labels and composite scores come
+from Tier 1.
+
 ## Manual Review Rules
 
 I selected follow-up wallets where the trading behavior connected to a specific

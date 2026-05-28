@@ -61,10 +61,13 @@ distributors, chart vendors, or production teams.
 
 I reviewed **154 resolved markets across 42 events**, covering **$211.9
 million** of market lifetime volume and **205,362 pulled trades from 44,607
-wallets**. I grouped trades by wallet, market, and side, then kept clusters
-where the wallet bought the ultimately winning contract at **20 to 85 cents**,
-at least **24 hours before resolution**, with at least **$3,000** of notional
-buying in that market.
+wallets**. The pipeline uses two screens (see `heuristics.md`): a stricter
+**ranking screen** (20 to 70 cents, $5,000, 48 hours) that scores the whole
+wallet universe, and a wider **triage screen** that surfaces candidates for
+manual review. The candidate detail below comes from the triage screen, which
+keeps clusters where the wallet bought the ultimately winning contract at
+**20 to 85 cents**, at least **24 hours before resolution**, with at least
+**$3,000** of notional buying in that market.
 
 | Heuristic | Why it matters | Candidate hit |
 |---|---|---|
@@ -99,9 +102,10 @@ confirmed into resolution.
 
 ## Interpretation
 
-The **$3,000 to $5,000** screen is not too low for this kind of work. A pure
-whale threshold would miss stealthier insider behavior, and Polymarket wallets
-can be meaningful even when the notional looks modest in institutional terms.
+The notional floors used here ($5,000 for ranking, $3,000 for triage) are not
+too low for this kind of work. A pure whale threshold would miss stealthier
+insider behavior, and Polymarket wallets can be meaningful even when the
+notional looks modest in institutional terms.
 For this assignment, the better signal is a bundle: correct side, non-obvious
 price, specific information owner, abnormal wallet behavior, and favorable
 contract movement after entry.
