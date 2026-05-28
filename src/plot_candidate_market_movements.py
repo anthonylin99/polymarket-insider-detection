@@ -32,7 +32,7 @@ CHART_META = {
         "subtitle": "$10.5k YES, 45.3c average entry",
         "color": "#0f4c3f",
         "first_offset": (18, 40),
-        "last_offset": (16, -34),
+        "last_offset": (-70, -40),
         "low_offset": (28, 22),
     },
     "Will Drake be the third most streamed Spotify artist for 2025?": {
@@ -50,7 +50,7 @@ CHART_META = {
         "subtitle": "$5.7k YES, 71.6c average entry",
         "color": "#496a9a",
         "first_offset": (22, 40),
-        "last_offset": (16, -50),
+        "last_offset": (20, -44),
         "low_offset": (22, 14),
     },
     "Will a contestant numbered 151 - 175 win Beast Games: Season 2?": {
@@ -150,7 +150,8 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
         )
     ax.set_title(meta["title"], fontsize=11, loc="left", color="#102b24", pad=10)
     ax.text(0, 1.01, meta["subtitle"], transform=ax.transAxes, ha="left", va="bottom", fontsize=8.5, color="#53605b")
-    ax.set_xlim(min(x), max(x))
+    span = max(x) - min(x)
+    ax.set_xlim(min(x), max(x) + span * 0.04)
     ax.set_ylim(0, 105)
     ax.set_xlabel("Market trading time", fontsize=8.3, color="#33423d")
     ax.set_ylabel("Contract price", fontsize=8.3, color="#33423d")

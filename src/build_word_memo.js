@@ -42,11 +42,12 @@ const borders = { top: border, bottom: border, left: border, right: border };
 function text(value, opts = {}) {
   return new TextRun({
     text: value,
-    font: "Arial",
+    font: opts.font || "Arial",
     size: opts.size || 19,
     bold: opts.bold || false,
     italics: opts.italics || false,
     color: opts.color || colors.ink,
+    break: opts.break || 0,
   });
 }
 
@@ -132,7 +133,7 @@ function note(value) {
   });
 }
 
-function imageParagraph(filename, width = 350, height = 145) {
+function imageParagraph(filename, width = 340, height = 141) {
   return new Paragraph({
     children: [
       new ImageRun({
@@ -168,7 +169,7 @@ function chartGrid() {
           children: pair.map((file) =>
             new TableCell({
               width: { size: w, type: WidthType.DXA },
-              margins: { top: 60, bottom: 70, left: 40, right: 40 },
+              margins: { top: 60, bottom: 70, left: 20, right: 20 },
               borders: {
                 top: { style: BorderStyle.NONE },
                 bottom: { style: BorderStyle.NONE },
@@ -191,19 +192,31 @@ const heuristicsRows = [
 
 const candidateRows = [
   [
-    "Kevindoto\n0xcd71fd...0d127",
+    [
+      text("Kevindoto", { bold: true }),
+      text("0xcd71fd5370880f3d92bb", { break: 1, size: 15, font: "Courier New" }),
+      text("941e628c05840fe0d127", { break: 1, size: 15, font: "Courier New" }),
+    ],
     "Spotify third-place artist: Weeknd YES / Drake NO",
     "$16.1k total at 43.8c weighted average",
     "A paired ranking view that points to platform, label, or distributor data.",
   ],
   [
-    "AllYourMoniesAreBelongToMe\n0x856484...84b2e",
+    [
+      text("AllYourMoniesAreBelongToMe", { bold: true }),
+      text("0x8564848285e54c65f6cc", { break: 1, size: 15, font: "Courier New" }),
+      text("2e3930b49362fbd84b2e", { break: 1, size: 15, font: "Courier New" }),
+    ],
     "BTS \"Arirang\" debut-week sales below 3m",
     "$5.7k YES at 71.6c average",
     "A sales-threshold bet far above the wallet's normal trade size.",
   ],
   [
-    "cookiejar\n0x614ef9...4f1b",
+    [
+      text("cookiejar", { bold: true }),
+      text("0x614ef98a8be021de3a97", { break: 1, size: 15, font: "Courier New" }),
+      text("4942b2fb98794ff34f1b", { break: 1, size: 15, font: "Courier New" }),
+    ],
     "Beast Games contestant 151-175 wins",
     "$5.8k YES at 78.2c average",
     "A production-result market where the answer may have been known before airing.",
@@ -251,19 +264,19 @@ const children = [
     text("AllYourMoniesAreBelongToMe", { bold: true }),
     text(" is the clearest size anomaly: the BTS sales bet was roughly 116 times the wallet's prior median trade. "),
     text("cookiejar", { bold: true }),
-    text(" is the cleanest production-access case: it bought a Beast Games outcome weeks before resolution, when the result may already have been known inside the production chain."),
+    text(" is the clearest production-access case: it bought a Beast Games outcome weeks before resolution, when the result may already have been known inside the production chain."),
   ]),
-  note("The point is not that these wallets simply won. The stronger pattern is correct-side buying in markets where a specific group could plausibly know the answer earlier than the public."),
+  note("The pattern is not just that these wallets won. It is the combination of correct-side buying, non-obvious prices, and markets where a specific group could plausibly know the answer earlier than the public."),
 
   h2("Screen and Heuristics"),
-  para("The review covered 154 resolved markets, $211.9 million of market lifetime volume, and 205,362 pulled trades. I used a strict ranking screen for the full wallet universe, then a wider triage screen to find candidate rows for manual review."),
+  para("The review covered 154 resolved markets, $211.9 million of market lifetime volume, and 205,362 pulled trades. I used a strict screen for the full wallet universe, then a wider triage screen to find candidate rows for manual review."),
   table(["Heuristic", "What it tests", "How it showed up"], heuristicsRows, [2500, 3900, contentWidth - 6400]),
 
   h2("Candidate Detail"),
   table(["Wallet", "Market", "Position", "Insider-style read"], candidateRows, [2550, 3150, 2300, contentWidth - 8000]),
 
   h2("Entry Timing and Contract Movement"),
-  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before finishing on the side they bought."),
+  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before finishing on the side it bought."),
   chartGrid(),
   table(["Market", "Entry avg.", "Worst after entry", "Won side"], movementRows, [3300, 1700, 2100, contentWidth - 7100]),
 

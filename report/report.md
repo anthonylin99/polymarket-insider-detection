@@ -27,18 +27,18 @@ the strongest market-structure case: one wallet bought both sides of the same
 Spotify ranking thesis, The Weeknd to finish third and Drake not to finish
 third. `AllYourMoniesAreBelongToMe` is the clearest size anomaly: the BTS
 sales bet was roughly 116 times the wallet's prior median trade. `cookiejar` is
-the cleanest production-access case: it bought a Beast Games outcome weeks
+the clearest production-access case: it bought a Beast Games outcome weeks
 before resolution, when the result may already have been known inside the
 production chain.
 
-<div class="note">The point is not that these wallets simply won. The stronger
-pattern is correct-side buying in markets where a specific group could
-plausibly know the answer earlier than the public.</div>
+<div class="note">The pattern is not just that these wallets won. It is the
+combination of correct-side buying, non-obvious prices, and markets where a
+specific group could plausibly know the answer earlier than the public.</div>
 
 ## Screen and Heuristics
 
 The review covered **154 resolved markets**, **$211.9 million** of market
-lifetime volume, and **205,362 pulled trades**. I used a strict ranking screen
+lifetime volume, and **205,362 pulled trades**. I used a strict screen
 for the full wallet universe, then a wider triage screen to find candidate rows
 for manual review.
 
@@ -52,14 +52,14 @@ for manual review.
 
 | Wallet | Market | Position | Insider-style read |
 |---|---|---|---|
-| `Kevindoto`<br>`0xcd71fd...0d127` | Spotify third-place artist: Weeknd YES / Drake NO | $16.1k total at 43.8c weighted average | Paired ranking view pointing to platform, label, or distributor data. |
-| `AllYourMoniesAreBelongToMe`<br>`0x856484...84b2e` | BTS "Arirang" debut-week sales below 3m | $5.7k YES at 71.6c average | Sales-threshold bet far above the wallet's normal trade size. |
-| `cookiejar`<br>`0x614ef9...4f1b` | Beast Games contestant 151-175 wins | $5.8k YES at 78.2c average | Production-result market where the answer may have been known before airing. |
+| `Kevindoto`<br>`0xcd71fd5370880f3d92bb941e628c05840fe0d127` | Spotify third-place artist: Weeknd YES / Drake NO | $16.1k total at 43.8c weighted average | Paired ranking view pointing to platform, label, or distributor data. |
+| `AllYourMoniesAreBelongToMe`<br>`0x8564848285e54c65f6cc2e3930b49362fbd84b2e` | BTS "Arirang" debut-week sales below 3m | $5.7k YES at 71.6c average | Sales-threshold bet far above the wallet's normal trade size. |
+| `cookiejar`<br>`0x614ef98a8be021de3a974942b2fb98794ff34f1b` | Beast Games contestant 151-175 wins | $5.8k YES at 78.2c average | Production-result market where the answer may have been known before airing. |
 
 ## Entry Timing and Contract Movement
 
 The charts mark each wallet's entry window. In all four markets, the contract
-later moved against the wallet before finishing on the side they bought.
+later moved against the wallet before finishing on the side it bought.
 
 ![Kevindoto Weeknd entry](charts/kevindoto_weeknd_entry.png)
 ![Kevindoto Drake entry](charts/kevindoto_drake_entry.png)
