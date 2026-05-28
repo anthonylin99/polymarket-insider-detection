@@ -28,7 +28,7 @@ and broad enough to test for information advantages.
 | Ranked review queue | `data/top20_reviewed.csv` |
 | Reviewed candidate leads | `data/candidate_wallet_leads.csv` |
 | Candidate contract movement | `data/candidate_market_movements.csv` |
-| Contract movement chart | `report/candidate_market_movements.png` |
+| Contract movement charts | `report/charts/` |
 | Verification output | `data/verification_summary.json` |
 
 ## Headline Numbers

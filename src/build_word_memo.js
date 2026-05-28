@@ -18,13 +18,13 @@ const {
 
 const ROOT = path.resolve(__dirname, "..");
 const OUT = path.join(ROOT, "report", "Inca_Polymarket_Submission_Memo.docx");
-const CHART = path.join(ROOT, "report", "candidate_market_movements.png");
+const CHARTS = path.join(ROOT, "report", "charts");
 
 const page = {
   size: { width: 12240, height: 15840 },
-  margin: { top: 720, right: 806, bottom: 720, left: 806 },
+  margin: { top: 680, right: 760, bottom: 680, left: 760 },
 };
-const contentWidth = 12240 - 806 - 806;
+const contentWidth = 12240 - 760 - 760;
 
 const colors = {
   ink: "17201C",
@@ -43,7 +43,7 @@ function text(value, opts = {}) {
   return new TextRun({
     text: value,
     font: "Arial",
-    size: opts.size || 20,
+    size: opts.size || 19,
     bold: opts.bold || false,
     italics: opts.italics || false,
     color: opts.color || colors.ink,
@@ -53,7 +53,7 @@ function text(value, opts = {}) {
 function para(children, opts = {}) {
   return new Paragraph({
     children: Array.isArray(children) ? children : [text(children)],
-    spacing: { before: opts.before || 0, after: opts.after || 120, line: opts.line || 276 },
+    spacing: { before: opts.before || 0, after: opts.after ?? 90, line: opts.line || 252 },
     alignment: opts.alignment,
   });
 }
@@ -61,16 +61,16 @@ function para(children, opts = {}) {
 function h1(value) {
   return new Paragraph({
     heading: HeadingLevel.HEADING_1,
-    children: [text(value, { size: 34, bold: true, color: colors.deep })],
-    spacing: { before: 0, after: 120 },
+    children: [text(value, { size: 32, bold: true, color: colors.deep })],
+    spacing: { before: 0, after: 90 },
   });
 }
 
 function h2(value) {
   return new Paragraph({
     heading: HeadingLevel.HEADING_2,
-    children: [text(value, { size: 24, bold: true, color: colors.green })],
-    spacing: { before: 220, after: 80 },
+    children: [text(value, { size: 23, bold: true, color: colors.green })],
+    spacing: { before: 180, after: 70 },
     border: { bottom: { color: "BAD7CE", space: 1, style: BorderStyle.SINGLE, size: 4 } },
   });
 }
@@ -80,7 +80,7 @@ function cell(children, width, opts = {}) {
     width: { size: width, type: WidthType.DXA },
     borders,
     shading: opts.fill ? { fill: opts.fill, type: ShadingType.CLEAR } : undefined,
-    margins: { top: 80, bottom: 80, left: 110, right: 110 },
+    margins: { top: 70, bottom: 70, left: 95, right: 95 },
     verticalAlign: "top",
     children: Array.isArray(children) ? children : [para(String(children), { after: 0 })],
   });
@@ -90,7 +90,7 @@ function table(headers, rows, widths) {
   const header = new TableRow({
     tableHeader: true,
     children: headers.map((h, i) =>
-      cell([para([text(h, { bold: true, size: 17, color: colors.deep })], { after: 0, alignment: AlignmentType.CENTER })], widths[i], { fill: colors.pale })
+      cell([para([text(h, { bold: true, size: 16, color: colors.deep })], { after: 0, alignment: AlignmentType.CENTER })], widths[i], { fill: colors.pale })
     ),
   });
   const body = rows.map((row, idx) =>
@@ -123,7 +123,7 @@ function note(value) {
               right: { style: BorderStyle.NONE },
             },
             shading: { fill: colors.note, type: ShadingType.CLEAR },
-            margins: { top: 110, bottom: 110, left: 160, right: 120 },
+            margins: { top: 95, bottom: 95, left: 140, right: 110 },
             children: [para(value, { after: 0 })],
           }),
         ],
@@ -132,62 +132,111 @@ function note(value) {
   });
 }
 
+function imageParagraph(filename, width = 315, height = 136) {
+  return new Paragraph({
+    children: [
+      new ImageRun({
+        data: fs.readFileSync(path.join(CHARTS, filename)),
+        transformation: { width, height },
+      }),
+    ],
+    spacing: { before: 0, after: 0 },
+    alignment: AlignmentType.CENTER,
+  });
+}
+
+function chartGrid() {
+  const w = contentWidth / 2;
+  const rows = [
+    ["kevindoto_weeknd_entry.png", "kevindoto_drake_entry.png"],
+    ["allyourmonies_bts_entry.png", "cookiejar_beast_games_entry.png"],
+  ];
+  return new Table({
+    width: { size: contentWidth, type: WidthType.DXA },
+    columnWidths: [w, w],
+    borders: {
+      top: { style: BorderStyle.NONE },
+      bottom: { style: BorderStyle.NONE },
+      left: { style: BorderStyle.NONE },
+      right: { style: BorderStyle.NONE },
+      insideHorizontal: { style: BorderStyle.NONE },
+      insideVertical: { style: BorderStyle.NONE },
+    },
+    rows: rows.map(
+      (pair) =>
+        new TableRow({
+          children: pair.map((file) =>
+            new TableCell({
+              width: { size: w, type: WidthType.DXA },
+              margins: { top: 60, bottom: 70, left: 40, right: 40 },
+              borders: {
+                top: { style: BorderStyle.NONE },
+                bottom: { style: BorderStyle.NONE },
+                left: { style: BorderStyle.NONE },
+                right: { style: BorderStyle.NONE },
+              },
+              children: [imageParagraph(file)],
+            })
+          ),
+        })
+    ),
+  });
+}
+
 const heuristicsRows = [
-  ["Specific information owner", "The market maps to a real access point.", "Spotify ranking data, album-sales tracking, production-result knowledge."],
-  ["Non-obvious entry price", "Buys at 40 to 80 cents still have downside; this excludes near-certain cleanup.", "Selected entries were below 80 cents on average except cookiejar at 78.2 cents."],
-  ["Clustered or paired conviction", "Repeated buying or a linked long/short view is stronger than one lucky fill.", "Kevindoto bought The Weeknd YES and Drake NO in the same Spotify rank complex."],
-  ["Wallet-relative abnormality", "A smaller trade can matter when it is large for that wallet.", "AllYourMonies' BTS position was about 116 times prior median trade size."],
-  ["Contract movement after entry", "A real lead should survive later price volatility and resolve in the predicted direction.", "Each selected contract later traded to 99.9 cents before resolving at 1.00."],
+  ["Information access point", "Market outcome depends on data a small group may see early.", "Spotify ranks, album sales, production results."],
+  ["Price still had downside", "Entries were not 99-cent cleanup trades.", "Selected positions averaged 40.9c to 78.2c."],
+  ["Wallet behavior stood out", "The trade pattern was unusual for the wallet or market complex.", "Paired Spotify view, 116x prior median size, early production-result bet."],
 ];
 
 const candidateRows = [
   [
-    "1",
     "Kevindoto\n0xcd71fd...0d127",
-    "Bought $10,520 of The Weeknd YES at 45.3 cents average and $5,549 of Drake NO at 40.9 cents average.",
-    "The paired trade is the signal: one wallet expressed both sides of the third-place Spotify ranking question. A plausible source would be platform analytics, label dashboards, distributor data, or unpublished year-end ranking snapshots.",
+    "Spotify third-place artist: Weeknd YES / Drake NO",
+    "$16.1k total at 43.8c weighted average",
+    "A paired ranking view that points to platform, label, or distributor data.",
   ],
   [
-    "2",
     "AllYourMoniesAreBelongToMe\n0x856484...84b2e",
-    "Bought $5,747 of BTS \"Arirang\" debut-week sales below 3 million at 71.6 cents average, 42 to 49 days before resolution.",
-    "Album-sales thresholds are natural information-asymmetry markets. Labels, distributors, chart-reporting vendors, and sales-operations teams can see preorder or tracking signals before the public.",
+    "BTS \"Arirang\" debut-week sales below 3m",
+    "$5.7k YES at 71.6c average",
+    "A sales-threshold bet far above the wallet's normal trade size.",
   ],
   [
-    "3",
     "cookiejar\n0x614ef9...4f1b",
-    "Bought $5,806 of the Beast Games contestant-number 151-175 YES contract at 78.2 cents average, 38 to 48 days before resolution.",
-    "This is the cleanest role-conflict story. If the season was filmed and edited, someone in production, casting, post-production, or the contestant network could know the result long before the public market resolved.",
+    "Beast Games contestant 151-175 wins",
+    "$5.8k YES at 78.2c average",
+    "A production-result market where the answer may have been known before airing.",
   ],
 ];
 
 const movementRows = [
-  ["Kevindoto / Weeknd third on Spotify", "0.453", "0.112", "0.339", "0.999", "YES won"],
-  ["Kevindoto / Drake third on Spotify", "0.409", "0.110", "0.357", "0.999", "NO won"],
-  ["AllYourMonies / BTS sales below 3m", "0.716", "0.497", "0.750", "0.999", "YES won"],
-  ["cookiejar / Beast Games 151-175", "0.782", "0.500", "0.667", "0.999", "YES won"],
+  ["Weeknd #3", "0.453", "0.112", "0.999", "YES"],
+  ["Drake not #3", "0.409", "0.110", "0.999", "NO"],
+  ["BTS sales <3m", "0.716", "0.497", "0.999", "YES"],
+  ["Beast Games 151-175", "0.782", "0.500", "0.999", "YES"],
 ];
 
 const taskRows = [
   [
     "1. Data collection",
-    "Collected public Polymarket market metadata, trade records, wallet profile statistics, and public trade API refreshes for the selected contracts. The reviewed universe covers 154 resolved markets across 42 events, $211.9 million of market lifetime volume, and 205,362 pulled trades from 44,607 wallets.",
-    "markets_reviewed.csv, trades.csv.gz, wallets.csv, candidate_market_movements.csv",
+    "Public Polymarket markets, trades, wallet stats, and refreshed trade API data for selected contracts.",
+    "154 markets, 205,362 trades, 44,607 wallets.",
   ],
   [
     "2. Heuristic design",
-    "Used explainable indicators rather than a black-box model: specific information owner, non-obvious entry price, clustered or paired conviction, wallet-relative abnormality, wash/noise filtering, and post-entry contract movement.",
-    "heuristics.md, score_wallets.py, identify_candidate_leads.py",
+    "Explainable screen: access point, non-obvious price, wallet behavior, wash/noise filter, contract movement.",
+    "No black-box score in the memo.",
   ],
   [
     "3. Application to traders",
-    "Applied the screen to wallet-market clusters and manually reviewed the strongest candidates. The final memo elevates three wallets and four wallet-market positions, with contract movement checked directly against the free Polymarket trade API.",
-    "candidate_wallet_leads.csv, candidate_market_price_points.csv, candidate_market_movements.png",
+    "Screened wallet-market clusters, then manually reviewed the strongest rows.",
+    "Three wallets, four positions.",
   ],
   [
     "4. Ranking and methodology",
-    "Kept a broad scoring output for review, then separated the final candidate queue from older wallet-tagging experiments. The ranking is qualitative but auditable: Kevindoto for paired Spotify positioning, AllYourMonies for size anomaly, and cookiejar for production-access logic.",
-    "wallet_scores_reviewed.csv, top20_reviewed.csv, verification_summary.json, personal_learnings/legacy_wallet_tags/",
+    "Priority is qualitative and auditable: paired Spotify view, size anomaly, production-access logic.",
+    "Support files available on request.",
   ],
 ];
 
@@ -196,50 +245,42 @@ const children = [
   para([text("Anthony Lin", { bold: true }), text(" | Inca Digital Investigations Analyst Take-Home | May 28, 2026")]),
   h2("Executive View"),
   para([
-    text("I would submit three potential insider-trading candidates from the reviewed market set. "),
+    text("I would submit three wallets for follow-up. "),
     text("Kevindoto", { bold: true }),
-    text(" is the best market-structure lead because the wallet expressed a paired view inside the same Spotify ranking complex: The Weeknd would finish third and Drake would not. "),
+    text(" is the strongest market-structure case: one wallet bought both sides of the same Spotify ranking thesis, The Weeknd to finish third and Drake not to finish third. "),
     text("AllYourMoniesAreBelongToMe", { bold: true }),
-    text(" is the best size-anomaly lead because the BTS album-sales position was roughly 116 times the wallet's prior median trade size. "),
+    text(" is the clearest size anomaly: the BTS sales bet was roughly 116 times the wallet's prior median trade. "),
     text("cookiejar", { bold: true }),
-    text(" is the cleanest production-access lead because it bought a Beast Games result market 38 to 48 days before resolution, when the show result was likely already known inside the production chain."),
+    text(" is the cleanest production-access case: it bought a Beast Games outcome weeks before resolution, when the result may already have been known inside the production chain."),
   ]),
-  note("The core idea is not \"large wallet won a trade.\" These wallets entered correct-side positions in markets where a specific group could plausibly know the answer earlier than the public: streaming platforms, labels, distributors, chart vendors, or production teams."),
+  note("The point is not that these wallets simply won. The stronger pattern is correct-side buying in markets where a specific group could plausibly know the answer earlier than the public."),
 
   h2("Screen and Heuristics"),
-  para("I reviewed 154 resolved markets across 42 events, covering $211.9 million of market lifetime volume and 205,362 pulled trades from 44,607 wallets. The pipeline uses a stricter ranking screen for the whole wallet universe and a wider triage screen for manual candidate review. The triage screen keeps clusters where the wallet bought the ultimately winning contract at 20 to 85 cents, at least 24 hours before resolution, with at least $3,000 of notional buying in that market."),
-  table(["Heuristic", "Why it matters", "Candidate hit"], heuristicsRows, [2200, 4000, contentWidth - 6200]),
+  para("The review covered 154 resolved markets, $211.9 million of market lifetime volume, and 205,362 pulled trades. I used a strict ranking screen for the full wallet universe, then a wider triage screen to find candidate rows for manual review."),
+  table(["Heuristic", "What it tests", "How it showed up"], heuristicsRows, [2500, 3900, contentWidth - 6400]),
 
   h2("Candidate Detail"),
-  table(["Priority", "Wallet", "Position", "Why it looks insider-shaped"], candidateRows, [700, 2300, 3100, contentWidth - 6100]),
+  table(["Wallet", "Market", "Position", "Insider-style read"], candidateRows, [2550, 3150, 2300, contentWidth - 8000]),
 
-  h2("Contract Movement and Resolution"),
-  para("The free Polymarket trade API shows that these were not simple endgame sweeps. The contracts still moved against the candidate wallets after entry, then confirmed into resolution."),
-  table(["Wallet / market", "Entry avg.", "Worst after first buy", "Worst after last buy", "Last pre-resolution", "Resolution"], movementRows, [2700, 1250, 1750, 1750, 1650, contentWidth - 9100]),
-  new Paragraph({
-    children: [
-      new ImageRun({
-        data: fs.readFileSync(CHART),
-        transformation: { width: 650, height: 329 },
-      }),
-    ],
-    spacing: { before: 80, after: 80 },
-  }),
+  h2("Entry Timing and Contract Movement"),
+  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before closing near 1.00 on the side they bought."),
+  chartGrid(),
+  table(["Market", "Entry avg.", "Worst after entry", "Last pre-resolution", "Won side"], movementRows, [2700, 1400, 1800, 1900, contentWidth - 7800]),
 
   h2("Interpretation"),
-  para("The notional floors used here ($5,000 for ranking, $3,000 for triage) are not too low for this kind of work. A pure whale threshold would miss stealthier insider behavior, and Polymarket wallets can be meaningful even when the notional looks modest in institutional terms. For this assignment, the better signal is a bundle: correct side, non-obvious price, specific information owner, abnormal wallet behavior, and favorable contract movement after entry."),
-  para("Timing also depends on the market. A production-result trade can be suspicious weeks before resolution because the result may already be fixed internally. A streaming-rank trade may cluster closer to resolution because the informational edge comes from late internal dashboards or ranking snapshots. These three wallets fit those different timing patterns."),
+  para("The $3,000 to $5,000 notional range is not too low for this assignment. A pure whale filter would miss quieter insider-style behavior. The more useful signal is the bundle: knowable-by-few market, non-obvious price, unusual wallet behavior, and price action that later confirms the position."),
+  para("Timing depends on the market. A production-result trade can be suspicious weeks before resolution. A streaming-rank trade can cluster closer to resolution if the edge comes from late platform or label data."),
 
   h2("Submission Methodology Appendix"),
-  para("This section is included so the memo can be submitted without sharing the GitHub repository. It maps the analysis directly to the four requested assignment tasks and names the supporting artifacts that can be attached separately if requested."),
-  table(["Assignment task", "What I did", "Supporting artifact"], taskRows, [2000, 5600, contentWidth - 7600]),
-  para("Recommended submission package: send this Word document, optionally export it to PDF, and attach only the small supporting CSVs if the interviewer asks for reproducibility. I would not share the full GitHub repository unless specifically requested, because the repo contains personal learning files and intermediate experiments that are not part of the polished submission.", { after: 0 }),
+  para("This appendix maps the memo to the four requested tasks so the document can stand on its own without sharing the full GitHub repository."),
+  table(["Assignment task", "What I did", "Result"], taskRows, [2200, 5700, contentWidth - 7900]),
+  para("If supporting files are requested, send the small artifact package rather than the full working repository. The support package contains the reviewed market set, candidate lead queue, contract movement outputs, chart images, and reproduction scripts.", { after: 0 }),
 ];
 
 const doc = new Document({
   styles: {
     default: {
-      document: { run: { font: "Arial", size: 20, color: colors.ink } },
+      document: { run: { font: "Arial", size: 19, color: colors.ink } },
     },
     paragraphStyles: [
       {
@@ -248,8 +289,8 @@ const doc = new Document({
         basedOn: "Normal",
         next: "Normal",
         quickFormat: true,
-        run: { size: 34, bold: true, font: "Arial", color: colors.deep },
-        paragraph: { spacing: { before: 0, after: 120 }, outlineLevel: 0 },
+        run: { size: 32, bold: true, font: "Arial", color: colors.deep },
+        paragraph: { spacing: { before: 0, after: 90 }, outlineLevel: 0 },
       },
       {
         id: "Heading2",
@@ -257,8 +298,8 @@ const doc = new Document({
         basedOn: "Normal",
         next: "Normal",
         quickFormat: true,
-        run: { size: 24, bold: true, font: "Arial", color: colors.green },
-        paragraph: { spacing: { before: 220, after: 80 }, outlineLevel: 1 },
+        run: { size: 23, bold: true, font: "Arial", color: colors.green },
+        paragraph: { spacing: { before: 180, after: 70 }, outlineLevel: 1 },
       },
     ],
   },

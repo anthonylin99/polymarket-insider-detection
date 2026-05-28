@@ -17,7 +17,7 @@ November 1, 2025 and May 1, 2026.
   from the free Polymarket trade API and writes
   `data/candidate_market_movements.csv` plus price points.
 - `src/plot_candidate_market_movements.py` renders
-  `report/candidate_market_movements.png`.
+  four standalone charts in `report/charts/`.
 - `src/owner_trace.py` writes `data/owner_trace.json` by checking the
   Polymarket proxy wallet owner for the Google-search control case through a
   public Polygon node.
@@ -39,7 +39,7 @@ data, album-sales tracking, and production-result information.
 - `data/wallet_scores_reviewed.csv`
 - `data/candidate_wallet_leads.csv`
 - `data/candidate_market_movements.csv`
-- `report/candidate_market_movements.png`
+- `report/charts/*.png`
 - `data/verification_summary.json`
 
 ## Reproduce

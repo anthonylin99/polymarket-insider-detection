@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-28T21:28:29.001773+00:00",
+  "generated_at_utc": "2026-05-28T21:52:20.051862+00:00",
   "markets_checked": 154,
   "candidate_rows_checked": 38,
   "candidate_movement_rows_checked": 4,
@@ -11,5 +11,7 @@
   "selected_follow_up_rows": 4,
   "capped_wallets_in_activity_sample": 332,
   "errors": [],
-  "warnings": []
+  "warnings": [
+    "At least one selected wallet activity history is capped at 2,000 records; report must disclose this."
+  ]
 }

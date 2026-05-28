@@ -14,7 +14,7 @@ This file documents the public data collection pipeline behind the report.
 | `score_wallets.py` | `data/wallet_scores_reviewed.csv` | Wallet scoring and confidence labels |
 | `identify_candidate_leads.py` | `data/candidate_wallet_leads.csv` | Reviewed wallet-market lead queue used in the report |
 | `analyze_candidate_markets.py` | `data/candidate_market_movements.csv` | Free Polymarket API check of post-entry contract movement |
-| `plot_candidate_market_movements.py` | `report/candidate_market_movements.png` | Contract movement chart for the final report |
+| `plot_candidate_market_movements.py` | `report/charts/*.png` | Four separate contract movement charts for the final report |
 | `verify_submission.py` | `data/verification_summary.json` | Consistency checks before submission |
 
 ## Key Numbers

@@ -38,7 +38,7 @@ possible information channel.
 from the free Polymarket trade API. It measures post-entry contract movement:
 entry average, worst price after first buy, worst price after last buy, last
 pre-resolution trade, and settlement direction. `src/plot_candidate_market_movements.py`
-turns those price points into the chart used in the report.
+turns those price points into four standalone charts in `report/charts/`.
 
 ## Two-Tier Screening
 
