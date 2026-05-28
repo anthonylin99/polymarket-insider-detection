@@ -132,7 +132,7 @@ function note(value) {
   });
 }
 
-function imageParagraph(filename, width = 315, height = 136) {
+function imageParagraph(filename, width = 350, height = 145) {
   return new Paragraph({
     children: [
       new ImageRun({
@@ -211,10 +211,10 @@ const candidateRows = [
 ];
 
 const movementRows = [
-  ["Weeknd #3", "45.3c", "11.2c", "99.9c", "YES"],
-  ["Drake not #3", "40.9c", "11.0c", "99.9c", "NO"],
-  ["BTS sales <3m", "71.6c", "49.7c", "99.9c", "YES"],
-  ["Beast Games 151-175", "78.2c", "50.0c", "99.9c", "YES"],
+  ["Weeknd #3", "45.3c", "11.2c", "YES"],
+  ["Drake not #3", "40.9c", "11.0c", "NO"],
+  ["BTS sales <3m", "71.6c", "49.7c", "YES"],
+  ["Beast Games 151-175", "78.2c", "50.0c", "YES"],
 ];
 
 const taskRows = [
@@ -263,9 +263,9 @@ const children = [
   table(["Wallet", "Market", "Position", "Insider-style read"], candidateRows, [2550, 3150, 2300, contentWidth - 8000]),
 
   h2("Entry Timing and Contract Movement"),
-  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before closing near 1.00 on the side they bought."),
+  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before finishing on the side they bought."),
   chartGrid(),
-  table(["Market", "Entry avg.", "Worst after entry", "Last pre-resolution", "Won side"], movementRows, [2700, 1400, 1800, 1900, contentWidth - 7800]),
+  table(["Market", "Entry avg.", "Worst after entry", "Won side"], movementRows, [3300, 1700, 2100, contentWidth - 7100]),
 
   h2("Interpretation"),
   para("The $3,000 to $5,000 notional range is not too low for this assignment. A pure whale filter would miss quieter insider-style behavior. The more useful signal is the bundle: knowable-by-few market, non-obvious price, unusual wallet behavior, and price action that later confirms the position."),

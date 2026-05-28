@@ -59,20 +59,19 @@ for manual review.
 ## Entry Timing and Contract Movement
 
 The charts mark each wallet's entry window. In all four markets, the contract
-later moved against the wallet before closing near 1.00 on the side they
-bought.
+later moved against the wallet before finishing on the side they bought.
 
 ![Kevindoto Weeknd entry](charts/kevindoto_weeknd_entry.png)
 ![Kevindoto Drake entry](charts/kevindoto_drake_entry.png)
 ![AllYourMonies BTS entry](charts/allyourmonies_bts_entry.png)
 ![cookiejar Beast Games entry](charts/cookiejar_beast_games_entry.png)
 
-| Market | Entry avg. | Worst after entry | Last pre-resolution | Won side |
-|---|---:|---:|---:|---|
-| Weeknd #3 | 45.3c | 11.2c | 99.9c | YES |
-| Drake not #3 | 40.9c | 11.0c | 99.9c | NO |
-| BTS sales <3m | 71.6c | 49.7c | 99.9c | YES |
-| Beast Games 151-175 | 78.2c | 50.0c | 99.9c | YES |
+| Market | Entry avg. | Worst after entry | Won side |
+|---|---:|---:|---|
+| Weeknd #3 | 45.3c | 11.2c | YES |
+| Drake not #3 | 40.9c | 11.0c | NO |
+| BTS sales <3m | 71.6c | 49.7c | YES |
+| Beast Games 151-175 | 78.2c | 50.0c | YES |
 
 ## Interpretation
 

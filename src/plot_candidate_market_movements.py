@@ -107,7 +107,6 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
     last_x = last_buy["timestamp_dt"]
     worst_x = worst["timestamp_dt"]
     avg_entry = cents(float(movement["candidate_avg_entry_price"]))
-    last_price = cents(float(movement["last_price_before_resolution"]))
 
     fig, ax = plt.subplots(figsize=(6.4, 2.65))
     fig.patch.set_facecolor("#fbfaf6")
@@ -149,17 +148,6 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
             fontsize=8,
             color="#6f211a",
         )
-    ax.text(
-        0.99,
-        0.08,
-        f"last pre-resolution {last_price:.0f}c",
-        transform=ax.transAxes,
-        ha="right",
-        va="bottom",
-        fontsize=8,
-        color="#33423d",
-    )
-
     ax.set_title(meta["title"], fontsize=11, loc="left", color="#102b24", pad=10)
     ax.text(0, 1.01, meta["subtitle"], transform=ax.transAxes, ha="left", va="bottom", fontsize=8.5, color="#53605b")
     ax.set_xlim(min(x), max(x))
