@@ -211,10 +211,10 @@ const candidateRows = [
 ];
 
 const movementRows = [
-  ["Weeknd #3", "0.453", "0.112", "0.999", "YES"],
-  ["Drake not #3", "0.409", "0.110", "0.999", "NO"],
-  ["BTS sales <3m", "0.716", "0.497", "0.999", "YES"],
-  ["Beast Games 151-175", "0.782", "0.500", "0.999", "YES"],
+  ["Weeknd #3", "45.3c", "11.2c", "99.9c", "YES"],
+  ["Drake not #3", "40.9c", "11.0c", "99.9c", "NO"],
+  ["BTS sales <3m", "71.6c", "49.7c", "99.9c", "YES"],
+  ["Beast Games 151-175", "78.2c", "50.0c", "99.9c", "YES"],
 ];
 
 const taskRows = [
