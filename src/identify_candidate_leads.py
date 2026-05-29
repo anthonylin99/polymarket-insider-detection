@@ -239,6 +239,8 @@ def main() -> int:
             if row["timestamp_dt"] < first_ts
         ]
         prior_median = statistics.median(prior_sizes) if prior_sizes else None
+        all_sizes = [row["size_usdc_float"] for row in activity.get(wallet, [])]
+        lifetime_median = statistics.median(all_sizes) if all_sizes else None
         wash_share = stats["wash_vol_share"] if stats else None
         row = {
             "wallet_address": wallet,
@@ -272,6 +274,8 @@ def main() -> int:
             "prior_activity_count": len(prior_sizes),
             "prior_median_size_usd": "" if prior_median is None else round(prior_median, 2),
             "notional_vs_prior_median": "" if not prior_median else round(signal_notional / prior_median, 1),
+            "lifetime_median_size_usd": "" if lifetime_median is None else round(lifetime_median, 2),
+            "notional_vs_lifetime_median": "" if not lifetime_median else round(signal_notional / lifetime_median, 1),
         }
         row["lead_score"] = row_score(row)
         row["review_label"] = review_label(row)
@@ -308,6 +312,7 @@ def main() -> int:
         "last_buy_timestamp_utc", "lifetime_profit_usd", "lifetime_volume_usd",
         "in_window_trade_count", "wash_vol_share", "wash_label", "activity_capped",
         "prior_activity_count", "prior_median_size_usd", "notional_vs_prior_median",
+        "lifetime_median_size_usd", "notional_vs_lifetime_median",
     ]
     with open(args.out, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)

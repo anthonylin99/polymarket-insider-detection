@@ -197,7 +197,7 @@ function chartGrid() {
 const heuristicsRows = [
   ["Information access point", "Market outcome depends on data a small group may see early.", "Spotify ranks, album sales, awards voting."],
   ["Price still had downside", "Entries were not 99-cent cleanup trades.", "Selected positions averaged 40.9c to 71.6c."],
-  ["Wallet behavior stood out", "The trade pattern was unusual for the wallet or market complex.", "Paired Spotify view, a 116x size jump, and an early awards bet."],
+  ["Wallet behavior stood out", "The trade pattern was unusual for the wallet or market complex.", "Bets 100x to 330x a wallet's usual trade size, plus a paired Spotify view."],
 ];
 
 const candidateRows = [
@@ -284,7 +284,7 @@ const children = [
   ]),
   bullet([
     text("ScottyNooo ", { bold: true }),
-    text("bet $9.2k that Lady Gaga would not win three Grammys, at 43c, four days before the night resolved exactly that way. Awards markets leak through the people who decide them, voters, academy staff, publicists. Betting against a specific count, not just a win, is a finer read than the public had, and the contract swung down to 12c before settling NO."),
+    text("normally trades about $27. It put $9.2k on Lady Gaga not winning three Grammys, roughly 330 times its own median, at 43c and against the market's lean, four days before the night resolved that way. A wallet sizing up that hard on the less-likely side is the behavioral tell. Awards leak through the people who decide them, voters, academy staff, publicists, and betting a specific count rather than a plain win is a finer read than the public had. The contract swung to 12c before settling NO."),
   ]),
   para([
     text("All three paid up into resolution and broke entries into many small fills. That is what you do when you think the answer is fixed and you want size without moving the tape. Paying 90c for a contract you expect to settle at 100c is not careless; it is collecting a near-riskless spread."),
