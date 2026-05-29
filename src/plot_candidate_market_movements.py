@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 import matplotlib.dates as mdates
@@ -25,46 +25,32 @@ REPORT = ROOT / "report"
 CHART_DIR = REPORT / "charts"
 
 
+# All numeric callouts live in the header line above the plot, never inside the
+# data area, so no label can ever overlap the price line or a marker.
 CHART_META = {
     "Will The Weeknd be the third most streamed Spotify artist for 2025?": {
         "file": "kevindoto_weeknd_entry.png",
         "title": "Kevindoto: The Weeknd #3 Spotify",
-        "subtitle": "$10.5k YES, 45.3c average entry",
+        "position": "$10.5k YES",
         "color": "#0f4c3f",
-        "first_offset": (18, 40),
-        "last_label_y": 15,
-        "last_label_ha": "right",
-        "low_offset": (28, 22),
     },
     "Will Drake be the third most streamed Spotify artist for 2025?": {
         "file": "kevindoto_drake_entry.png",
         "title": "Kevindoto: Drake not #3 Spotify",
-        "subtitle": "$5.5k NO, 40.9c average entry",
+        "position": "$5.5k NO",
         "color": "#d28b45",
-        "first_offset": (20, 20),
-        "last_label_y": 12,
-        "last_label_ha": "left",
-        "low_offset": (16, 22),
     },
     "Will 'Arirang' - BTS debut week album sales be less than 3m?": {
         "file": "allyourmonies_bts_entry.png",
         "title": "AllYourMonies: BTS sales below 3m",
-        "subtitle": "$5.7k YES, 71.6c average entry",
+        "position": "$5.7k YES",
         "color": "#496a9a",
-        "first_offset": (22, 40),
-        "last_label_y": 13,
-        "last_label_ha": "left",
-        "low_offset": (22, 14),
     },
-    "Will a contestant numbered 151 - 175 win Beast Games: Season 2?": {
-        "file": "cookiejar_beast_games_entry.png",
-        "title": "cookiejar: Beast Games 151-175",
-        "subtitle": "$5.8k YES, 78.2c average entry",
-        "color": "#7b4c7e",
-        "first_offset": (45, -6),
-        "last_label_y": 13,
-        "last_label_ha": "left",
-        "low_offset": (22, 16),
+    "Will Lady Gaga win 3 Grammys?": {
+        "file": "scottynooo_grammys_entry.png",
+        "title": "ScottyNooo: Lady Gaga not 3 Grammys",
+        "position": "$9.2k NO",
+        "color": "#a14a63",
     },
 }
 
@@ -111,77 +97,70 @@ def render_chart(question: str, rows: list[dict], movement: dict, out_dir: Path)
     last_x = last_buy["timestamp_dt"]
     worst_x = worst["timestamp_dt"]
     avg_entry = cents(float(movement["candidate_avg_entry_price"]))
+    settle = float(movement.get("settlement_price") or 1.0)
+    color = meta["color"]
 
-    fig, ax = plt.subplots(figsize=(6.4, 2.65))
+    fig, ax = plt.subplots(figsize=(6.4, 3.05))
     fig.patch.set_facecolor("#fbfaf6")
     ax.set_facecolor("#fffdf8")
-    ax.plot(x, y, color=meta["color"], linewidth=1.9)
-    ax.scatter(buy_x, buy_y, color="#111111", s=24, zorder=4)
-    ax.axvline(first_x, color="#111111", linestyle="--", linewidth=0.9)
-    if last_x != first_x:
-        ax.axvline(last_x, color="#555555", linestyle="--", linewidth=0.8)
-    ax.axhline(avg_entry, color="#6b7b76", linestyle=":", linewidth=0.9)
-    ax.scatter([worst_x], [cents(worst["price"])], color="#c44536", s=24, zorder=5)
 
-    ax.annotate(
-        f"first buy\n{cents(first_buy['price']):.0f}c",
-        xy=(first_x, cents(first_buy["price"])),
-        xytext=meta["first_offset"],
-        textcoords="offset points",
-        arrowprops={"arrowstyle": "->", "color": "#111111", "lw": 0.8},
-        fontsize=8,
-        color="#17201c",
-        bbox={"boxstyle": "round,pad=0.15", "fc": "#fffdf8", "ec": "none", "alpha": 0.94},
-        zorder=8,
-    )
+    # Shade the accumulation window (first buy to last buy) so the spread of
+    # fills reads at a glance, then draw the price line and markers. No text is
+    # ever placed inside the axes, so nothing can overlap the price line.
     if last_x != first_x:
-        ax.text(
-            last_x,
-            meta["last_label_y"],
-            f"last buy\n{cents(last_buy['price']):.0f}c",
-            fontsize=8,
-            color="#33423d",
-            ha=meta["last_label_ha"],
-            va="bottom",
-            bbox={"boxstyle": "round,pad=0.15", "fc": "#fffdf8", "ec": "none", "alpha": 0.94},
-            zorder=8,
-        )
-    if worst_x != first_x or abs(worst["price"] - first_buy["price"]) > 0.001:
-        ax.annotate(
-            f"low {cents(worst['price']):.0f}c",
-            xy=(worst_x, cents(worst["price"])),
-            xytext=meta["low_offset"],
-            textcoords="offset points",
-            arrowprops={"arrowstyle": "->", "color": "#c44536", "lw": 0.8},
-            fontsize=8,
-            color="#6f211a",
-            bbox={"boxstyle": "round,pad=0.12", "fc": "#fffdf8", "ec": "none", "alpha": 0.9},
-            zorder=8,
-        )
-    ax.set_title(meta["title"], fontsize=11, loc="left", color="#102b24", pad=10)
-    ax.text(0, 1.01, meta["subtitle"], transform=ax.transAxes, ha="left", va="bottom", fontsize=8.5, color="#53605b")
-    span = max(x) - min(x)
-    ax.set_xlim(min(x), max(x) + span * 0.04)
+        ax.axvspan(first_x, last_x, color=color, alpha=0.10, lw=0,
+                   label="accumulation window")
+    ax.fill_between(x, y, color=color, alpha=0.06, zorder=0)
+    ax.plot(x, y, color=color, linewidth=2.0, zorder=2)
+    ax.axhline(avg_entry, color="#6b7b76", linestyle=":", linewidth=1.1,
+               label=f"avg fill {avg_entry:.0f}c", zorder=1)
+    ax.scatter(buy_x, buy_y, color="#111111", s=22, zorder=4, label="candidate buys")
+    ax.scatter([worst_x], [cents(worst["price"])], color="#c44536", s=34, zorder=5,
+               label=f"low {cents(worst['price']):.0f}c")
+
+    # Header: title plus the single requested callout, in the whitespace above
+    # the plot where the price line can never reach.
+    ax.set_title(meta["title"], fontsize=11.5, loc="left", color="#102b24",
+                 pad=22, fontweight="bold")
+    ax.text(0, 1.03, f"{meta['position']}  ·  avg fill {avg_entry:.0f}c",
+            transform=ax.transAxes, ha="left", va="bottom", fontsize=8.5,
+            color="#53605b")
+
+    # Zoom to the entry-and-resolution window: trim the long flat tail once the
+    # contract has settled within 3c of its resolution value.
+    move_end_idx = 0
+    for i, r in enumerate(rows):
+        if abs(r["price"] - settle) > 0.03:
+            move_end_idx = i
+    move_end_x = rows[move_end_idx]["timestamp_dt"]
+    left = min(x)
+    window = max(move_end_x - left, timedelta(hours=6))
+    ax.set_xlim(left - window * 0.03, move_end_x + window * 0.14)
     ax.set_ylim(0, 105)
-    ax.set_xlabel("Market trading time", fontsize=8.3, color="#33423d")
+
     ax.set_ylabel("Contract price", fontsize=8.3, color="#33423d")
     ax.yaxis.set_major_locator(MultipleLocator(25))
     ax.yaxis.set_major_formatter(FuncFormatter(lambda value, _pos: f"{int(value)}c"))
-    span_days = (max(x) - min(x)).total_seconds() / 86_400
-    if span_days <= 4:
-        ax.xaxis.set_major_locator(mdates.HourLocator(interval=12))
+    window_days = window.total_seconds() / 86_400
+    if window_days <= 4:
+        ax.xaxis.set_major_locator(mdates.HourLocator(interval=6))
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %-d\n%H:%M"))
     else:
-        ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=5))
+        ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=6))
         ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %-d"))
-    ax.grid(True, axis="y", color="#d8ded8", linewidth=0.6)
+    ax.grid(True, axis="y", color="#e1e6e0", linewidth=0.6)
     ax.tick_params(labelsize=8, colors="#33423d")
-    for spine in ax.spines.values():
-        spine.set_color("#cbd8d2")
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("#cbd8d2")
+    ax.spines["bottom"].set_color("#cbd8d2")
+
+    # Legend sits below the axes in empty space, never over the data.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.13), ncol=4,
+              fontsize=7.5, frameon=False, handletextpad=0.4, columnspacing=1.4)
 
     out_path = out_dir / meta["file"]
-    fig.tight_layout(pad=0.8)
-    fig.savefig(out_path, dpi=190, facecolor=fig.get_facecolor(), bbox_inches="tight", pad_inches=0.08)
+    fig.savefig(out_path, dpi=200, facecolor=fig.get_facecolor(), bbox_inches="tight", pad_inches=0.1)
     plt.close(fig)
     return out_path
 

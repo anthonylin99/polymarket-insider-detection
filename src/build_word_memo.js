@@ -6,6 +6,7 @@ const {
   Document,
   HeadingLevel,
   ImageRun,
+  LevelFormat,
   Packer,
   Paragraph,
   ShadingType,
@@ -56,6 +57,14 @@ function para(children, opts = {}) {
     children: Array.isArray(children) ? children : [text(children)],
     spacing: { before: opts.before || 0, after: opts.after ?? 90, line: opts.line || 252 },
     alignment: opts.alignment,
+  });
+}
+
+function bullet(children, opts = {}) {
+  return new Paragraph({
+    children: Array.isArray(children) ? children : [text(children)],
+    numbering: { reference: "bul", level: 0 },
+    spacing: { before: opts.before || 0, after: opts.after ?? 120, line: 256 },
   });
 }
 
@@ -151,7 +160,7 @@ function chartGrid() {
   const w = contentWidth / 2;
   const rows = [
     ["kevindoto_weeknd_entry.png", "kevindoto_drake_entry.png"],
-    ["allyourmonies_bts_entry.png", "cookiejar_beast_games_entry.png"],
+    ["allyourmonies_bts_entry.png", "scottynooo_grammys_entry.png"],
   ];
   return new Table({
     width: { size: contentWidth, type: WidthType.DXA },
@@ -186,9 +195,9 @@ function chartGrid() {
 }
 
 const heuristicsRows = [
-  ["Information access point", "Market outcome depends on data a small group may see early.", "Spotify ranks, album sales, production results."],
-  ["Price still had downside", "Entries were not 99-cent cleanup trades.", "Selected positions averaged 40.9c to 78.2c."],
-  ["Wallet behavior stood out", "The trade pattern was unusual for the wallet or market complex.", "Paired Spotify view, 116x prior median size, early production-result bet."],
+  ["Information access point", "Market outcome depends on data a small group may see early.", "Spotify ranks, album sales, awards voting."],
+  ["Price still had downside", "Entries were not 99-cent cleanup trades.", "Selected positions averaged 40.9c to 71.6c."],
+  ["Wallet behavior stood out", "The trade pattern was unusual for the wallet or market complex.", "Paired Spotify view, a 116x size jump, and an early awards bet."],
 ];
 
 const candidateRows = [
@@ -200,7 +209,7 @@ const candidateRows = [
     ],
     "Spotify third-place artist: Weeknd YES / Drake NO",
     "$16.1k total at 43.8c weighted average",
-    "A paired ranking view that points to platform, label, or distributor data.",
+    "~1-2 days before close",
   ],
   [
     [
@@ -210,88 +219,138 @@ const candidateRows = [
     ],
     "BTS \"Arirang\" debut-week sales below 3m",
     "$5.7k YES at 71.6c average",
-    "A sales-threshold bet far above the wallet's normal trade size.",
+    "42-49 days before close",
   ],
   [
     [
-      text("cookiejar", { bold: true }),
-      text("0x614ef98a8be021de3a97", { break: 1, size: 15, font: "Courier New" }),
-      text("4942b2fb98794ff34f1b", { break: 1, size: 15, font: "Courier New" }),
+      text("ScottyNooo", { bold: true }),
+      text("0xbacd00c9080a82ded56f", { break: 1, size: 15, font: "Courier New" }),
+      text("504ee8810af732b0ab35", { break: 1, size: 15, font: "Courier New" }),
     ],
-    "Beast Games contestant 151-175 wins",
-    "$5.8k YES at 78.2c average",
-    "A production-result market where the answer may have been known before airing.",
+    "Lady Gaga to win 3 Grammys — bought NO",
+    "$9.2k NO at 43.2c average",
+    "~4 days before close",
   ],
+];
+
+const rankRows = [
+  ["1", "Kevindoto", "Music streaming rank", "71", "Yes"],
+  ["2", "ScottyNooo", "Awards", "69", "Yes"],
+  ["3", "blank2389473495", "Music streaming rank", "67", "—"],
+  ["4", "SaylorMoon", "Music streaming rank", "53", "—"],
+  ["5", "AllYourMoniesAreBelongToMe", "Entertainment release", "52", "Yes"],
+  ["6", "BeN", "Music streaming rank", "51", "—"],
 ];
 
 const movementRows = [
   ["Weeknd #3", "45.3c", "11.2c", "YES"],
   ["Drake not #3", "40.9c", "11.0c", "NO"],
   ["BTS sales <3m", "71.6c", "49.7c", "YES"],
-  ["Beast Games 151-175", "78.2c", "50.0c", "YES"],
-];
-
-const taskRows = [
-  [
-    "1. Data collection",
-    "Public Polymarket markets, trades, wallet stats, and refreshed trade API data for selected contracts.",
-    "154 markets, 205,362 trades, 44,607 wallets.",
-  ],
-  [
-    "2. Heuristic design",
-    "Explainable screen: access point, non-obvious price, wallet behavior, wash/noise filter, contract movement.",
-    "No black-box score in the memo.",
-  ],
-  [
-    "3. Application to traders",
-    "Screened wallet-market clusters, then manually reviewed the strongest rows.",
-    "Three wallets, four positions.",
-  ],
-  [
-    "4. Ranking and methodology",
-    "Priority is qualitative and auditable: paired Spotify view, size anomaly, production-access logic.",
-    "Support files available on request.",
-  ],
+  ["Lady Gaga 3 Grammys", "43.2c", "12.2c", "NO"],
 ];
 
 const children = [
   h1("Potential Informed Trading on Polymarket"),
-  para([text("Anthony Lin", { bold: true }), text(" | Inca Digital Investigations Analyst Take-Home | May 28, 2026")]),
-  h2("Executive View"),
+  para([text("Anthony Lin", { bold: true }), text(" | Inca Digital Investigations Analyst Take-Home | May 28, 2026")], { after: 140 }),
   para([
-    text("I would submit three wallets for follow-up. "),
-    text("Kevindoto", { bold: true }),
-    text(" is the strongest market-structure case: one wallet bought both sides of the same Spotify ranking thesis, The Weeknd to finish third and Drake not to finish third. "),
-    text("AllYourMoniesAreBelongToMe", { bold: true }),
-    text(" is the clearest size anomaly: the BTS sales bet was roughly 116 times the wallet's prior median trade. "),
-    text("cookiejar", { bold: true }),
-    text(" is the clearest production-access case: it bought a Beast Games outcome weeks before resolution, when the result may already have been known inside the production chain."),
+    text("Three Polymarket wallets made early, correct, oddly specific bets in entertainment markets where a small group could have known the result first. All three are worth attributing."),
   ]),
-  note("The pattern is not just that these wallets won. It is the combination of correct-side buying, non-obvious prices, and markets where a specific group could plausibly know the answer earlier than the public."),
 
-  h2("Screen and Heuristics"),
-  para("The review covered 154 resolved markets, $211.9 million of market lifetime volume, and 205,362 pulled trades. I used a strict screen for the full wallet universe, then a wider triage screen to find candidate rows for manual review."),
+  h2("Task 1 · Data Collection"),
+  para("I pulled public Polymarket data end to end: market discovery, every trade in the reviewed markets, wallet activity for wash filtering, and a fresh trade-API pull on the four finalist contracts. The reviewed set is 154 resolved markets, $211.9 million in lifetime volume, 205,362 trades, and 44,607 wallets, all in entertainment and attention markets where one side can know first."),
+
+  h2("Task 2 · Heuristics"),
+  para("An explainable screen, not a score you have to trust. A strict pass ranks the full wallet universe; a wider pass surfaces rows for manual review. Three tests do the work."),
   table(["Heuristic", "What it tests", "How it showed up"], heuristicsRows, [2500, 3900, contentWidth - 6400]),
 
-  h2("Candidate Detail"),
-  table(["Wallet", "Market", "Position", "Insider-style read"], candidateRows, [2550, 3150, 2300, contentWidth - 8000]),
+  h2("Task 3 · Findings: Candidate Detail"),
+  para("Reviewing the strongest rows by hand leaves three wallets and four positions."),
+  table(["Wallet", "Market", "Position", "Lead time"], candidateRows, [2550, 3550, 2400, contentWidth - 8500]),
 
-  h2("Entry Timing and Contract Movement"),
-  para("The charts mark each wallet's entry window. In all four markets, the contract later moved against the wallet before finishing on the side it bought."),
+  h2("Task 3 · Entry Timing and Contract Movement"),
+  para("The shaded band marks each wallet's buying window against the full price path. Every contract moved against the wallet after entry, then settled on the side it bought, so none of these were last-minute sweeps."),
   chartGrid(),
   table(["Market", "Entry avg.", "Worst after entry", "Won side"], movementRows, [3300, 1700, 2100, contentWidth - 7100]),
 
   h2("Interpretation"),
-  para("The $3,000 to $5,000 notional range is not too low for this assignment. A pure whale filter would miss quieter insider-style behavior. The more useful signal is the bundle: knowable-by-few market, non-obvious price, unusual wallet behavior, and price action that later confirms the position."),
-  para("Timing depends on the market. A production-result trade can be suspicious weeks before resolution. A streaming-rank trade can cluster closer to resolution if the edge comes from late platform or label data."),
+  para("The throughline is the market, not the trader. Each bet rests on a public guess about something a small group already had in hand: a year-end streaming rank, a first-week sales number, an awards result the people who vote on it can sense before the show."),
+  bullet([
+    text("Kevindoto ", { bold: true }),
+    text("bought The Weeknd YES and Drake NO in the same year-end ranking, $16.1k at 43.8c blended, and held from a dip to 11c through resolution. Betting both legs means knowing the order of finish, not one artist, which narrows the source to a full-ranking vantage point like a platform or label seat, not a tip about a single name."),
+  ]),
+  bullet([
+    text("AllYourMonies ", { bold: true }),
+    text("staked $5.7k on BTS first-week sales landing under 3 million, about 116 times its own median trade. It does not bet that sales look soft; it names a number. A hard threshold called weeks early reads like someone who saw a real sales figure, the kind an insider might know ahead of public announcements."),
+  ]),
+  bullet([
+    text("ScottyNooo ", { bold: true }),
+    text("bet $9.2k that Lady Gaga would not win three Grammys, at 43c, four days before the night resolved exactly that way. Awards markets leak through the people who decide them, voters, academy staff, publicists. Betting against a specific count, not just a win, is a finer read than the public had, and the contract swung down to 12c before settling NO."),
+  ]),
+  para([
+    text("All three paid up into resolution and broke entries into many small fills. That is what you do when you think the answer is fixed and you want size without moving the tape. Paying 90c for a contract you expect to settle at 100c is not careless; it is collecting a near-riskless spread."),
+  ], { before: 40 }),
+  note([
+    text("For an investigations team, the names matter less than the signature they share: small in dollars, large for the wallet, early, priced well below certainty, in a market with a nameable information owner. That is a rule you can run continuously, and every hit is a starting point for attribution, from funding-source clustering to timing the position against when the private number actually existed."),
+  ]),
+  para([
+    text("The caveat I would not bury: public data cannot prove intent. A sharp trader reads public signals well, and Kevindoto is a high-volume, profitable wallet that may simply be a good trader."),
+  ]),
 
-  h2("Submission Methodology Appendix"),
-  para("This appendix maps the memo to the four requested tasks so the document can stand on its own without sharing the full GitHub repository."),
-  table(["Assignment task", "What I did", "Result"], taskRows, [2200, 5700, contentWidth - 7900]),
-  para("If supporting files are requested, send the small artifact package rather than the full working repository. The support package contains the reviewed market set, candidate lead queue, contract movement outputs, chart images, and reproduction scripts.", { after: 0 }),
+  h2("Task 4 · Ranking and Methodology"),
+  para("The ranking is a transparent point score, not a black box, applied to every qualifying wallet-market position and built from the same heuristics."),
+  bullet([
+    text("Conviction ", { bold: true }),
+    text("— correct-side notional plus the payoff at stake. This is the bulk of the score."),
+  ]),
+  bullet([
+    text("Non-obvious entry price ", { bold: true }),
+    text("— full credit below 60c, partial to 75c, nothing for near-certain buys."),
+  ]),
+  bullet([
+    text("Lead time ", { bold: true }),
+    text("— more weight for entries a week or more before resolution."),
+  ]),
+  bullet([
+    text("Clean history ", { bold: true }),
+    text("— a bonus when the wallet's wash-trade share is low."),
+  ]),
+  bullet([
+    text("Wallet-relative size ", { bold: true }),
+    text("— a jump of 50x or more over the wallet's own median trade."),
+  ]),
+  bullet([
+    text("Public-data control penalty ", { bold: true }),
+    text("— Google-trend markets are demoted and pulled out of the insider queue, since public search data explains the edge."),
+  ]),
+  para("Ranked on merit with controls removed, the top of the queue is:", { before: 40 }),
+  table(["#", "Wallet", "Market type", "Score", "In report"], rankRows, [650, 3300, 3100, 1000, contentWidth - 8050]),
+  para([
+    text("The three profiled here, Kevindoto, ScottyNooo, and AllYourMonies, sit at ranks 1, 2, and 5. The queue holds more, a music-rank wallet at #3 and others below, left as live follow-ups. One pattern outlasts any single name: Kevindoto, blank2389473495, and BeN all bought into the same Weeknd and Drake Spotify-rank markets, a cluster that warrants a coordination check on its own."),
+  ], { before: 60 }),
+
+  para([
+    text("Support package: ", { bold: true }),
+    text("code and CSV artifacts, the reviewed market set, the ranked candidate lead queue, contract-movement outputs, and chart images, available on request rather than as the full working repository."),
+  ], { before: 120, after: 0 }),
 ];
 
 const doc = new Document({
+  numbering: {
+    config: [
+      {
+        reference: "bul",
+        levels: [
+          {
+            level: 0,
+            format: LevelFormat.BULLET,
+            text: "•",
+            alignment: AlignmentType.LEFT,
+            style: { paragraph: { indent: { left: 460, hanging: 240 } } },
+          },
+        ],
+      },
+    ],
+  },
   styles: {
     default: {
       document: { run: { font: "Arial", size: 19, color: colors.ink } },

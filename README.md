@@ -19,17 +19,12 @@ and broad enough to test for information advantages.
 
 | Deliverable | Path |
 |---|---|
-| Short written report | `report/report.md` and `report/report.pdf` |
-| Editable submission memo | `report/Inca_Polymarket_Submission_Memo.docx` |
-| Optional non-GitHub support package | `report/Inca_Polymarket_Supporting_Artifacts.zip` |
+| Written report (memo) | `report/Inca_Polymarket_Submission_Memo.docx` |
 | Market universe | `data/markets_reviewed.csv` |
 | Excluded market audit file | `data/markets_excluded.csv` |
-| Wallet scores | `data/wallet_scores_reviewed.csv` |
-| Ranked review queue | `data/top20_reviewed.csv` |
-| Reviewed candidate leads | `data/candidate_wallet_leads.csv` |
+| Ranked lead queue (the ranking) | `data/candidate_wallet_leads.csv` |
 | Candidate contract movement | `data/candidate_market_movements.csv` |
 | Contract movement charts | `report/charts/` |
-| Verification output | `data/verification_summary.json` |
 
 ## Headline Numbers
 
@@ -61,10 +56,8 @@ because public trend data can explain too much of that edge.
 pip install -r requirements.txt
 python3 src/review_markets.py
 python3 src/owner_trace.py
-python3 src/score_wallets.py
-python3 src/identify_candidate_leads.py
+python3 src/identify_candidate_leads.py   # builds the ranked lead queue
 python3 src/analyze_candidate_markets.py
 python3 src/plot_candidate_market_movements.py
 node src/build_word_memo.js
-python3 src/verify_submission.py
 ```

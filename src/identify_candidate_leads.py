@@ -34,10 +34,13 @@ PRICE_LO = 0.20
 PRICE_HI = 0.85
 VOLUME_FARMER_WASH_SHARE = 0.50
 
+# (wallet_address, condition_id) positions profiled in the report. Keyed by
+# market so a wallet's other qualifying trades are not auto-profiled.
 REPORT_SELECTION = {
-    "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
-    "0x8564848285e54c65f6cc2e3930b49362fbd84b2e",
-    "0x614ef98a8be021de3a974942b2fb98794ff34f1b",
+    ("0xcd71fd5370880f3d92bb941e628c05840fe0d127", "0x2a46bac806f455a2fd53322cd830298d2ff86a1a6e40f5133e03786396d5445b"),  # Kevindoto / Weeknd #3
+    ("0xcd71fd5370880f3d92bb941e628c05840fe0d127", "0x947d1021c37d975fb9a2f81d9b7da2579dd6cbf18d9c1e147e7a8f95480cd01a"),  # Kevindoto / Drake not #3
+    ("0x8564848285e54c65f6cc2e3930b49362fbd84b2e", "0x19304977d87e5b37f5c40719a3e935c136acd5705b1398afdb4179b0dbdda19b"),  # AllYourMonies / BTS sales
+    ("0xbacd00c9080a82ded56f504ee8810af732b0ab35", "0x0d880d85cadbe01cf69b30215a8f7304f0bc3e31f6f92218b0b02c9f145e9780"),  # ScottyNooo / Lady Gaga 3 Grammys
 }
 
 
@@ -150,7 +153,7 @@ def row_score(row: dict) -> float:
 def review_label(row: dict) -> str:
     if row["wash_vol_share"] is not None and row["wash_vol_share"] >= VOLUME_FARMER_WASH_SHARE:
         return "Excluded volume farmer"
-    if row["wallet_address"] in REPORT_SELECTION:
+    if (row["wallet_address"], row["market_condition_id"]) in REPORT_SELECTION:
         return "Selected follow-up"
     if row["topic_label"] == "attention_index_google_search":
         return "Public-data control"
@@ -242,6 +245,7 @@ def main() -> int:
             "wallet_pseudonym": wallet_row.get("pseudonym") or group["wallet_pseudonym_from_trade"],
             "review_label": "",
             "lead_score": 0.0,
+            "lead_rank": "",
             "market_condition_id": group["market_condition_id"],
             "event_id": group["event_id"],
             "market_question": group["market_question"],
@@ -273,17 +277,30 @@ def main() -> int:
         row["review_label"] = review_label(row)
         rows.append(row)
 
+    # Rank purely on merit: public-data controls (Google-trend markets) are
+    # pulled out of the insider queue, then everything else is ordered by the
+    # transparent lead_score. No wallet is pinned to the top by hand.
+    def is_control(r: dict) -> bool:
+        return r["topic_label"] == "attention_index_google_search"
+
     rows.sort(
         key=lambda r: (
-            r["review_label"] != "Selected follow-up",
+            is_control(r),
             -r["lead_score"],
             -r["signal_notional_usd"],
             r["wallet_address"],
         )
     )
+    rank = 0
+    for r in rows:
+        if is_control(r):
+            r["lead_rank"] = ""
+        else:
+            rank += 1
+            r["lead_rank"] = rank
 
     fieldnames = [
-        "wallet_address", "wallet_pseudonym", "review_label", "lead_score",
+        "wallet_address", "wallet_pseudonym", "review_label", "lead_rank", "lead_score",
         "market_condition_id", "event_id", "market_question", "topic_label", "possible_information_channel",
         "resolved_outcome", "side_bought", "signal_trade_count", "signal_notional_usd",
         "weighted_avg_price", "min_price", "max_price", "min_hours_pre_resolution",

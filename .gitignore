@@ -17,3 +17,6 @@ data/activity_wash.csv
 report/*.pdf
 *.pdf
 !report/report.pdf
+
+# Personal research notes — never publish
+personal_learnings/
